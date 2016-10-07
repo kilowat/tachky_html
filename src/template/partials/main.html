@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New project</title>
+    <!-- bootstrap:css -->
+    <!-- endinject -->
+
+    <!-- dev:css -->
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/fonts/roboto/roboto.css">
+    <!-- endinject -->
+</head>
+
+<body>
+<header>
+    {% include './../partials/header.html' %}
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    {% include './../partials/footer.html' %}
+</footer>
+
+<!-- jquery:js -->
+<!-- endinject -->
+
+<!-- bootstrap:js -->
+<!-- endinject -->
+
+<!-- dev:js -->
+<script src="./js/main.js"></script>
+<!-- endinject -->
+</body>
+
+
+</html>

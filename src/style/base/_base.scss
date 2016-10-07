@@ -1,3 +1,8 @@
 body{
   
 }
+.wrapper{
+  margin: 0 auto;
+  max-width: $wrapper-max-width;
+  min-width: $wrapper-min-width;
+}

@@ -153,7 +153,7 @@ function clean() {
 function html_build() {
 
   return gulp.src(path.src.html)
-   .pipe(plugins.newer(path.build.html))
+   //.pipe(plugins.newer(path.build.html))
     .pipe(plugins.swig(swigOpt).on('error', plugins.notify.onError(function (e) {
       console.log(e);
       return "AHTUNG TWIG ERROR!!"

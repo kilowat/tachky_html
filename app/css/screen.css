@@ -48,8 +48,10 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background: #ccc;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 1000px;
 }
 
 /* BEGIN Thin */
