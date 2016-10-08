@@ -8,4 +8,18 @@ i{
   margin: 0 auto;
   max-width: $wrapper-max-width;
   min-width: $wrapper-min-width;
+  display: table;
+  height: 100%;
+}
+html, body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -268px;
+}
+footer, .push {
+  height: 268px;
 }

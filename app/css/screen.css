@@ -60,6 +60,23 @@ i {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 1000px;
+  display: table;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -268px;
+}
+
+footer, .push {
+  height: 268px;
 }
 
 body {
@@ -226,12 +243,16 @@ header .catalog-menu-wrapper {
 }
 
 header .search-wrapper {
-  width: 30%;
+  width: 29%;
   padding-right: 15px;
 }
 
 header .basket-panel {
   width: 40%;
+}
+
+footer {
+  background-color: #1e1e1e;
 }
 
 .search {
@@ -408,6 +429,11 @@ header .basket-panel {
 
 .catalog-menu .catalog-menu-btn:hover {
   background-color: #df312e;
+}
+
+.top-cart .cart-summ {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 @font-face {
