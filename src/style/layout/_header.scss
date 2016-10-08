@@ -1,0 +1,77 @@
+header {
+  background-color: #1e1e1e;
+  .top-line{
+    height: 40px;
+    background-color: #ffffff;
+  }
+  .top-menu-block{
+    float: left;
+  }
+  .user-menu-block{
+    float: right;
+    padding-left: 25px;
+    border-left: 1px solid #cdcdcf;
+    height: 40px;
+    padding-right: 20px;
+  }
+  .top-panel{
+    height: 65px;
+
+    border-bottom: 5px solid #000000;
+    .block {
+      display: table-cell;
+      height: 70px;
+      vertical-align: middle;
+      color: #FFFFFF;
+      &.compared-wrapper, &.book-mark-wrapper{
+        padding-right: 15px;
+      }
+      &.cart-wrapper, &.compared-wrapper, &.book-mark-wrapper{
+        text-align: right;
+        position: relative;
+        &:before{
+          display: block;
+          content: '';
+          height: 75%;
+          position: absolute;
+          top: 15%;
+          left: 0px;
+          background: #3a3a3a;
+          width: 1px;
+        }
+      }
+    }
+    .counter{
+      background-color: #434343;
+      border: 1px solid;
+      border-radius: 9px;
+      color: #a43634;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      height: 16px;
+      margin-left: 10px;
+      padding: 9px;
+      position: relative;
+    }
+    .ic_compared, .ic_book-mark, .ic_cart, .ic_cart-order-arrow-btn, .ic_cart-order-arrow-btn-active{
+      position: relative;
+      top: 7px;
+    }
+  }
+  .logo{
+    width: 1%;
+    padding-right: 20px;
+  }
+  .catalog-menu-wrapper{
+    width: 20%;
+  }
+  .search-wrapper{
+    width: 30%;
+    padding-right: 15px;
+  }
+  .basket-panel {
+    width: 40%;
+  }
+}
+

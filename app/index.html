@@ -4,20 +4,100 @@
 <head>
   <meta charset="utf-8">
   <title>New project</title>
-  <!-- bootstrap:css -->
-  <!-- endinject -->
-
-  <!-- dev:css -->
   <link rel="stylesheet" href="./css/screen.css">
-  <link rel="stylesheet" href="./css/fonts/roboto/roboto.css">
-  <!-- endinject -->
+  <link rel="stylesheet" href="./css/libs.css">
+
 </head>
 
 <body>
   <header>
-    <div class="wrapper">
-      header content
+    <div class="top-line">
+      <div class="wrapper">
+        <div class="top-menu-block">
+          <!--start component top menu-->
+          <div class="top-menu">
+            <ul>
+              <li><a href="#" class="selected" title="Магазин"><i class="ic_bag"></i>Магазин</a></li>
+              <li><a href="#" title="Журнал"><i class="ic_jurnal"></i>Журнал</a></li>
+              <li><a href="#" title="Сообщество"><i class="ic_people"></i>Сообщество</a></li>
+            </ul>
+          </div>
+          <!--end component top menu-->
+        </div>
+        <div class="user-menu-block">
+          <!--start component user menu-->
+          <ul class="user-menu">
+            <li class="user-menu-line">
+              <a href="#" title="user">
+                <span class="user-avatar ic_user"></span>
+                <span class="user-name">Петр Иванов</span>
+              </a>
+            </li>
+            <ul class="user-links">
+              <li>
+                <a href="#" title="Выход">Выход</a>
+              </li>
+            </ul>
+          </ul>
+          <!--end component user menu-->
+        </div>
+      </div>
     </div>
+    <div class="top-panel">
+      <div class="wrapper">
+        <div class="logo block">
+          <a href="/" tilte="Тюнячки на любые тачки"><img src="./images/logo.png" alt="Тюнячки на любые тачки"></a>
+        </div>
+        <div class="block catalog-menu-wrapper">
+          <!--start component catalog menu-->
+          <div class="catalog-menu">
+            <button class="catalog-menu-btn">Каталог <i class="ic_menu"></i></button>
+            <ul>
+              <li>
+                <a href="" title="#"></a>
+              </li>
+            </ul>
+          </div>
+          <!--end component catalog menu-->
+        </div>
+        <div class="block search-wrapper">
+          <!--start component search-->
+          <div class="search">
+            <input type="text" placeholder="Поиск">
+            <input type="submit" value="" class="ic_search">
+          </div>
+          <!--end component search-->
+        </div>
+        <div class="block book-mark-wrapper">
+          <!--start component book-mark-->
+          <div class="book-mark">
+            <i class="ic_book-mark"></i>
+            <span class="counter">7</span>
+          </div>
+          <!--end component book-makr-->
+        </div>
+        <div class="block compared-wrapper">
+          <!--start component compared-->
+          <div class="compared">
+            <i class="ic_compared"></i>
+            <span class="counter">467</span>
+          </div>
+          <!--end component compared-->
+        </div>
+        <div class="block cart-wrapper">
+          <!--start component top-cart-->
+          <div class="top-cart">
+            <i class="ic_cart"></i>
+            <span class="counter">555</span>
+            <span class="cart-summ">1 245 Р</span>
+            <a href="#" title="Оформить заказ"><i class="ic_cart-order-arrow-btn"></i></a>
+          </div>
+
+          <!--end component top-cart-->
+        </div>
+      </div>
+    </div>
+
   </header>
   <main>
 
@@ -31,16 +111,10 @@
       footer content
     </div>
   </footer>
+  <script src="./js/libs.js"></script>
 
-  <!-- jquery:js -->
-  <!-- endinject -->
-
-  <!-- bootstrap:js -->
-  <!-- endinject -->
-
-  <!-- dev:js -->
   <script src="./js/main.js"></script>
-  <!-- endinject -->
+
 </body>
 
 

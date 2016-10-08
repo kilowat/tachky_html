@@ -97,7 +97,7 @@ var path = {
     img: root + '/images/',
     fonts: root + '/fonts/',
     libs: root + '/libs/',
-    sprite: "./",
+    sprite: "../images/",
 	//php: '/../test.site/',
   },
   src: {
@@ -141,7 +141,8 @@ var configServer = {
   logPrefix: "Frontend_Devil",
   proxy: 'tachky.local',
   port: 80,
-  browser: "firefox"
+  browser: "firefox",
+  logLevel: 'silent'
 };
 
 /*clear build directory*/

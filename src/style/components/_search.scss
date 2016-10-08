@@ -1,0 +1,18 @@
+.search{
+  position: relative;
+  input[type=text]{
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 95%;
+    border:none;
+  }
+  input[type="submit"]{
+    border: medium none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,33 @@
+.ic_bag{
+  @include sprite($ic_bag);
+}
+.ic_jurnal{
+  @include sprite($ic_jurnal);
+}
+.ic_people{
+  @include sprite($ic_people);
+}
+.ic_user{
+  @include sprite($ic_user);
+}
+.ic_menu{
+  @include sprite($ic_menu);
+}
+.ic_search{
+  @include sprite($ic_search);
+}
+.ic_book-mark{
+  @include sprite($ic-book-mark);
+}
+.ic_compared{
+  @include sprite($ic_compared);
+}
+.ic_cart{
+  @include sprite($ic_cart);
+}
+.ic_cart-order-arrow-btn{
+  @include sprite($ic_cart-order-arrow-btn);
+}
+.ic_cart-order-arrow-btn-active{
+  @include sprite($ic_cart-order-arrow-btn-active);
+}
