@@ -1,0 +1,128 @@
+.top-item-wrapper{
+  padding-top:20px;
+  display: block;
+  border: 1px solid #b8b8bc;
+  border-radius: 5px;
+  color: #424242;
+  left: -300px;
+  margin-top: 15px;
+  position: absolute;
+  width: 560px;
+  top: 54px;
+  z-index: 2;
+  background-color: #ffffff;
+  &:hover{
+    .top-item-wrapper{
+      display: block;
+    }
+  }
+  .top-item-list.table {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .table-cell{
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 8px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    i:hover{
+      cursor: pointer;
+    }
+  }
+  .top-item-list{
+    .name{
+      width: 45%;
+      font-weight: 200;
+      line-height: 1.1em;
+      a{
+        display: inline-block;
+        height: 32px;
+        overflow: hidden;
+      }
+    }
+    .pic {
+      width: 10%;
+      img{
+        border: 1px solid #b8b8bc;
+        padding: 7px;
+      }
+      .status{
+        width: 5%;
+      }
+      .compare{
+        width: 5%;
+      }
+      .add-to-cart{
+        width: 5%;
+      }
+      .remove-from{
+        width: 5%;
+      }
+    }
+  }
+}
+.bookmark-wrapper, .compared-wrapper, .cart-wrapper{
+  display: none;
+  &:hover{
+    .top-item-wrapper {
+      display: block;
+      .btn-block {
+        padding-top: 25px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.bookmark-wrapper {
+
+  &:hover{
+    .ic_bookmark{
+      @include sprite($ic_book-mark-hover);
+    }
+  }
+  .top-item-wrapper {
+    display: none;
+    &:before{
+      display: block;
+      content: "";
+      @include sprite($ic_arrow-up);
+      position: absolute;
+      left: 63%;
+      top: -12px;
+    }
+  }
+}
+.compared-wrapper{
+  &:hover{
+    .ic_compared{
+      @include sprite($ic_compared-hover);
+    }
+  }
+  .top-item-wrapper{
+    display: none;
+    &:before{
+      display: block;
+      content: "";
+      @include sprite($ic_arrow-up);
+      position: absolute;
+      left: 65%;
+      top: -12px;
+    }
+  }
+}
+.cart-wrapper{
+  &:hover{
+    .ic_cart{
+      @include sprite($ic_cart-hover);
+    }
+  }
+  .top-item-wrapper{
+    display: block;
+  }
+}
+.bookmark, .compared, .top-cart{
+  cursor: pointer;
+}
+

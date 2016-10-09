@@ -18,12 +18,21 @@
 }
 .ic_bookmark{
   @include sprite($ic-book-mark);
+  &:hover{
+    @include sprite($ic-book-mark-hover);
+  }
 }
 .ic_compared{
   @include sprite($ic_compared);
+  &:hover{
+    @include sprite($ic_compared-hover);
+  }
 }
 .ic_cart{
   @include sprite($ic_cart);
+  &:hover{
+    @include sprite($ic_cart-hover);
+  }
 }
 .ic_cart-order-arrow-btn{
   @include sprite($ic_cart-order-arrow-btn);
@@ -51,4 +60,7 @@
 }
 .ic_wait{
   @include sprite($ic_wait);
+}
+.ic_arrow-down{
+  @include sprite($ic_arrow-down);
 }

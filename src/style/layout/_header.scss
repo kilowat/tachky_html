@@ -12,12 +12,15 @@ header {
     padding-left: 25px;
     border-left: 1px solid #cdcdcf;
     height: 40px;
-    padding-right: 20px;
+    padding-right: 7px;
+    padding-left: 7px;
   }
   .top-panel{
     height: 65px;
-
     border-bottom: 5px solid #000000;
+    .cart-wrapper{
+      float: right;
+    }
     .block {
       position: relative;
       display: table-cell;
@@ -25,21 +28,11 @@ header {
       vertical-align: middle;
       color: #FFFFFF;
       &.compared-wrapper, &.bookmark-wrapper{
-        padding-right: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
       }
-      &.cart-wrapper, &.compared-wrapper, &.bookmark-wrapper{
-        text-align: right;
+       &.compared-wrapper, &.bookmark-wrapper{
         position: relative;
-        &:before{
-          display: block;
-          content: '';
-          height: 75%;
-          position: absolute;
-          top: 15%;
-          left: 0px;
-          background: #3a3a3a;
-          width: 1px;
-        }
       }
     }
     .counter{
@@ -65,11 +58,10 @@ header {
     padding-right: 20px;
   }
   .catalog-menu-wrapper{
-    width: 20%;
+    width: 14%;
   }
   .search-wrapper{
-    width: 29%;
-    padding-right: 15px;
+    padding-right: 25px;
   }
   .basket-panel {
     width: 40%;

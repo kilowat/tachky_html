@@ -9,4 +9,12 @@
       background-color: scale_color(#6a6a6a, 40);
     }
   }
+  &.grey-light{
+    border: 1px solid #6b6b6b;
+    color: #6b6b6b;
+  }
+  &.red-light{
+    border: 1px solid #de2d29;
+    color: #de2d29;
+  }
 }

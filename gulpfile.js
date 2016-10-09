@@ -372,7 +372,7 @@ var build = gulp.series(
     style_build,
     js_build
   ),
-  inc_build,
+  //inc_build,
   html_build
 );
 

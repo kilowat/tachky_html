@@ -1,3 +1,7 @@
+header, main, footer{
+  min-width: $wrapper-min-width;
+}
+
 body{
   font-size: $base-font-size;
 }
@@ -14,6 +18,8 @@ i{
   margin: 0 auto;
   max-width: $wrapper-max-width;
   min-width: $wrapper-min-width;
+  margin-left: 10px;
+  margin-right: 10px;
   display: table;
   height: 100%;
 }
