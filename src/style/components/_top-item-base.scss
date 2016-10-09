@@ -1,0 +1,52 @@
+.top-item-wrapper{
+  display: block;
+  border: 1px solid #b8b8bc;
+  border-radius: 5px;
+  color: #424242;
+  left: -300px;
+  margin-top: 15px;
+  padding: 20px 5px;
+  position: absolute;
+  width: 560px;
+  .table-cell{
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 8px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    i:hover{
+      cursor: pointer;
+    }
+  }
+  .top-item-list{
+    .name{
+      width: 45%;
+      font-weight: 200;
+      line-height: 1.1em;
+      a{
+        display: inline-block;
+        height: 32px;
+        overflow: hidden;
+      }
+    }
+    .pic {
+      width: 10%;
+      img{
+        border: 1px solid #b8b8bc;
+        padding: 7px;
+      }
+      .status{
+        width: 5%;
+      }
+      .compare{
+        width: 5%;
+      }
+      .add-to-cart{
+        width: 5%;
+      }
+      .remove-from{
+        width: 5%;
+      }
+    }
+  }
+}

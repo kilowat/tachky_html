@@ -1,6 +1,12 @@
 body{
   font-size: $base-font-size;
 }
+a{
+  color: #000000;
+  &:hover{
+    color: #bf312e;
+  }
+}
 i{
   display: inline-block;
 }
@@ -23,3 +29,13 @@ main {
 footer, .push {
   height: 268px;
 }
+.table{
+  display: table;
+}
+.table-row{
+  display: table-row;
+}
+.table-cell{
+  display: table-cell;
+}
+

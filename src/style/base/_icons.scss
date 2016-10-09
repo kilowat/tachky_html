@@ -16,7 +16,7 @@
 .ic_search{
   @include sprite($ic_search);
 }
-.ic_book-mark{
+.ic_bookmark{
   @include sprite($ic-book-mark);
 }
 .ic_compared{
@@ -30,4 +30,25 @@
 }
 .ic_cart-order-arrow-btn-active{
   @include sprite($ic_cart-order-arrow-btn-active);
+}
+.ic_close{
+  @include sprite($ic_close);
+  &:hover{
+    @include sprite($ic_close-hover);
+  }
+}
+.ic_cart_item{
+  @include sprite($ic_cart_item);
+  &:hover{
+    @include sprite($ic_cart_item-hover);
+  }
+}
+.ic_allow{
+  @include sprite($ic_allow);
+}
+.ic_not-allow{
+  @include sprite($ic_not-allow);
+}
+.ic_wait{
+  @include sprite($ic_wait);
 }

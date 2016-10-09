@@ -55,13 +55,45 @@
             </div>
             <!--end component search-->
         </div>
-        <div class="block book-mark-wrapper">
+        <div class="block bookmark-wrapper">
             <!--start component book-mark-->
-            <div class="book-mark">
-                <i class="ic_book-mark"></i>
+            <div class="bookmark">
+                <i class="ic_bookmark"></i>
                 <span class="counter">7</span>
             </div>
-            <!--end component book-makr-->
+            <div class="top-item-wrapper">
+                <div class="top-item-list table">
+                {% for item in bookMarkItem %}
+                    <div class="item table-row">
+                        <div class="table-cell pic">
+                            <a href="#" title="#"><img src="{{item.img}}" alt="#"></a>
+                        </div>
+                        <div class="table-cell name">
+                            <a href="#" title="#">{{item.name}}</a>
+                        </div>
+                        <div class="table-cell status">
+                            <i class="ic_{{item.status}}"></i>
+                        </div>
+                        <div class="table-cell compare">
+                            <a href="#" title="Сравнить"><i class="ic_compared"></i></a>
+                        </div>
+                        <div class="table-cell price">
+                            <span>{{item.price}} &#8381</span>
+                        </div>
+                        <div class="table-cell add-to-cart">
+                            <a href="#" title="В корзину"><i class="ic_cart_item"></i></a>
+                        </div>
+                        <div class="table-cell remove-from">
+                            <i class="ic_close"></i>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="btn-block">
+                    <a href="#" title="#" class="btn-round grey">Управление закладками</a>
+                </div>
+            </div>
+            <!--end component book-mark-->
         </div>
         <div class="block compared-wrapper">
             <!--start component compared-->

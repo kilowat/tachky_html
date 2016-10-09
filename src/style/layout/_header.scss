@@ -19,14 +19,15 @@ header {
 
     border-bottom: 5px solid #000000;
     .block {
+      position: relative;
       display: table-cell;
       height: 70px;
       vertical-align: middle;
       color: #FFFFFF;
-      &.compared-wrapper, &.book-mark-wrapper{
+      &.compared-wrapper, &.bookmark-wrapper{
         padding-right: 15px;
       }
-      &.cart-wrapper, &.compared-wrapper, &.book-mark-wrapper{
+      &.cart-wrapper, &.compared-wrapper, &.bookmark-wrapper{
         text-align: right;
         position: relative;
         &:before{
@@ -54,7 +55,7 @@ header {
       padding: 9px;
       position: relative;
     }
-    .ic_compared, .ic_book-mark, .ic_cart, .ic_cart-order-arrow-btn, .ic_cart-order-arrow-btn-active{
+    .ic_compared, .ic_bookmark, .ic_cart, .ic_cart-order-arrow-btn, .ic_cart-order-arrow-btn-active{
       position: relative;
       top: 7px;
     }
