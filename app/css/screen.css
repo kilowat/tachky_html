@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,11 +49,8 @@ table {
   border-spacing: 0;
 }
 
-header, main, footer {
-  min-width: 1000px;
-}
-
 body {
+  min-width: 1000px;
   font-size: 14px;
 }
 
@@ -72,10 +70,11 @@ i {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 1000px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: table;
-  height: 100%;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 html, body {
@@ -103,6 +102,18 @@ footer, .push {
 
 .table-cell {
   display: table-cell;
+}
+
+.rouble {
+  display: inline-block;
+  position: relative;
+}
+
+.rouble:before {
+  display: block;
+  content: "–";
+  position: absolute;
+  top: 0.06em;
 }
 
 body {
@@ -281,7 +292,7 @@ header .user-menu-block {
   padding-left: 25px;
   border-left: 1px solid #cdcdcf;
   height: 40px;
-  padding-right: 7px;
+  padding-right: 20px;
   padding-left: 7px;
 }
 
@@ -295,6 +306,7 @@ header .top-panel .cart-wrapper {
 }
 
 header .top-panel .block {
+  text-align: center;
   position: relative;
   display: table-cell;
   height: 70px;
@@ -302,13 +314,29 @@ header .top-panel .block {
   color: #FFFFFF;
 }
 
-header .top-panel .block.compared-wrapper, header .top-panel .block.bookmark-wrapper {
-  padding-right: 10px;
-  padding-left: 10px;
+header .top-panel .block.compared-wrapper:before, header .top-panel .block.bookmark-wrapper:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 8px;
+  background-color: #cdcdcf;
 }
 
 header .top-panel .block.compared-wrapper, header .top-panel .block.bookmark-wrapper {
   position: relative;
+}
+
+header .top-panel .block.compared-wrapper:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 8px;
+  right: 0;
+  background-color: #cdcdcf;
 }
 
 header .top-panel .counter {
@@ -528,6 +556,87 @@ footer, footer > .wrapper {
   background-color: #df312e;
 }
 
+.catalog-menu .catalog-menu-item-wrapper {
+  display: block;
+  position: absolute;
+  width: 760px;
+  color: #000;
+  text-align: left;
+}
+
+.catalog-menu .catalog-menu-item-wrapper a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.catalog-menu .catalog-menu-item-wrapper ul {
+  background-color: #FFFFFF;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items {
+  border: 1px solid #cdcdcf;
+  left: -220px;
+  padding: 5px 50px 0px 10px;
+  position: absolute;
+  top: 18px;
+  z-index: 2;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items > li > a {
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 137%;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items > li > a:hover + .child-items {
+  display: block;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items {
+  display: none;
+  padding: 20px 20px 20px 25px;
+  z-index: 3;
+  top: -1px;
+  position: absolute;
+  left: 163px;
+  width: 778px;
+  border: 1px solid #cdcdcf;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items:hover {
+  display: block;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items a {
+  font-weight: 100;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items .item-head {
+  color: #137fb7;
+  font-weight: 700;
+  marign-bottom: 6px;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items .coll-item {
+  margin-right: 45px;
+  float: left;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items .coll-item > ul:first-child {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 5px;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items .coll-item > ul:nth-child(2) {
+  padding-top: 5px;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items .child-items ul li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 .top-item-wrapper {
   padding-top: 20px;
   display: block;
@@ -600,6 +709,10 @@ footer, footer > .wrapper {
 
 .top-item-wrapper .top-item-list .pic .remove-from {
   width: 5%;
+}
+
+.top-item-wrapper .btn-block {
+  height: 30px;
 }
 
 .bookmark-wrapper, .compared-wrapper, .cart-wrapper {
@@ -684,6 +797,7 @@ footer, footer > .wrapper {
 .cart-wrapper .top-item-wrapper {
   width: 712px;
   left: -533px;
+  display: none;
 }
 
 .cart-wrapper .top-item-wrapper:before {

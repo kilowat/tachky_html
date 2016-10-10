@@ -10,20 +10,21 @@
 
 <body>
 <header>
-    {% include './../partials/header.html' %}
+    {% include './../layout/header.html' %}
 </header>
 <main>
     {% block content %}{% endblock %}
     <div class="push"></div>
 </main>
 <footer>
-    {% include './../partials/footer.html' %}
+    {% include './../layout/footer.html' %}
 </footer>
 
 
 <script src="./js/main.js"></script>
-<!--js:jquery-->
-<!--en-->
+<!--jquery:js-->
+<script src="./libs/jquery/js/jquery.min.js"></script>
+<!--endinject-->
 </body>
 
 

@@ -202,7 +202,6 @@ function html_build() {
 function js_build() {
 
   return gulp.src(path.src.js)
-    .pipe(plugins.rigger())
     .pipe(plugins.if(env === "ftp", conn.dest(path.build.js)))
     .pipe(plugins.if(env === "local", gulp.dest(path.build.js)))
     .pipe(plugins.browserSync.stream());
@@ -305,7 +304,7 @@ function lib_build(cb) {
 
 /*inject css js to index file*/
 function inc_build() {
-  var stream = gulp.src('src/template/layout/master.html')
+  var stream = gulp.src('src/template/layout/main.html')
     .pipe(plugins.inject(gulp.src([
         root + 'js/**/*.js'
    ], {
