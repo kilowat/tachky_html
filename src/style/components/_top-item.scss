@@ -61,7 +61,11 @@
       }
     }
   }
+  .btn-block {
+    height: 30px;
+  }
 }
+
 .bookmark-wrapper, .compared-wrapper, .cart-wrapper{
   display: none;
   &:hover{
