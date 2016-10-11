@@ -122,156 +122,233 @@ body {
 
 .ic_bag {
   background-image: url(../images/sprite.png);
-  background-position: -101px -30px;
+  background-position: -80px -57px;
   width: 14px;
   height: 14px;
 }
 
 .ic_jurnal {
   background-image: url(../images/sprite.png);
-  background-position: -101px -44px;
+  background-position: -77px -109px;
   width: 13px;
   height: 13px;
 }
 
 .ic_people {
   background-image: url(../images/sprite.png);
-  background-position: 0px -99px;
+  background-position: -60px -109px;
   width: 17px;
   height: 13px;
 }
 
 .ic_user {
   background-image: url(../images/sprite.png);
-  background-position: -56px -21px;
+  background-position: -54px -57px;
   width: 26px;
   height: 26px;
 }
 
 .ic_menu {
   background-image: url(../images/sprite.png);
-  background-position: -58px -73px;
+  background-position: -114px -97px;
   width: 16px;
   height: 10px;
 }
 
 .ic_search {
   background-image: url(../images/sprite.png);
-  background-position: -16px -73px;
+  background-position: -40px -109px;
   width: 20px;
   height: 20px;
 }
 
 .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -54px -47px;
+  background-position: -95px -27px;
   width: 19px;
   height: 26px;
 }
 
 .ic_bookmark:hover {
   background-image: url(../images/sprite.png);
-  background-position: -82px 0px;
+  background-position: -95px -53px;
   width: 19px;
   height: 26px;
 }
 
 .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: 0px -73px;
+  background-position: -114px -26px;
   width: 16px;
   height: 26px;
 }
 
 .ic_compared:hover {
   background-image: url(../images/sprite.png);
-  background-position: -82px -26px;
+  background-position: -114px 0px;
   width: 16px;
   height: 26px;
 }
 
 .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: 0px -21px;
+  background-position: -67px 0px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart:hover {
   background-image: url(../images/sprite.png);
-  background-position: -28px -21px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart-order-arrow-btn {
   background-image: url(../images/sprite.png);
-  background-position: 0px -47px;
+  background-position: 0px -57px;
   width: 27px;
   height: 26px;
 }
 
 .ic_cart-order-arrow-btn-active {
   background-image: url(../images/sprite.png);
-  background-position: -27px -47px;
+  background-position: -27px -57px;
   width: 27px;
   height: 26px;
 }
 
 .ic_close {
   background-image: url(../images/sprite.png);
-  background-position: -101px -70px;
+  background-position: -80px -71px;
   width: 9px;
   height: 9px;
 }
 
 .ic_close:hover {
   background-image: url(../images/sprite.png);
-  background-position: -101px -88px;
+  background-position: -90px -83px;
   width: 9px;
   height: 9px;
 }
 
 .ic_cart_item {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: -26px 0px;
   width: 41px;
   height: 21px;
 }
 
 .ic_cart_item:hover {
   background-image: url(../images/sprite.png);
-  background-position: -41px 0px;
+  background-position: 0px -36px;
   width: 41px;
   height: 21px;
 }
 
 .ic_allow {
   background-image: url(../images/sprite.png);
-  background-position: -82px -52px;
+  background-position: -114px -82px;
   width: 15px;
   height: 15px;
 }
 
 .ic_not-allow {
   background-image: url(../images/sprite.png);
-  background-position: -101px 0px;
+  background-position: -114px -52px;
   width: 15px;
   height: 15px;
 }
 
 .ic_wait {
   background-image: url(../images/sprite.png);
-  background-position: -101px -15px;
+  background-position: -114px -67px;
   width: 15px;
   height: 15px;
 }
 
 .ic_arrow-down {
   background-image: url(../images/sprite.png);
-  background-position: -101px -57px;
+  background-position: -56px -21px;
   width: 11px;
   height: 13px;
+}
+
+.ic_arrow {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -36px;
+  width: 4px;
+  height: 7px;
+}
+
+.ic_arrow:hover {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -43px;
+  width: 4px;
+  height: 7px;
+}
+
+.ic_engine {
+  background-image: url(../images/sprite.png);
+  background-position: -20px -109px;
+  width: 20px;
+  height: 20px;
+}
+
+.ic_gear {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -83px;
+  width: 18px;
+  height: 26px;
+}
+
+.ic_carcase {
+  background-image: url(../images/sprite.png);
+  background-position: -26px -21px;
+  width: 30px;
+  height: 14px;
+}
+
+.ic_suspension {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 26px;
+  height: 36px;
+}
+
+.ic_wheels {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -109px;
+  width: 20px;
+  height: 20px;
+}
+
+.ic_chear {
+  background-image: url(../images/sprite.png);
+  background-position: -18px -83px;
+  width: 19px;
+  height: 22px;
+}
+
+.ic_electric {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -83px;
+  width: 22px;
+  height: 19px;
+}
+
+.ic_break {
+  background-image: url(../images/sprite.png);
+  background-position: -41px -36px;
+  width: 21px;
+  height: 20px;
+}
+
+.ic_trinket {
+  background-image: url(../images/sprite.png);
+  background-position: -95px 0px;
+  width: 19px;
+  height: 27px;
 }
 
 header {
@@ -552,16 +629,20 @@ footer, footer > .wrapper {
   cursor: pointer;
 }
 
-.catalog-menu .catalog-menu-btn:hover {
+.catalog-menu .catalog-menu-btn:hover, .catalog-menu .catalog-menu-btn.selected {
   background-color: #df312e;
 }
 
 .catalog-menu .catalog-menu-item-wrapper {
-  display: block;
+  display: none;
   position: absolute;
   width: 760px;
   color: #000;
   text-align: left;
+}
+
+.catalog-menu .catalog-menu-item-wrapper.opened {
+  display: block;
 }
 
 .catalog-menu .catalog-menu-item-wrapper a {
@@ -569,28 +650,53 @@ footer, footer > .wrapper {
   color: #414141;
 }
 
+.catalog-menu .catalog-menu-item-wrapper a:hover {
+  color: #bf312e;
+}
+
 .catalog-menu .catalog-menu-item-wrapper ul {
   background-color: #FFFFFF;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .ic_arrow {
+  float: right;
+  margin-top: 7px;
 }
 
 .catalog-menu .catalog-menu-item-wrapper .root-items {
   border: 1px solid #cdcdcf;
   left: -220px;
-  padding: 5px 50px 0px 10px;
+  padding: 5px 65px 0px 10px;
   position: absolute;
   top: 18px;
   z-index: 2;
 }
 
 .catalog-menu .catalog-menu-item-wrapper .root-items > li > a {
-  display: block;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 137%;
+  display: table;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 127%;
 }
 
 .catalog-menu .catalog-menu-item-wrapper .root-items > li > a:hover + .child-items {
   display: block;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items > li > a:hover .ic_arrow {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -43px;
+  width: 4px;
+  height: 7px;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items > li > a > * {
+  vertical-align: middle;
+}
+
+.catalog-menu .catalog-menu-item-wrapper .root-items > li > a > span:first-child {
+  text-align: center;
+  width: 45px;
 }
 
 .catalog-menu .catalog-menu-item-wrapper .root-items .child-items {
@@ -599,7 +705,7 @@ footer, footer > .wrapper {
   z-index: 3;
   top: -1px;
   position: absolute;
-  left: 163px;
+  left: 230px;
   width: 778px;
   border: 1px solid #cdcdcf;
 }
@@ -651,6 +757,10 @@ footer, footer > .wrapper {
   top: 54px;
   z-index: 2;
   background-color: #ffffff;
+}
+
+.top-item-wrapper a {
+  text-decoration: none;
 }
 
 .top-item-wrapper:hover .top-item-wrapper {
@@ -730,7 +840,7 @@ footer, footer > .wrapper {
 
 .bookmark-wrapper:hover .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -82px 0px;
+  background-position: -95px -53px;
   width: 19px;
   height: 26px;
 }
@@ -743,7 +853,7 @@ footer, footer > .wrapper {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -36px -73px;
+  background-position: -59px -83px;
   width: 22px;
   height: 12px;
   position: absolute;
@@ -753,7 +863,7 @@ footer, footer > .wrapper {
 
 .compared-wrapper:hover .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -82px -26px;
+  background-position: -114px 0px;
   width: 16px;
   height: 26px;
 }
@@ -766,7 +876,7 @@ footer, footer > .wrapper {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -36px -73px;
+  background-position: -59px -83px;
   width: 22px;
   height: 12px;
   position: absolute;
@@ -776,7 +886,7 @@ footer, footer > .wrapper {
 
 .cart-wrapper:hover .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -28px -21px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
@@ -804,7 +914,7 @@ footer, footer > .wrapper {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -36px -73px;
+  background-position: -59px -83px;
   width: 22px;
   height: 12px;
   position: absolute;

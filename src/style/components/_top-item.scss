@@ -11,6 +11,9 @@
   top: 54px;
   z-index: 2;
   background-color: #ffffff;
+  a{
+    text-decoration: none;
+  }
   &:hover{
     .top-item-wrapper{
       display: block;

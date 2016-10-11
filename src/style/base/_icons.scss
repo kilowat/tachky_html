@@ -64,3 +64,36 @@
 .ic_arrow-down{
   @include sprite($ic_arrow-down);
 }
+.ic_arrow{
+  @include sprite($ic_arrow);
+  &:hover{
+    @include sprite($ic_arrow-hover);
+  }
+}
+.ic_engine{
+  @include sprite($ic_engine);
+}
+.ic_gear{
+  @include sprite($ic_gear);
+}
+.ic_carcase{
+  @include sprite($ic_carcase);
+}
+.ic_suspension{
+  @include sprite($ic_suspension);
+}
+.ic_wheels{
+  @include sprite($ic_wheels);
+}
+.ic_chear{
+  @include sprite($ic_chear);
+}
+.ic_electric{
+  @include sprite($ic_electic);
+}
+.ic_break{
+  @include sprite($ic_break);
+}
+.ic_trinket{
+  @include sprite($ic_trinket);
+}
