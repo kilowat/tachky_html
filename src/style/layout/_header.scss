@@ -9,11 +9,10 @@ header {
   }
   .user-menu-block{
     float: right;
-    padding-left: 25px;
     border-left: 1px solid #cdcdcf;
     height: 40px;
     padding-right: 20px;
-    padding-left: 7px;
+    padding-left: 25px;
   }
   .top-panel{
     height: 65px;
@@ -36,7 +35,7 @@ header {
           width: 1px;
           height: 80%;
           top: 8px;
-          background-color: #cdcdcf;
+          background-color: #3a3a3a;
         }
       }
        &.compared-wrapper, &.bookmark-wrapper{
@@ -50,7 +49,7 @@ header {
         height: 80%;
         top: 8px;
         right:0;
-        background-color: #cdcdcf;
+        background-color: #3a3a3a;
       }
     }
     .counter{
@@ -65,10 +64,6 @@ header {
       margin-left: 10px;
       padding: 9px;
       position: relative;
-    }
-    .ic_compared, .ic_bookmark, .ic_cart, .ic_cart-order-arrow-btn, .ic_cart-order-arrow-btn-active{
-      position: relative;
-      top: 7px;
     }
   }
   .logo{

@@ -1,3 +1,125 @@
 footer, footer>.wrapper{
   background-color: #1e1e1e;
+  .bottom-menu-wrapper{
+    @include span(7 of 15 1/4);
+  }
+  .price-list-wrapper{
+    @include span(3 of 15 at 6 1/4);
+  }
+  .subscribe-wrapper{
+    @include span(3 of 15 at 9 1/4);
+  }
+  .social-wrapper{
+    @include span(2 of 15 at 13 1/4 last);
+  }
+}
+footer{
+  padding-top:20px;
+  color: #c9c9c9;
+  .bottom-line{
+    height: 35px;
+    background-color: #000000;
+  }
+  a{
+    color: #c9c9c9;
+  }
+  .header{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .social-wrapper{
+    text-align: center;
+    i{
+      cursor: pointer;
+    }
+    ul li{
+      display: inline-block;
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+    .ya-widget{
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid;
+      margin-top: 50px;
+      padding-bottom:10px;
+      span{
+        color: #d20606;
+      }
+    }
+  }
+  .system-pay-row{
+    text-align: center;
+    margin-top: 30px;
+    clear: both;
+  }
+  .system-pay{
+    height: 60px;
+   .system-pay-list{
+     li{
+       @include span(1 of 15 1/3);
+       &:nth-child(20){
+         @include last;
+       }
+     }
+   }
+  }
+  .date-created{
+    float: left;
+  }
+  .created-by{
+    float: right;
+  }
+  .date-created, .created-by{
+    margin-top:13px;
+    color: #686868;
+  }
+}
+.price-list-wrapper{
+  a {
+    text-decoration: none;
+    span{
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+  }
+  .date{
+    color: #404040;
+    display: inline-block;
+    padding-top: 6px;
+    margin-bottom: 10px;
+  }
+}
+.subscribe-wrapper{
+  text-align: center;
+  #subcribe{
+    border:1px solid;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color:#c0c0c2;
+    height: 35px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .row{
+    margin-bottom: 10px;
+  }
+  .input-email{
+    height: 35px;
+    width: 100%;
+    border:1px solid;
+    border-radius: 8px;
+    color:#404040;
+    background-color: #1e1e1e;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    box-sizing: border-box;
+  }
+}
+.bottom-line{
+
 }

@@ -97,3 +97,39 @@
 .ic_trinket{
   @include sprite($ic_trinket);
 }
+.ic_xls{
+  @include sprite($ic_xls);
+}
+.ic_zip{
+  @include sprite($ic_zip);
+}
+.ic_vk{
+  @include sprite($ic_vk);
+  &:hover{
+    @include sprite($ic_vk-hover);
+  }
+}
+.ic_facebook{
+  @include sprite($ic_facebook);
+  &:hover{
+    @include sprite($ic_facebook-hover);
+  }
+}
+.ic_youtube{
+  @include sprite($ic_youtube);
+  &:hover{
+    @include sprite($ic_youtube-hover);
+  }
+}
+.ic_inst{
+  @include sprite($ic_inst);
+  &:hover{
+    @include sprite($ic_inst-hover);
+  }
+}
+.ic_stars{
+  @include sprite($ic_stars);
+}
+
+
+

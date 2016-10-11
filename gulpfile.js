@@ -193,7 +193,7 @@ function html_build() {
       return "AHTUNG TWIG ERROR!!"
     })))
 	.pipe(plugins.htmlBeautify(htmlBeautifyOptions))
-    //.pipe(plugins.remember('html'))
+    .pipe(plugins.remember('html'))
     .pipe(plugins.if(env === "ftp", conn.dest(root)))
     .pipe(plugins.if(env === "local", gulp.dest(path.build.html)))
     .on('end', plugins.browserSync.reload);
@@ -219,7 +219,7 @@ function style_build() {
       browsers: ['last 16 versions'],
       cascade: false
     }))
-    //.pipe(plugins.remember('style'))
+    .pipe(plugins.remember('style'))
     .pipe(plugins.if(env === "ftp", conn.dest(path.build.css)))
     .pipe(plugins.if(env === "local", gulp.dest(path.build.css)))
     .pipe(plugins.browserSync.stream());
@@ -368,8 +368,8 @@ var build = gulp.series(
     fonts_build,
     image_build,
     style_build,
-    js_build,
-	php_build
+    js_build
+	//php_build
   ),
   inc_build,
   html_build

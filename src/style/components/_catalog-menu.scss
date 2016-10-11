@@ -46,8 +46,9 @@
       >li>a{
         display: table;
         padding-bottom: 8px;
+        padding-right: 9%;
         padding-top: 8px;
-        width: 127%;
+        width: 115%;
         &:hover+.child-items{
           display: block;
         }
@@ -75,6 +76,7 @@
         left: 230px;
         width: 778px;
         border:1px solid #cdcdcf;
+        min-height: 350px;
         &:hover{
           display: block;
         }

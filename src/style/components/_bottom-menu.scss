@@ -1,0 +1,22 @@
+.bottom-menu-wrapper{
+  .list{
+    .item-header{
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+    ul{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 30px;
+      li{
+        margin-bottom:10px;
+        a{
+          text-decoration: none;
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
