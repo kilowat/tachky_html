@@ -636,7 +636,7 @@ footer .system-pay {
 }
 
 footer .system-pay .system-pay-list li {
-  padding-right: 24px;
+  padding-right: 18px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -1275,6 +1275,25 @@ footer .date-created, footer .created-by {
 
 .bottom-menu-wrapper .list ul:last-child {
   margin-right: 0;
+}
+
+p#vtip {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  left: 5px;
+  font-size: 0.8em;
+  background-color: white;
+  border: 1px solid #a6c9e2;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  z-index: 9999;
+}
+
+p#vtip #vtipArrow {
+  position: absolute;
+  top: -10px;
+  left: 5px;
 }
 
 @font-face {

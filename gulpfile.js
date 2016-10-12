@@ -130,7 +130,7 @@ var path = {
   src: {
 	php: 'src/php/*.*',
     html: 'src/template/pages/*.html',
-    js: 'src/js/main.js',
+    js: 'src/js/**/*.js',
     style: ['src/style/**/*.scss', '!src/style/libs/**/*.scss'],
     libStyle: 'src/style/libs/**/*.scss',
     img: 'src/images/**/*.*',
