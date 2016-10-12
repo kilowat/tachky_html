@@ -124,14 +124,14 @@ body {
 
 .ic_bag {
   background-image: url(../images/sprite.png);
-  background-position: -67px -115px;
+  background-position: -101px -115px;
   width: 14px;
   height: 14px;
 }
 
 .ic_jurnal {
   background-image: url(../images/sprite.png);
-  background-position: -81px -115px;
+  background-position: -115px -115px;
   width: 13px;
   height: 13px;
 }
@@ -159,49 +159,49 @@ body {
 
 .ic_search {
   background-image: url(../images/sprite.png);
-  background-position: -132px 0px;
+  background-position: -132px -20px;
   width: 20px;
   height: 20px;
 }
 
 .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -95px -53px;
+  background-position: -95px -27px;
   width: 19px;
   height: 26px;
 }
 
 .ic_bookmark:hover {
   background-image: url(../images/sprite.png);
-  background-position: -95px -27px;
+  background-position: -95px -53px;
   width: 19px;
   height: 26px;
 }
 
 .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -114px -26px;
+  background-position: -114px -52px;
   width: 16px;
   height: 26px;
 }
 
 .ic_compared:hover {
   background-image: url(../images/sprite.png);
-  background-position: -114px -52px;
+  background-position: -114px -26px;
   width: 16px;
   height: 26px;
 }
 
 .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px -26px;
+  background-position: -67px 0px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart:hover {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
@@ -250,21 +250,21 @@ body {
 
 .ic_allow {
   background-image: url(../images/sprite.png);
-  background-position: -52px -115px;
+  background-position: -114px -78px;
   width: 15px;
   height: 15px;
 }
 
 .ic_not-allow {
   background-image: url(../images/sprite.png);
-  background-position: -114px -78px;
+  background-position: -80px -57px;
   width: 15px;
   height: 15px;
 }
 
 .ic_wait {
   background-image: url(../images/sprite.png);
-  background-position: -80px -57px;
+  background-position: -86px -115px;
   width: 15px;
   height: 15px;
 }
@@ -292,7 +292,7 @@ body {
 
 .ic_engine {
   background-image: url(../images/sprite.png);
-  background-position: -132px -20px;
+  background-position: -132px -40px;
   width: 20px;
   height: 20px;
 }
@@ -320,7 +320,7 @@ body {
 
 .ic_wheels {
   background-image: url(../images/sprite.png);
-  background-position: -132px -40px;
+  background-position: -132px 0px;
   width: 20px;
   height: 20px;
 }
@@ -355,14 +355,28 @@ body {
 
 .ic_xls {
   background-image: url(../images/sprite.png);
-  background-position: -132px -96px;
+  background-position: -36px -115px;
   width: 18px;
   height: 18px;
 }
 
 .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -36px -115px;
+  background-position: -70px -115px;
+  width: 16px;
+  height: 18px;
+}
+
+.ic_xls-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -132px -96px;
+  width: 18px;
+  height: 18px;
+}
+
+.ic_zip-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -54px -115px;
   width: 16px;
   height: 18px;
 }
@@ -411,14 +425,14 @@ body {
 
 .ic_inst {
   background-image: url(../images/sprite.png);
-  background-position: -18px -115px;
+  background-position: 0px -115px;
   width: 18px;
   height: 18px;
 }
 
 .ic_inst:hover {
   background-image: url(../images/sprite.png);
-  background-position: 0px -115px;
+  background-position: -18px -115px;
   width: 18px;
   height: 18px;
 }
@@ -497,6 +511,7 @@ header .top-panel .block.compared-wrapper:after {
 header .top-panel .counter {
   background-color: #434343;
   border: 1px solid;
+  -webkit-border-radius: 9px;
   border-radius: 9px;
   color: #a43634;
   display: inline-block;
@@ -588,15 +603,25 @@ footer .social-wrapper ul li {
 }
 
 footer .social-wrapper .ya-widget {
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid;
   margin-top: 50px;
   padding-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 
 footer .social-wrapper .ya-widget span {
   color: #d20606;
+}
+
+footer .social-wrapper .ya-widget:hover {
+  background-color: #3b3b3b;
+  border-color: #c9c9c9;
+  color: #c9c9c9;
 }
 
 footer .system-pay-row {
@@ -606,18 +631,18 @@ footer .system-pay-row {
 }
 
 footer .system-pay {
-  height: 60px;
+  min-height: 50px;
+  padding-top: 10px;
 }
 
 footer .system-pay .system-pay-list li {
-  width: 5.08475%;
-  float: left;
-  margin-right: 1.69492%;
+  padding-right: 24px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 footer .system-pay .system-pay-list li:nth-child(20) {
-  float: right;
-  margin-right: 0;
+  padding-right: 0;
 }
 
 footer .date-created {
@@ -642,6 +667,20 @@ footer .date-created, footer .created-by {
   text-decoration: underline;
 }
 
+.price-list-wrapper a:hover .ic_xls {
+  background-image: url(../images/sprite.png);
+  background-position: -132px -96px;
+  width: 18px;
+  height: 18px;
+}
+
+.price-list-wrapper a:hover .ic_zip {
+  background-image: url(../images/sprite.png);
+  background-position: -54px -115px;
+  width: 16px;
+  height: 18px;
+}
+
 .price-list-wrapper .date {
   color: #404040;
   display: inline-block;
@@ -655,6 +694,7 @@ footer .date-created, footer .created-by {
 
 .subscribe-wrapper #subcribe {
   border: 1px solid;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #1e1e1e;
   color: #c0c0c2;
@@ -662,7 +702,12 @@ footer .date-created, footer .created-by {
   width: 100%;
   font-size: 1.1em;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.subscribe-wrapper #subcribe:hover {
+  color: #bf312e;
 }
 
 .subscribe-wrapper .row {
@@ -673,12 +718,14 @@ footer .date-created, footer .created-by {
   height: 35px;
   width: 100%;
   border: 1px solid;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   color: #404040;
   background-color: #1e1e1e;
   text-align: center;
   font-size: 1.1em;
   font-style: italic;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -688,6 +735,7 @@ footer .date-created, footer .created-by {
 
 .search input[type=text] {
   height: 35px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   padding-left: 10px;
   width: 95%;
@@ -697,8 +745,8 @@ footer .date-created, footer .created-by {
 .search input[type="submit"] {
   border: medium none;
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 13px;
+  top: 9px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -736,6 +784,7 @@ footer .date-created, footer .created-by {
 
 .top-menu ul li a {
   background-color: #ffffff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-right: 1px solid #cfcfd1;
   border-right: 1px solid #cfcfd1;
@@ -757,7 +806,7 @@ footer .date-created, footer .created-by {
 .top-menu ul li a i {
   margin-right: 10px;
   position: relative;
-  top: 2px;
+  top: -2px;
 }
 
 .user-menu-block:hover .user-links {
@@ -775,6 +824,8 @@ footer .date-created, footer .created-by {
   position: absolute;
   right: -13px;
   top: 8px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
@@ -828,6 +879,8 @@ footer .date-created, footer .created-by {
   position: absolute;
   right: -13px;
   top: 8px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
@@ -838,6 +891,7 @@ footer .date-created, footer .created-by {
 
 .catalog-menu .catalog-menu-btn {
   background-color: #bf312e;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   border: none;
   color: #ffffff;
@@ -967,6 +1021,7 @@ footer .date-created, footer .created-by {
   padding-top: 20px;
   display: block;
   border: 1px solid #b8b8bc;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #424242;
   left: -300px;
@@ -1059,7 +1114,7 @@ footer .date-created, footer .created-by {
 
 .bookmark-wrapper:hover .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -95px -27px;
+  background-position: -95px -53px;
   width: 19px;
   height: 26px;
 }
@@ -1082,7 +1137,7 @@ footer .date-created, footer .created-by {
 
 .compared-wrapper:hover .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -114px -52px;
+  background-position: -114px -26px;
   width: 16px;
   height: 26px;
 }
@@ -1105,7 +1160,7 @@ footer .date-created, footer .created-by {
 
 .cart-wrapper:hover .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
@@ -1149,9 +1204,18 @@ footer .date-created, footer .created-by {
   width: 40px;
   border: 1px solid #6a6a6a;
   text-align: center;
+  -webkit-border-radius: 7px;
   border-radius: 7px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.cart-wrapper .top-item-wrapper .amound-down, .cart-wrapper .top-item-wrapper .amound-up {
+  cursor: pointer;
+}
+
+.cart-wrapper .top-item-wrapper .amound-down:hover, .cart-wrapper .top-item-wrapper .amound-up:hover {
+  color: #bf312e;
 }
 
 .cart-wrapper .bookmark, .cart-wrapper .compared {
@@ -1286,6 +1350,7 @@ footer .date-created, footer .created-by {
 .btn-round {
   text-decoration: none;
   padding: 5px 20px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 

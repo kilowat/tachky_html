@@ -44,8 +44,16 @@ footer{
       border: 1px solid;
       margin-top: 50px;
       padding-bottom:10px;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
       span{
         color: #d20606;
+      }
+      &:hover{
+        background-color: #3b3b3b;
+        border-color: #c9c9c9;
+        color:#c9c9c9 ;
       }
     }
   }
@@ -55,12 +63,15 @@ footer{
     clear: both;
   }
   .system-pay{
-    height: 60px;
+    min-height: 50px;
+    padding-top: 10px;
    .system-pay-list{
      li{
-       @include span(1 of 15 1/3);
+       padding-right: 24px;
+       display: table-cell;
+       vertical-align: middle;
        &:nth-child(20){
-         @include last;
+        padding-right:0;
        }
      }
    }
@@ -83,6 +94,16 @@ footer{
       margin-left: 10px;
       text-decoration: underline;
     }
+    &:hover{
+      .ic_xls{
+        @include sprite($ic_xls-hover);
+      }
+    }
+    &:hover{
+      .ic_zip{
+        @include sprite($ic_zip-hover);
+      }
+    }
   }
   .date{
     color: #404040;
@@ -103,6 +124,9 @@ footer{
     font-size: 1.1em;
     cursor: pointer;
     box-sizing: border-box;
+    &:hover{
+      color: #bf312e;
+    }
   }
   .row{
     margin-bottom: 10px;

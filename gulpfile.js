@@ -105,7 +105,7 @@ var libsPath = {
 var libs = {
   jquery: libsPath.jquery, // inject name jquery
    susy: libsPath.susy,
-   //breakpoint: libsPath.breakpoint,
+   breakpoint: libsPath.breakpoint,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick

@@ -98,10 +98,16 @@
   @include sprite($ic_trinket);
 }
 .ic_xls{
-  @include sprite($ic_xls);
-}
+   @include sprite($ic_xls);
+ }
 .ic_zip{
   @include sprite($ic_zip);
+}
+.ic_xls-hover{
+  @include sprite($ic_xls-hover);
+}
+.ic_zip-hover{
+  @include sprite($ic_zip-hover);
 }
 .ic_vk{
   @include sprite($ic_vk);

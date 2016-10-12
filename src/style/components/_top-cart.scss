@@ -30,7 +30,11 @@
         margin-right: 5px;
       }
     }
-    #amound-down, #amound-up{
+    .amound-down, .amound-up{
+      cursor: pointer;
+      &:hover{
+        color: $color-link-hover;
+      }
     }
     .row-summ  {
     }
