@@ -12,9 +12,16 @@
   &.grey-light{
     border: 1px solid #6b6b6b;
     color: #6b6b6b;
+    &:hover{
+      background-color: #8d8d8d;
+      color: #fff;
+    }
   }
   &.red-light{
     border: 1px solid #de2d29;
     color: #de2d29;
+    &:hover{
+      background-color: #ffdfdf;
+    }
   }
 }
