@@ -380,20 +380,20 @@
                                 <div class="table-cell name">
                                     <a href="#" title="#">{{item.name}}</a>
                                 </div>
-                                <div class="table-cell status" title="Пример подсказки">
-                                    <i class="ic_{{item.status}}"></i>
+                                <div class="table-cell status">
+                                    <i class="ic_{{item.status}} vtip" title="В наличии 15 шт. в 5 магазинах"></i>
                                 </div>
-                                <div class="table-cell compare">
-                                    <a href="#" title="Сравнить"><i class="ic_compared"></i></a>
+                                <div class="table-cell compared">
+                                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
                                 </div>
                                 <div class="table-cell price">
                                     <span>{{item.price}} <span class="rouble">P</span></span>
                                 </div>
                                 <div class="table-cell add-to-cart">
-                                    <a href="#" title="В корзину"><i class="ic_cart_item"></i></a>
+                                    <a href="#" title="В корзину" class="vtip"><i class="ic_cart_item"></i></a>
                                 </div>
                                 <div class="table-cell remove-from">
-                                    <i class="ic_close"></i>
+                                    <i class="ic_close vtip" title="Убрать из корзины"></i>
                                 </div>
                             </div>
                             {% endfor %}
@@ -421,19 +421,19 @@
                                     <a href="#" title="#">{{item.name}}</a>
                                 </div>
                                 <div class="table-cell status">
-                                    <i class="ic_{{item.status}}"></i>
+                                    <i class="ic_{{item.status}} vtip" title="В наличии 15 шт. в 5 магазинах"></i>
                                 </div>
-                                <div class="table-cell compare">
-                                    <a href="#" title="Сравнить"><i class="ic_bookmark"></i></a>
+                                <div class="table-cell bookmark">
+                                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
                                 </div>
                                 <div class="table-cell price">
                                     <span>{{item.price}} <span class="rouble">P</span></span>
                                 </div>
                                 <div class="table-cell add-to-cart">
-                                    <a href="#" title="В корзину"><i class="ic_cart_item"></i></a>
+                                    <a href="#" title="В корзину" class="vtip"><i class="ic_cart_item"></i></a>
                                 </div>
                                 <div class="table-cell remove-from">
-                                    <i class="ic_close"></i>
+                                    <i class="ic_close vtip" title="Убрать из корзины"></i>
                                 </div>
                             </div>
                             {% endfor %}
@@ -469,23 +469,23 @@
                                     <span>{{item.price}} <span class="rouble">P</span></span>
                                 </div>
                                 <div class="table-cell amount">
-                                    <span class="amound-up">+</span><input type="text" class="amoutset" value="1"><span
-                                        class="amound-down">-</span>
+                                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span><input type="text" class="amoutset vtip" title="Ввести количество" value="1"><span
+                                        class="amound-down vtip" title="Уменьшить количество">-</span>
                                 </div>
                                 <div class="table-cell row-summ">
                                     <span>= 2 000 <span class="rouble">P</span></span>
                                 </div>
                                 <div class="table-cell add-to-cart">
-                                    <a href="#" title="В корзину"><i class="ic_cart_item"></i></a>
+                                    <a href="#" class="vtip" title="В корзину"><i class="ic_cart_item"></i></a>
                                 </div>
-                                <div class="table-cell bookmark">
-                                    <a href="#" title="Сравнить"><i class="ic_bookmark"></i></a>
+                                <div class="table-cell bookmark ">
+                                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
                                 </div>
                                 <div class="table-cell compared">
-                                    <a href="#" title="Сравнить"><i class="ic_compared"></i></a>
+                                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
                                 </div>
-                                <div class="table-cell remove-from">
-                                    <i class="ic_close"></i>
+                                <div class="table-cell remove-from" >
+                                    <i class="ic_close vtip" title="Убрать из корзины"></i>
                                 </div>
                             </div>
                             {% endfor %}

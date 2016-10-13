@@ -67,9 +67,32 @@ footer{
     padding-top: 10px;
    .system-pay-list{
      li{
-       padding-right: 18px;
-       display: table-cell;
+       display: inline-block;
        vertical-align: middle;
+       padding-right: 24px;
+       a{
+         display: block;
+         background-position: top left;
+         &:hover{
+           background-position: 100% 100%;
+         }
+       }
+
+       @include breakpoint(max-width 1205px){
+          padding-right:21px;
+       }
+       @include breakpoint(max-width 1148px){
+         padding-right:19px;
+       }
+       @include breakpoint(max-width 1108px){
+         padding-right:18px;
+       }
+       @include breakpoint(max-width 1091px){
+         padding-right:17px;
+       }
+       @include breakpoint(max-width 1067px){
+         padding-right:14px;
+       }
        &:nth-child(20){
         padding-right:0;
        }
@@ -134,9 +157,9 @@ footer{
   .input-email{
     height: 35px;
     width: 100%;
-    border:1px solid;
+    border:1px solid #3a3a3a;
     border-radius: 8px;
-    color:#404040;
+    color:#fff;
     background-color: #1e1e1e;
     text-align: center;
     font-size: 1.1em;
