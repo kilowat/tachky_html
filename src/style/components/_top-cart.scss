@@ -14,20 +14,22 @@
       content: "";
       @include sprite($ic_arrow-up);
       position: absolute;
-      left: 81%;
+      left: 84.5%;
       top: -12px;
     }
     .name{
       width: 27%;
     }
     .amount{
-      .amoutset{
+      .amountset{
         width: 40px;
         border:1px solid #6a6a6a;
         text-align: center;
         border-radius: 7px;
         margin-left: 5px;
         margin-right: 5px;
+        font-family: Rubik;
+        color: #6a6a6a;
       }
     }
     .amound-down, .amound-up{
@@ -39,13 +41,21 @@
     .row-summ  {
     }
   }
+  .do-order{
+    float: right;
+    height: 20px;
+    line-height: 1.4em;
+  }
+  .order-detail{
+    height: 20px;
+  }
   .bookmark, .compared{
     position: relative;
     top: -6px;
   }
   .top-cart{
-    position: relative;
-    top: 15px;
+    padding-left: 15px;
+    text-align: left;
   }
   .cart-summ-block{
     border-top: 1px solid #b8b8bc;

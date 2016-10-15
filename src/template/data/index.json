@@ -4,31 +4,31 @@
       "img":"./images/bolt-img.png",
       "name":"Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
       "status": "allow",
-      "price": 1200
+      "price": "1 200"
     },
     {
       "img":"./images/bolt-img.png",
       "name":"Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
       "status": "not-allow",
-      "price": 1200
+      "price": "1 200"
     },
     {
       "img":"./images/bolt-img.png",
       "name":"Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
       "status": "wait",
-      "price": 120000
+      "price": "1 200"
     },
     {
       "img":"./images/bolt-img.png",
       "name":"Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
       "status": "allow",
-      "price": 1200
+      "price": "1 200"
     },
     {
       "img":"./images/bolt-img.png",
       "name":"Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
       "status": "allow",
-      "price": 1200
+      "price": "1 200"
     }
   ]
 }

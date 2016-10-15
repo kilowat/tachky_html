@@ -6,7 +6,8 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px;
+    height: 38px;
     cursor: pointer;
     &:hover, &.selected{
       background-color: scale_color(#bf312e, 50);
@@ -41,7 +42,7 @@
       left: -220px;
       padding: 5px 65px 0px 10px;
       position: absolute;
-      top: 18px;
+      top: 16px;
       z-index: 2;
       >li>a{
         display: table;

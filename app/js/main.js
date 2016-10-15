@@ -7,4 +7,7 @@ $(document).ready(function(){
     });
 //end catalog menu
 
+//set input number
+    $('input[type=number]').iLightInputNumber();
+//end set input number
 });

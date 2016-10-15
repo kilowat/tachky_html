@@ -8,11 +8,20 @@
   margin-top: 15px;
   position: absolute;
   width: 560px;
-  top: 54px;
+  top: 56px;
   z-index: 2;
   background-color: #ffffff;
   a{
     text-decoration: none;
+  }
+  &:after{
+    background: transparent;
+    content: "";
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: -3px;
+    width: 100%;
   }
   &:hover{
     .top-item-wrapper{
@@ -83,10 +92,14 @@
 }
 
 .bookmark-wrapper {
-
   &:hover{
     .ic_bookmark{
       @include sprite($ic_book-mark-hover);
+    }
+  }
+  &.disabled:hover{
+    .ic_bookmark{
+      @include sprite($ic_book-mark);
     }
   }
   .top-item-wrapper {
@@ -107,6 +120,11 @@
       @include sprite($ic_compared-hover);
     }
   }
+  &.disabled:hover{
+    .ic_compared{
+      @include sprite($ic_compared);
+    }
+  }
   .top-item-wrapper{
     display: none;
     &:before{
@@ -123,6 +141,11 @@
   &:hover{
     .ic_cart{
       @include sprite($ic_cart-hover);
+    }
+  }
+  &.disabled:hover{
+    .ic_cart{
+      @include sprite($ic_cart);
     }
   }
   .top-item-wrapper{

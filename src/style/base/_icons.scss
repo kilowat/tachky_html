@@ -40,6 +40,9 @@
 .ic_cart-order-arrow-btn-active{
   @include sprite($ic_cart-order-arrow-btn-active);
 }
+.ic_arrow-down-disabled{
+  @include sprite($ic_arrow-down-disabled);
+}
 .ic_close{
   @include sprite($ic_close);
   &:hover{

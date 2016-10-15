@@ -18,7 +18,7 @@ header {
     height: 65px;
     border-bottom: 5px solid #000000;
     .cart-wrapper{
-      float: right;
+
     }
     .block {
       text-align: center;
@@ -51,24 +51,34 @@ header {
         right:0;
         background-color: #3a3a3a;
       }
+      .order-detail.disabled{
+        background-color: #c1c1c3;
+        padding: 7px;
+        border-radius: 8px;
+      }
     }
     .counter{
       background-color: #434343;
       border: 1px solid;
-      border-radius: 9px;
+      border-radius: 10px;
       color: #a43634;
       display: inline-block;
       font-size: 16px;
       font-weight: 500;
       height: 16px;
       margin-left: 10px;
-      padding: 9px;
       position: relative;
+      min-width: 38px;
+      padding: 10px 2px;
+      text-align: center;
+      &.disabled{
+        border-color: #b9b9bc;
+        color: #b9b9bc;
+      }
     }
   }
   .logo{
     width: 1%;
-    padding-right: 20px;
   }
   .catalog-menu-wrapper{
     width: 14%;

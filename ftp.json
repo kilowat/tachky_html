@@ -1,11 +1,12 @@
 {
 	"conf": {
-		"host": "dev.bitrix",
-		"user": "ftp",
-		"password": "ftp",
+		"host": "template.aliens.pro",
+		"user": "aliens_kadancev",
+		"password": "408221987ser",
 		"parallel": "10"
 	},
 	"files": [
 		"app/**/*.*"
-	]
+	],
+    "pathToServer":"/template/public_html/"
 }

@@ -378,7 +378,7 @@ var build = gulp.series(
 function upload() {
   var conn = plugins.vinylFtp.create(ftp.conf);  
   var stream =  gulp.src(ftp.files, {
-      base: '.',
+      base: 'app',
       buffer: true
     })
     .pipe(conn.dest(ftp.pathToServer));
