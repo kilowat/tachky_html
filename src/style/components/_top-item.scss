@@ -14,18 +14,9 @@
   a{
     text-decoration: none;
   }
-  &:after{
-    background: transparent;
-    content: "";
-    display: block;
-    height: 10px;
-    position: absolute;
-    top: -3px;
-    width: 100%;
-  }
   &:hover{
     .top-item-wrapper{
-      display: block;
+      //display: block;
     }
   }
   .top-item-list.table {
@@ -80,19 +71,19 @@
 
 .bookmark-wrapper, .compared-wrapper, .cart-wrapper{
   display: none;
+  .opened{
+    display: block!important;
+  }
   &:hover{
     .top-item-wrapper {
-      display: block;
-      .btn-block {
-        padding-top: 25px;
-        text-align: center;
-      }
+      //display: block;
+
     }
   }
 }
 
 .bookmark-wrapper {
-  &:hover{
+  &:hover, .bookmark.selected{
     .ic_bookmark{
       @include sprite($ic_book-mark-hover);
     }
@@ -115,7 +106,7 @@
   }
 }
 .compared-wrapper{
-  &:hover{
+  &:hover, .compared.selected{
     .ic_compared{
       @include sprite($ic_compared-hover);
     }
@@ -138,7 +129,7 @@
   }
 }
 .cart-wrapper{
-  &:hover{
+  &:hover, .top-cart.selected{
     .ic_cart{
       @include sprite($ic_cart-hover);
     }

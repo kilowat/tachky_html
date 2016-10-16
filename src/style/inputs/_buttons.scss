@@ -29,4 +29,7 @@
 .toggle-btn {
   background: transparent none repeat scroll 0 0;
   border: medium none;
+  &:active{
+    position:unset;
+  }
 }

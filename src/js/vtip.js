@@ -6,9 +6,10 @@ Requires jQuery
 this.vtip = function(cl) {
     this.xOffset = -10; // x distance from mouse
     this.yOffset = 35; // y distance from mouse
-   var cl = cl||'.vtip';
+    var cl = cl||'.vtip';
     $(cl).unbind().hover(
         function(e) {
+            
             this.t = this.title;
             this.title = ''; 
             this.top = (e.pageY + yOffset); this.left = (e.pageX + xOffset);

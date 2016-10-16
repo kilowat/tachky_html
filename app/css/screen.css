@@ -1184,20 +1184,6 @@ footer .date-created, footer .created-by {
   text-decoration: none;
 }
 
-.top-item-wrapper:after {
-  background: transparent;
-  content: "";
-  display: block;
-  height: 10px;
-  position: absolute;
-  top: -3px;
-  width: 100%;
-}
-
-.top-item-wrapper:hover .top-item-wrapper {
-  display: block;
-}
-
 .top-item-wrapper .top-item-list.table {
   padding-left: 10px;
   padding-right: 10px;
@@ -1260,16 +1246,11 @@ footer .date-created, footer .created-by {
   display: none;
 }
 
-.bookmark-wrapper:hover .top-item-wrapper, .compared-wrapper:hover .top-item-wrapper, .cart-wrapper:hover .top-item-wrapper {
-  display: block;
+.bookmark-wrapper .opened, .compared-wrapper .opened, .cart-wrapper .opened {
+  display: block !important;
 }
 
-.bookmark-wrapper:hover .top-item-wrapper .btn-block, .compared-wrapper:hover .top-item-wrapper .btn-block, .cart-wrapper:hover .top-item-wrapper .btn-block {
-  padding-top: 25px;
-  text-align: center;
-}
-
-.bookmark-wrapper:hover .ic_bookmark {
+.bookmark-wrapper:hover .ic_bookmark, .bookmark-wrapper .bookmark.selected .ic_bookmark {
   background-image: url(../images/sprite.png);
   background-position: -95px -53px;
   width: 19px;
@@ -1299,7 +1280,7 @@ footer .date-created, footer .created-by {
   top: -12px;
 }
 
-.compared-wrapper:hover .ic_compared {
+.compared-wrapper:hover .ic_compared, .compared-wrapper .compared.selected .ic_compared {
   background-image: url(../images/sprite.png);
   background-position: -114px -26px;
   width: 16px;
@@ -1329,7 +1310,7 @@ footer .date-created, footer .created-by {
   top: -12px;
 }
 
-.cart-wrapper:hover .ic_cart {
+.cart-wrapper:hover .ic_cart, .cart-wrapper .top-cart.selected .ic_cart {
   background-image: url(../images/sprite.png);
   background-position: -67px -26px;
   width: 28px;
@@ -1534,6 +1515,10 @@ p#vtip #vtipArrow {
 .toggle-btn {
   background: transparent none repeat scroll 0 0;
   border: medium none;
+}
+
+.toggle-btn:active {
+  position: unset;
 }
 
 .input-number-box {
