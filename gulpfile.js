@@ -141,7 +141,7 @@ var path = {
   watch: {
 	php: 'src/php/*.*',
     html: 'src/template/**/*.html',
-    js: 'src/js/**/*.*',
+    js: 'src/js/**/*.js',
     style: 'src/style/**/*.scss',
     img: 'src/images/**/*.*',
     fonts: 'src/fonts/**/*.*',

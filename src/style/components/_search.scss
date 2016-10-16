@@ -7,6 +7,10 @@
     width: 92%;
     border:none;
     font-family: Rubik;
+    ::-webkit-input-placeholder {color:#2c2c2c;}
+    ::-moz-placeholder          {color:#2c2c2c;}/* Firefox 19+ */
+    :-moz-placeholder           {color:#2c2c2c;}/* Firefox 18- */
+    :-ms-input-placeholder      {color:#2c2c2c;}
   }
   input[type="submit"]{
     border: medium none;

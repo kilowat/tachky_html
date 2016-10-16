@@ -67,6 +67,9 @@
 .ic_arrow-down{
   @include sprite($ic_arrow-down);
 }
+.ic_arrow-down-hover{
+  @include sprite($ic_arrow-down-hover);
+}
 .ic_arrow{
   @include sprite($ic_arrow);
   &:hover{

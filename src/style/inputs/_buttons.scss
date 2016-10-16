@@ -21,7 +21,12 @@
     border: 1px solid #de2d29;
     color: #de2d29;
     &:hover{
-      background-color: #ffdfdf;
+      background-color: #de2d2a;
+      color: #fff;
     }
   }
+}
+.toggle-btn {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
 }

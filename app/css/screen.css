@@ -224,7 +224,7 @@ body {
 
 .ic_search {
   background-image: url(../images/sprite.png);
-  background-position: -132px -40px;
+  background-position: -132px 0px;
   width: 20px;
   height: 20px;
 }
@@ -259,14 +259,14 @@ body {
 
 .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px -26px;
+  background-position: -67px 0px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart:hover {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
@@ -322,21 +322,21 @@ body {
 
 .ic_allow {
   background-image: url(../images/sprite.png);
-  background-position: -114px -78px;
+  background-position: -101px -115px;
   width: 15px;
   height: 15px;
 }
 
 .ic_not-allow {
   background-image: url(../images/sprite.png);
-  background-position: -86px -115px;
+  background-position: -114px -78px;
   width: 15px;
   height: 15px;
 }
 
 .ic_wait {
   background-image: url(../images/sprite.png);
-  background-position: -101px -115px;
+  background-position: -86px -115px;
   width: 15px;
   height: 15px;
 }
@@ -344,6 +344,13 @@ body {
 .ic_arrow-down {
   background-image: url(../images/sprite.png);
   background-position: -56px -21px;
+  width: 11px;
+  height: 13px;
+}
+
+.ic_arrow-down-hover {
+  background-image: url(../images/sprite.png);
+  background-position: -20px -133px;
   width: 11px;
   height: 13px;
 }
@@ -364,7 +371,7 @@ body {
 
 .ic_engine {
   background-image: url(../images/sprite.png);
-  background-position: -132px 0px;
+  background-position: -132px -40px;
   width: 20px;
   height: 20px;
 }
@@ -427,84 +434,84 @@ body {
 
 .ic_xls {
   background-image: url(../images/sprite.png);
-  background-position: -36px -115px;
+  background-position: -18px -115px;
   width: 18px;
   height: 18px;
 }
 
 .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -70px -115px;
+  background-position: -54px -115px;
   width: 16px;
   height: 18px;
 }
 
 .ic_xls-hover {
   background-image: url(../images/sprite.png);
-  background-position: -132px -96px;
+  background-position: -36px -115px;
   width: 18px;
   height: 18px;
 }
 
 .ic_zip-hover {
   background-image: url(../images/sprite.png);
-  background-position: -54px -115px;
+  background-position: -70px -115px;
   width: 16px;
   height: 18px;
 }
 
 .ic_vk {
   background-image: url(../images/sprite.png);
-  background-position: -41px -93px;
+  background-position: -66px -93px;
   width: 25px;
   height: 14px;
 }
 
 .ic_vk:hover {
   background-image: url(../images/sprite.png);
-  background-position: -66px -93px;
+  background-position: -41px -93px;
   width: 25px;
   height: 14px;
 }
 
 .ic_facebook {
   background-image: url(../images/sprite.png);
-  background-position: 0px -133px;
+  background-position: -10px -133px;
   width: 10px;
   height: 17px;
 }
 
 .ic_facebook:hover {
   background-image: url(../images/sprite.png);
-  background-position: -10px -133px;
+  background-position: 0px -133px;
   width: 10px;
   height: 17px;
 }
 
 .ic_youtube {
   background-image: url(../images/sprite.png);
-  background-position: -132px -60px;
+  background-position: -132px -78px;
   width: 19px;
   height: 18px;
 }
 
 .ic_youtube:hover {
   background-image: url(../images/sprite.png);
-  background-position: -132px -78px;
+  background-position: -132px -60px;
   width: 19px;
   height: 18px;
 }
 
 .ic_inst {
   background-image: url(../images/sprite.png);
-  background-position: -18px -115px;
+  background-position: 0px -115px;
   width: 18px;
   height: 18px;
 }
 
 .ic_inst:hover {
   background-image: url(../images/sprite.png);
-  background-position: 0px -115px;
+  background-position: -132px -96px;
   width: 18px;
   height: 18px;
 }
@@ -789,14 +796,14 @@ footer .date-created, footer .created-by {
 
 .price-list-wrapper a:hover .ic_xls {
   background-image: url(../images/sprite.png);
-  background-position: -132px -96px;
+  background-position: -36px -115px;
   width: 18px;
   height: 18px;
 }
 
 .price-list-wrapper a:hover .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -54px -115px;
+  background-position: -70px -115px;
   width: 16px;
   height: 18px;
 }
@@ -861,6 +868,24 @@ footer .date-created, footer .created-by {
   width: 92%;
   border: none;
   font-family: Rubik;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+
+.search input[type=text] ::-webkit-input-placeholder {
+  color: #2c2c2c;
+}
+
+.search input[type=text] ::-moz-placeholder {
+  color: #2c2c2c;
+}
+
+.search input[type=text] :-moz-placeholder {
+  color: #2c2c2c;
+}
+
+.search input[type=text] :-ms-input-placeholder {
+  color: #2c2c2c;
 }
 
 .search input[type="submit"] {
@@ -1191,7 +1216,7 @@ footer .date-created, footer .created-by {
 }
 
 .top-item-wrapper .top-item-list .name {
-  width: 45%;
+  width: 30%;
   font-weight: 200;
   line-height: 1.1em;
 }
@@ -1270,7 +1295,7 @@ footer .date-created, footer .created-by {
   width: 22px;
   height: 12px;
   position: absolute;
-  left: 63%;
+  left: 65.5%;
   top: -12px;
 }
 
@@ -1306,14 +1331,14 @@ footer .date-created, footer .created-by {
 
 .cart-wrapper:hover .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -67px -26px;
   width: 28px;
   height: 26px;
 }
 
 .cart-wrapper.disabled:hover .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px -26px;
+  background-position: -67px 0px;
   width: 28px;
   height: 26px;
 }
@@ -1327,8 +1352,16 @@ footer .date-created, footer .created-by {
 }
 
 .top-cart .cart-summ {
-  padding-right: 10px;
-  padding-left: 10px;
+  color: #fff;
+  display: inline-block;
+  font-family: Rubik;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.block.cart-wrapper {
+  width: 201px;
 }
 
 .cart-wrapper .top-item-wrapper {
@@ -1347,10 +1380,6 @@ footer .date-created, footer .created-by {
   position: absolute;
   left: 84.5%;
   top: -12px;
-}
-
-.cart-wrapper .top-item-wrapper .name {
-  width: 27%;
 }
 
 .cart-wrapper .top-item-wrapper .amount .amountset {
@@ -1377,6 +1406,13 @@ footer .date-created, footer .created-by {
   float: right;
   height: 20px;
   line-height: 1.4em;
+}
+
+.cart-wrapper .do-order:hover .ic_arrow-down {
+  background-image: url(../images/sprite.png);
+  background-position: -20px -133px;
+  width: 11px;
+  height: 13px;
 }
 
 .cart-wrapper .order-detail {
@@ -1442,7 +1478,7 @@ p#vtip {
   position: absolute;
   padding: 10px;
   left: 5px;
-  max-width: 90px;
+  max-width: 150px;
   font-size: 1em;
   background-color: #f0f0f0;
   border: 1px solid #d0d0d2;
@@ -1455,7 +1491,7 @@ p#vtip {
 
 p#vtip #vtipArrow {
   position: absolute;
-  top: -13px;
+  top: -12px;
   left: 5px;
 }
 
@@ -1491,7 +1527,13 @@ p#vtip #vtipArrow {
 }
 
 .btn-round.red-light:hover {
-  background-color: #ffdfdf;
+  background-color: #de2d2a;
+  color: #fff;
+}
+
+.toggle-btn {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
 }
 
 .input-number-box {

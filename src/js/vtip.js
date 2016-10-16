@@ -3,11 +3,11 @@ Vertigo Tip by www.vertigo-project.com
 Requires jQuery
 */
 
-this.vtip = function() {    
+this.vtip = function(cl) {
     this.xOffset = -10; // x distance from mouse
     this.yOffset = 35; // y distance from mouse
-    
-    $(".vtip").unbind().hover(    
+   var cl = cl||'.vtip';
+    $(cl).unbind().hover(
         function(e) {
             this.t = this.title;
             this.title = ''; 
@@ -34,4 +34,7 @@ this.vtip = function() {
     
 };
 
-jQuery(document).ready(function($){vtip();}) 
+jQuery(document).ready(function($){
+    vtip('a');
+    vtip();
+})

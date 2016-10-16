@@ -43,8 +43,8 @@
                 <div class="block catalog-menu-wrapper">
                     <!--start component catalog menu-->
                     <div class="catalog-menu">
-                        <button class="catalog-menu-btn">Каталог <i class="ic_menu"></i></button>
-                        <div class="catalog-menu-item-wrapper">
+                        <button class="catalog-menu-btn toggle-btn">Каталог <i class="ic_menu"></i></button>
+                        <div class="catalog-menu-item-wrapper toggle-wrapper">
                             <ul class="root-items">
                                 <li>
                                     <a href="" title="#">
@@ -366,19 +366,19 @@
                 </div>
                 <div class="block bookmark-wrapper">
                     <!--start component book-mark-->
-                    <div class="bookmark">
+                    <button class="bookmark toggle-btn">
                         <i class="ic_bookmark"></i>
                         <span class="counter">7</span>
-                    </div>
-                    <div class="top-item-wrapper">
+                    </button>
+                    <div class="top-item-wrapper toggle-wrapper">
                         <div class="top-item-list table">
                             {% for item in bookMarkItem %}
                             <div class="item table-row">
                                 <div class="table-cell pic">
-                                    <a href="#" title="#"><img src="{{item.img}}" alt="#"></a>
+                                    <a href="#" title="{{item.name}}"><img src="{{item.img}}" alt="#"></a>
                                 </div>
                                 <div class="table-cell name">
-                                    <a href="#" title="#">{{item.name}}</a>
+                                    <a href="#" title="{{item.name}}">{{item.name}}</a>
                                 </div>
                                 <div class="table-cell status">
                                     <i class="ic_{{item.status}} vtip" title="В наличии 15 шт. в 5 магазинах"></i>
@@ -406,19 +406,19 @@
                 </div>
                 <div class="block compared-wrapper">
                     <!--start component compared-->
-                    <div class="compared">
+                    <button class="compared toggle-btn">
                         <i class="ic_compared"></i>
                         <span class="counter">467</span>
-                    </div>
-                    <div class="top-item-wrapper">
+                    </button>
+                    <div class="top-item-wrapper toggle-wrapper">
                         <div class="top-item-list table">
                             {% for item in bookMarkItem %}
                             <div class="item table-row">
                                 <div class="table-cell pic">
-                                    <a href="#" title="#"><img src="{{item.img}}" alt="#"></a>
+                                    <a href="#" title="{{item.name}}"><img src="{{item.img}}" alt="#"></a>
                                 </div>
                                 <div class="table-cell name">
-                                    <a href="#" title="#">{{item.name}}</a>
+                                    <a href="#" title="{{item.name}}">{{item.name}}</a>
                                 </div>
                                 <div class="table-cell status">
                                     <i class="ic_{{item.status}} vtip" title="В наличии 15 шт. в 5 магазинах"></i>
@@ -444,25 +444,26 @@
                     </div>
                     <!--end component compared-->
                 </div>
-                <div class="block cart-wrapper disabled">
+                <div class="block cart-wrapper">
                     <!--start component top-cart-->
-                    <div class="top-cart">
+                    <button class="top-cart toggle-btn">
                         <i class="ic_cart"></i>
-                        <!-- if not empty cart
-                        <span class="cart-summ">1 245 <span class="rouble">P</span></span>
-                        -->
+                        <span class="counter">10</span>
+                        <span class="cart-summ">9 999 999 <span class="rouble">P</span></span>
+                       <!--
                         <span class="counter disabled">0</span>
                         <span class="cart-summ">Нет товаров</span>
-                    </div>
-                    <div class="top-item-wrapper">
+                        -->
+                    </button>
+                    <div class="top-item-wrapper toggle-wrapper">
                         <div class="top-item-list table">
                             {% for item in bookMarkItem %}
                             <div class="item table-row">
                                 <div class="table-cell pic">
-                                    <a href="#" title="#"><img src="{{item.img}}" alt="#"></a>
+                                    <a href="#" title="{{item.name}}"><img src="{{item.img}}" alt="#"></a>
                                 </div>
                                 <div class="table-cell name">
-                                    <a href="#" title="#">{{item.name}}</a>
+                                    <a href="#" title="{{item.name}}">{{item.name}}</a>
                                 </div>
                                 <div class="table-cell status">
                                     <i class="ic_{{item.status}} vtip" title="В наличии 15 шт. в 5 магазинах"></i>
@@ -477,10 +478,7 @@
                                         class="amound-down vtip" title="Уменьшить количество">-</span>
                                 </div>
                                 <div class="table-cell row-summ">
-                                    <span>= 2 000 <span class="rouble">P</span></span>
-                                </div>
-                                <div class="table-cell add-to-cart">
-                                    <a href="#" class="vtip" title="В корзину"><i class="ic_cart_item"></i></a>
+                                    <span>= 500 000 <span class="rouble">P</span></span>
                                 </div>
                                 <div class="table-cell bookmark ">
                                     <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
@@ -511,7 +509,7 @@
                     <!--end component top-cart-->
                 </div>
                 <div class="order-wrapper block">
-                    <a href="#" title="Оформить заказ" class="order-detail disabled"><i class="ic_arrow-down-disabled"></i></a>
+                    <a href="#" title="Оформить заказ" class="order-detail vtip"><i class="ic_cart-order-arrow-btn"></i></a>
                 </div>
             </div>
         </div>
