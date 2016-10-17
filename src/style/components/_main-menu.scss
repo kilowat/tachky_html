@@ -49,11 +49,27 @@
         display: none;
         position: absolute;
         background-color: #FFFFFF;
-        border:1px solid #e2e2e2;
+        border: 1px solid #b8b8bc;
         padding: 7px 7px 7px 15px;
-        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        top:25px;
+        left: -20%;
+        z-index: 2;
+
+        &:before {
+          background-image: url("../images/sprite.png");
+          background-position: -91px -93px;
+          content: "";
+          display: block;
+          height: 12px;
+          left: 36.5%;
+          position: absolute;
+          top: -12px;
+          width: 22px;
+        }
         li{
-          margin-bottom: 10px;
+          margin-top:10px;
+          margin-bottom: 15px;
           a{
             text-decoration: none;
           }
