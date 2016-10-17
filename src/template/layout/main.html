@@ -13,6 +13,21 @@
 <header>
     {% include './../layout/header.html' %}
 </header>
+
+<div class="wrapper after-header-row">
+    <div class="container">
+        <div class="contact-text">
+            {% include './../component/contact-text.html'%}
+        </div>
+        <div class="main-menu-block">
+            <!--start component main menu-->
+            {% include './../component/main-menu.html'%}
+            <!--end component main menu-->
+        </div>
+    </div>
+</div>
+
+
 <main>
     {% block content %}{% endblock %}
     <div class="push"></div>
