@@ -1514,7 +1514,14 @@ footer .date-created, footer .created-by {
 .bottom-menu-wrapper .list ul {
   display: inline-block;
   vertical-align: top;
-  margin-right: 30px;
+  width: 28.57143%;
+  float: left;
+  margin-right: 7.14286%;
+}
+
+.bottom-menu-wrapper .list ul:last-child {
+  float: right;
+  margin-right: 0;
 }
 
 .bottom-menu-wrapper .list ul li {
@@ -1534,7 +1541,6 @@ p#vtip {
   position: absolute;
   padding: 10px;
   left: 5px;
-  max-width: 150px;
   font-size: 1em;
   background-color: #f0f0f0;
   border: 1px solid #d0d0d2;
@@ -1543,12 +1549,12 @@ p#vtip {
   z-index: 9999;
   color: #414141;
   text-align: center;
+  max-width: 120px;
 }
 
 p#vtip #vtipArrow {
   position: absolute;
   top: -12px;
-  left: 5px;
 }
 
 .main-menu {

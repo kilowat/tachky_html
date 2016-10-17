@@ -10,14 +10,18 @@ $(document).ready(function(){
            $('.toggle-btn.selected').each(function(key,value){
 
                if(!$(value).is($t)){
-                   console.log(value);
                    $(value).removeClass('selected');
-                   $(value).next().slideUp('fast');
+                   $(value).next().hide('fast');
                }
            });
 
             $t.toggleClass('selected');
-            $t.next().toggle('fast');
+            //$t.next().slideToggle('fast');
+            if($t.next().is(':visible')){
+               $t.next().hide();
+            }else{
+                $t.next().slideDown('fast');
+            }
         }
 
         if(!wrapper.is($t)  &&  wrapper.has($t).length === 0 && !$t.hasClass('toggle-btn')){

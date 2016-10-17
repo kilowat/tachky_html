@@ -3,7 +3,10 @@
     ul{
       display: inline-block;
       vertical-align: top;
-      margin-right: 30px;
+      @include span(1 of 3);
+      &:last-child{
+        @include last;
+      }
       li{
         margin-bottom:10px;
         a{

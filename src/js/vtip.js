@@ -12,13 +12,19 @@ this.vtip = function(cl) {
             
             this.t = this.title;
             this.title = ''; 
-            this.top = (e.pageY + yOffset); this.left = (e.pageX + xOffset);
-            
+            this.top = (e.pageY + yOffset);
+            this.left = (e.pageX + xOffset);
+            //console.log(this.left);
+
             $('body').append( '<p id="vtip"><img id="vtipArrow" />' + this.t + '</p>' );
-                        
+            if(($('#vtip').width()+$('#vtip').width()+100)+this.left>innerWidth){
+                this.left = this.left-($('#vtip').width());
+                $('#vtipArrow').css('right','0px');
+            }
+
             $('p#vtip #vtipArrow').attr("src", 'images/vtip_arrow.png');
             $('p#vtip').css("top", this.top+"px").css("left", this.left+"px").fadeIn("slow");
-            
+
         },
         function() {
             this.title = this.t;
@@ -28,7 +34,10 @@ this.vtip = function(cl) {
         function(e) {
             this.top = (e.pageY + yOffset);
             this.left = (e.pageX + xOffset);
-                         
+            if(($('#vtip').width()+$('#vtip').width()+100)+this.left>innerWidth){
+                this.left = this.left-($('#vtip').width());
+                $('#vtipArrow').css('right','0px');
+            }
             $("p#vtip").css("top", this.top+"px").css("left", this.left+"px");
         }
     );            
