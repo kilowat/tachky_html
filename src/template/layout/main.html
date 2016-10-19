@@ -2,49 +2,56 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>New project</title>
-    <link rel="stylesheet" href="./css/screen.css">
-
+  <meta charset="utf-8">
+  <title>New project</title>
+  <link rel="stylesheet" href="./css/screen.css">
+  <!--jquery:js-->
+  <script src="./libs/jquery/js/jquery.min.js"></script>
+  <!--endinject-->
 </head>
 
 <body>
 
-<header>
+  <header>
     {% include './../layout/header.html' %}
-</header>
+  </header>
 
-<div class="wrapper after-header-row">
+  <div class="wrapper after-header-row">
     <div class="container">
-        <div class="contact-text">
-            {% include './../component/contact-text.html'%}
-        </div>
-        <div class="main-menu-block">
-            <!--start component main menu-->
-            {% include './../component/main-menu.html'%}
-            <!--end component main menu-->
-        </div>
+      <div class="contact-text">
+        {% include './../component/contact-text.html'%}
+      </div>
+      <div class="main-menu-block">
+        <!--start component main menu-->
+        {% include './../component/main-menu.html'%}
+        <!--end component main menu-->
+      </div>
     </div>
-</div>
+  </div>
 
 
-<main>
+  <main>
     {% block content %}{% endblock %}
     <div class="push"></div>
-</main>
-<footer>
+  </main>
+  <footer>
     {% include './../layout/footer.html' %}
-</footer>
-<!--jquery:js-->
-<script src="./libs/jquery/js/jquery.min.js"></script>
-<!--endinject-->
+  </footer>
 
-<script src="./js/vtip.js"></script>
-<script src="./js/number_input.js"></script>
-<script src="./js/drop_menu.js"></script>
-<script src="./js/app.js"></script>
-<script src="./js/main.js"></script>
-
+  <!--vtip:js-->
+  <script src="./libs/vtip/js/vtip.js"></script>
+  <!--endinject-->
+  <!--numberInput:js-->
+  <script src="./libs/numberInput/js/number_input.js"></script>
+  <!--endinject-->
+  <!--priceSlider:js-->
+  <script src="./libs/priceSlider/js/jquery.slider.min.js"></script>
+  <!--endinject-->
+  <!--dev:js-->
+  <script src="./js/app.js"></script>
+  <script src="./js/drop_menu.js"></script>
+  <script src="./js/main.js"></script>
+  <!--endinject-->
 </body>
 
 </html>

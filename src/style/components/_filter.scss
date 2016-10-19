@@ -1,10 +1,37 @@
-.filter{
+.filter {
   border: 1px solid #bababe;
-  border-radius: 4px;
-  .row{
+  border-radius: 6px;
+  .block {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 15px;
     padding-top: 10px;
+    border-bottom: 1px solid #b9b9bb;
+    .name {
+      font-size: 1.1em;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+    &.price {
+      .price-inputs {
+        text-align: center;
+        .default-input {
+          width: 40%;
+          display: inline-block;
+          text-align: center
+        }
+      }
+    }
+  }
+  .ic_arrow-up2{
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    &.selected{
+      transform: rotate(180deg);
+    }
   }
 }

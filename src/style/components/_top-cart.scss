@@ -35,6 +35,9 @@
         margin-right: 5px;
         font-family: Rubik;
         color: #6a6a6a;
+        &:focus{
+          border-color: $color-link-hover;
+        }
       }
     }
     .amound-down, .amound-up{

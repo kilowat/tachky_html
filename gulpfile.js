@@ -32,6 +32,16 @@ var libsPath = {
         'bower_components/jquery/dist/jquery.min.js'
       ]
   },
+  vtip:{
+    js:[
+      'src/libs/vtip/js/vtip.js'
+    ]
+  },
+  numberInput:{
+    js:[
+      'src/libs/numberInput/js/number_input.js'
+    ]
+  },
   fancybox:{
 	  js: [
 		"src/libs/fancybox/js/jquery.fancybox.pack.js"
@@ -98,6 +108,11 @@ var libsPath = {
     scss: [
       'bower_components/bourbon/app/assets/stylesheets/**/*.*'
     ]
+  },
+  priceSlider:{
+    js:[
+      'src/libs/priceSlider/js/jquery.slider.min.js'
+    ]
   }
 }
 
@@ -106,6 +121,9 @@ var libs = {
   jquery: libsPath.jquery, // inject name jquery
    susy: libsPath.susy,
    breakpoint: libsPath.breakpoint,
+  vtip:libsPath.vtip,
+  numberInput:libsPath.numberInput,
+ // priceSlider:libsPath.priceSlider,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick
