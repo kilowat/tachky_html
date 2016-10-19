@@ -933,23 +933,118 @@
 
     <div class="wrapper">
       <div class="container">
-        <div class="content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum
-            illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non
-            reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus
-            voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis!
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor
-            ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima
-            nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis
-            sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate.
-            Alias fuga fugiat harum hic, maiores ratione reiciendis!
-          </p>
+        <!--start component banner-->
+        <div class="bn" style="background-image:url(./images/car.png)">
+        </div>
+        <!--end component banner-->
+
+        <!--start component breadcrumbs-->
+        <div class="breadcrumbs">
+          <ul>
+
+            <li>
+
+              <a href="" title="Колеса">Колеса</a>
+
+            </li>
+
+            <li>
+
+              <a href="" title="Крепеж">Крепеж</a>
+
+            </li>
+
+            <li>
+
+              <span>Болты</span>
+
+            </li>
+
+          </ul>
+        </div>
+        <!--end component breadcrumbs-->
+        <div class="left sidebar">
+          <!--start component filter-->
+          <div class="filter">
+            <div class="price block">
+              <div class="row">
+                <span class="name">Цена</span>
+                <i class="ic_arrow-up"></i>
+              </div>
+              <div class="row">
+                <input type="text" class="" value="123">
+                <span>-</span>
+                <input type="text" value="423">
+              </div>
+              <div class="row">
+                range bar
+              </div>
+            </div>
+            <div class="block">
+              <div class="row">
+                <span class="name">Название</span>
+                <i class="ic_arrow-up"></i>
+              </div>
+              <div class="row">
+                <!--foreach inputs-->
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Коленвалы</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Шатуны</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Поршни</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Маслосьемные кольца</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Шатунные вкладыши</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Строкер-киты</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Еще одна хреновина</label>
+                </div>
+                <!--endforeach-->
+                <button>Сбросить фильтр</button>
+              </div>
+              <div class="block">
+                <div class="row">
+                  <!--foreach inputs-->
+                  <div class="input-row">
+                    <input type="radio" id="filter-item-1">
+                    <label for="filter-item-1">Коленвалы</label>
+                  </div>
+                  <div class="input-row">
+                    <input type="radio" id="filter-item-1">
+                    <label for="filter-item-1">Шатуны</label>
+                  </div>
+                  <div class="input-row">
+                    <input type="radio" id="filter-item-1">
+                    <label for="filter-item-1">Поршни</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Показать">
+                  <input type="reset" value="Сбросить все">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end component filter-->
+        </div>
+        <div class="right content">
+          right
         </div>
       </div>
     </div>

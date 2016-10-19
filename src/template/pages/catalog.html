@@ -1,0 +1,22 @@
+{% extends './../layout/main.html'%}
+{% block content %}
+ <div class="wrapper">
+    <div class="container">
+      <!--start component banner-->
+      {%include './../component/top-banner.html'%}
+      <!--end component banner-->
+      
+      <!--start component breadcrumbs-->
+      {%include './../component/breadcrumbs.html'%}
+      <!--end component breadcrumbs-->
+       <div class="left sidebar">
+        <!--start component filter-->
+         {% include './../component/filter.html' %}
+         <!--end component filter-->
+       </div>
+       <div class="right content">
+         right
+       </div>
+    </div>
+ </div>
+{% endblock %}

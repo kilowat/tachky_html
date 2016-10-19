@@ -50,7 +50,6 @@ footer, .push {
   display: inline-block;
   position: relative;
 }
-
 .rouble:before {
   display: block;
   content: "–";
@@ -58,4 +57,13 @@ footer, .push {
   top: 0.2em;
   left: -0.1em;
 }
-
+.left{
+  @include span(18.5%);
+  @include post(2%); 
+}
+.right{
+  @include span(79.5% last);
+}
+.container{
+  @include container;
+}

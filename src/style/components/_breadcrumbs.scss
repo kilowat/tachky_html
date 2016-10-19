@@ -1,0 +1,23 @@
+.breadcrumbs{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  ul{
+    li{
+      display: inline-block;
+      a{
+        color: #0096d7;
+        position: relative;
+        text-decoration: none;
+        &:hover{
+          color: $color-link-hover;
+        }
+        &:after{
+          display: inline-block;
+          content: ">";
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+}
