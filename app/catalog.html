@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>New project</title>
   <link rel="stylesheet" href="./css/screen.css">
-  <!--jquery:js-->
-  <script src="./libs/jquery/js/jquery.min.js"></script>
+  <!--jqueryUi:css-->
+  <link rel="stylesheet" href="./libs/jqueryUi/css/jquery-ui.min.css">
   <!--endinject-->
 </head>
 
@@ -979,79 +979,77 @@
                 <input type="text" class="default-input grey" value="423">
               </div>
               <div class="row">
-                range
+                <div class="slider-gaps"></div>
+              </div>
+            </div>
 
+            <div class="block">
+              <div class="row">
+                <span class="name">Название</span>
+                <i class="ic_arrow-up2"></i>
+              </div>
+              <div class="row">
+                <!--foreach inputs-->
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Коленвалы</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Шатуны</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Поршни</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Маслосьемные кольца</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Шатунные вкладыши</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Строкер-киты</label>
+                </div>
+                <div class="input-row">
+                  <input type="checkbox" id="filter-item-1">
+                  <label for="filter-item-1">Еще одна хреновина</label>
+                </div>
+                <!--endforeach-->
+                <button>Сбросить фильтр</button>
+              </div>
+            </div>
+            <div class="block">
+              <div class="row">
+                <!--foreach inputs-->
+                <div class="input-row">
+                  <input type="radio" id="filter-item-1">
+                  <label for="filter-item-1">Коленвалы</label>
+                </div>
+                <div class="input-row">
+                  <input type="radio" id="filter-item-1">
+                  <label for="filter-item-1">Шатуны</label>
+                </div>
+                <div class="input-row">
+                  <input type="radio" id="filter-item-1">
+                  <label for="filter-item-1">Поршни</label>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Показать">
+                <input type="reset" value="Сбросить все">
               </div>
             </div>
           </div>
-          <div class="block">
-            <div class="row">
-              <span class="name">Название</span>
-              <i class="ic_arrow-up2"></i>
-            </div>
-            <div class="row">
-              <!--foreach inputs-->
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Коленвалы</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Шатуны</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Поршни</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Маслосьемные кольца</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Шатунные вкладыши</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Строкер-киты</label>
-              </div>
-              <div class="input-row">
-                <input type="checkbox" id="filter-item-1">
-                <label for="filter-item-1">Еще одна хреновина</label>
-              </div>
-              <!--endforeach-->
-              <button>Сбросить фильтр</button>
-            </div>
-          </div>
-          <div class="block">
-            <div class="row">
-              <!--foreach inputs-->
-              <div class="input-row">
-                <input type="radio" id="filter-item-1">
-                <label for="filter-item-1">Коленвалы</label>
-              </div>
-              <div class="input-row">
-                <input type="radio" id="filter-item-1">
-                <label for="filter-item-1">Шатуны</label>
-              </div>
-              <div class="input-row">
-                <input type="radio" id="filter-item-1">
-                <label for="filter-item-1">Поршни</label>
-              </div>
-            </div>
-            <div class="row">
-              <input type="submit" value="Показать">
-              <input type="reset" value="Сбросить все">
-            </div>
-          </div>
-
+          <!--end component filter-->
         </div>
-        <!--end component filter-->
+        <div class="right content">
+          right
+        </div>
       </div>
-      <div class="right content">
-        right
-      </div>
-    </div>
     </div>
 
     <div class="push"></div>
@@ -1252,7 +1250,9 @@
       </div>
     </div>
   </footer>
-
+  <!--jquery:js-->
+  <script src="./libs/jquery/js/jquery.min.js"></script>
+  <!--endinject-->
   <!--vtip:js-->
   <script src="./libs/vtip/js/vtip.js"></script>
   <!--endinject-->
@@ -1261,6 +1261,12 @@
   <!--endinject-->
   <!--priceSlider:js-->
   <script src="./libs/priceSlider/js/jquery.slider.min.js"></script>
+  <!--endinject-->
+  <!--jqueryUi:js-->
+  <script src="./libs/jqueryUi/js/jquery-ui.min.js"></script>
+  <!--endinject-->
+  <!--sliderLimit:js-->
+  <script src="./libs/sliderLimit/js/jquery.limitslider.js"></script>
   <!--endinject-->
   <!--dev:js-->
   <script src="./js/app.js"></script>

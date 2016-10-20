@@ -109,11 +109,20 @@ var libsPath = {
       'bower_components/bourbon/app/assets/stylesheets/**/*.*'
     ]
   },
-  priceSlider:{
-    js:[
-      'src/libs/priceSlider/js/jquery.slider.min.js'
-    ]
+  jqueryUi:{
+	  js:[
+		'src/libs/jqueryui/js/jquery-ui.min.js'
+	  ],
+	  css:[
+		'src/libs/jqueryui/css/jquery-ui.min.css'
+	  ]
+  },
+  sliderLimit:{
+	  js:[
+		'src/libs/sliderlimit/js/jquery.limitslider.js'
+	  ]
   }
+  
 }
 
 //set what your want use
@@ -121,9 +130,10 @@ var libs = {
   jquery: libsPath.jquery, // inject name jquery
    susy: libsPath.susy,
    breakpoint: libsPath.breakpoint,
-  vtip:libsPath.vtip,
-  numberInput:libsPath.numberInput,
- // priceSlider:libsPath.priceSlider,
+   vtip:libsPath.vtip,
+   numberInput:libsPath.numberInput,
+   sliderLimit:libsPath.sliderLimit,
+   jqueryUi:libsPath.jqueryUi
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick
