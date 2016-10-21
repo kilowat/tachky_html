@@ -5,11 +5,17 @@
       <i class="ic_arrow-up2"></i>
     </div>
     <div class="row price-inputs">
-      <input type="text" class="default-input grey" value="123">
-      <span>&nbsp;&mdash;&nbsp;</span>
-      <input type="text" class="default-input grey" value="423">
+      <div class="price-slider-cell table-cell">
+         <input type="number" class="default-input grey min-price" id="min-price" value="1" name="min-price">
+      </div>
+     <div class="price-slider-cell table-cell">
+        <span>&nbsp;&mdash;&nbsp;</span>
+     </div>
+     <div class="price-slicer-cell table-cell">
+       <input type="number" class="default-input grey max-price" id="max-price" value="400" name="max-price">
+     </div>
     </div>
-    <div class="row">
+    <div class="row price-slider-row">
       <div class="slider-gaps"></div>
     </div>
   </div>
