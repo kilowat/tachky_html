@@ -6,7 +6,6 @@ $(document).ready(function () {
   $(".vtip").tipTip();
 
   //run sliderprice
-
   $('.slider-gaps').limitslider({
     values: [parseInt($('#min-price').val()), parseInt($('#max-price').val())],
     gap: 1,
@@ -23,11 +22,25 @@ $(document).ready(function () {
       styleClass: 'range-glow'
     }, false, true]
   });
-
+ //set min-max prices
   $('#min-price').next().change(function () {
     $(".slider-gaps").limitslider('values', 0, $(this).val());
   });
   $('#max-price').next().change(function () {
     $(".slider-gaps").limitslider('values', 1, $(this).val());
+  });
+
+  //run checkbox
+ $('input').iCheck({
+     checkboxClass: 'icheckbox_flat',
+    radioClass: 'iradio_flat'
+  });
+  
+  $('.filter .ic_arrow-up2').click(function(){
+    var self = this;
+   $(this).parent().next().slideToggle(function(){
+     $(self).toggleClass('selected');
+   });
+
   });
 });

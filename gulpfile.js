@@ -121,6 +121,11 @@ var libsPath = {
 	  js:[
 		'src/libs/sliderlimit/js/jquery.limitslider.js'
 	  ]
+  },
+  icheck:{
+    js:[
+      'src/libs/icheck/js/icheck.min.js'
+    ]
   }
   
 }
@@ -133,7 +138,8 @@ var libs = {
    vtip:libsPath.vtip,
    numberInput:libsPath.numberInput,
    sliderLimit:libsPath.sliderLimit,
-   jqueryUi:libsPath.jqueryUi
+   jqueryUi:libsPath.jqueryUi,
+   icheck:libsPath.icheck,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick

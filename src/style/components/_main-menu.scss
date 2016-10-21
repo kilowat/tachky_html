@@ -65,7 +65,7 @@
           z-index: 1;
         }
         &:before {
-          background-image: url("../images/sprite.png");
+          background-image: url("#{$path-to-img}/sprite.png");
           background-position: -91px -93px;
           content: "";
           display: block;

@@ -208,6 +208,18 @@ footer, .push {
   clear: both;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 body {
   font-family: "Rubik";
 }
@@ -1813,14 +1825,25 @@ footer .date-created, footer .created-by {
   border: 1px solid #bababe;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .filter .block {
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid #b9b9bb;
+}
+
+.filter .block .input-row {
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.filter .block .input-row label {
+  padding-left: 10px;
+  font-weight: 200;
 }
 
 .filter .block .name {
@@ -1846,6 +1869,43 @@ footer .date-created, footer .created-by {
 .filter .block .price-slider-row {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.filter .block .reset-filter {
+  font-size: 0.9em;
+  border-bottom: 1px dashed;
+  color: #6badde;
+  cursor: pointer;
+}
+
+.filter .block .reset-filter:hover {
+  color: #bf312e;
+}
+
+.filter .block .buttons {
+  border-top: 1px solid #b9b9bb;
+}
+
+.filter .block .show-all {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #6a6a6a;
+  color: #6a6a6a;
+  font-weight: 100;
+  display: inline-block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.filter .block .show-all:hover {
+  background-color: #6b6b6b;
+  color: #fff;
 }
 
 .filter .ic_arrow-up2 {
@@ -2145,6 +2205,93 @@ footer .date-created, footer .created-by {
 
 .toggle-btn:active {
   position: unset;
+}
+
+.icheckbox_flat {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #b8b8ba;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.icheckbox_flat.checked {
+  border-color: #e43130;
+  position: relative;
+}
+
+.icheckbox_flat.checked:after {
+  background: #e43130 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 1px;
+  position: absolute;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 8px;
+  top: 7px;
+}
+
+.icheckbox_flat.checked:before {
+  background: #e43130 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 6px;
+  position: absolute;
+  -webkit-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  width: 8px;
+  top: 7px;
+}
+
+.icheckbox_flat.disabled {
+  background-color: #e8e8e8;
+}
+
+.iradio_flat {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #bebec0;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: relative;
+}
+
+.iradio_flat.checked {
+  border-color: #e43130;
+}
+
+.iradio_flat.checked:after {
+  background-color: #e43130;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 5px;
+}
+
+.iradio_flat.disabled {
+  background-color: #e8e8e8;
 }
 
 .input-number-box {
