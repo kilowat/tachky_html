@@ -220,6 +220,14 @@ footer, .push {
   text-align: left;
 }
 
+.borer-grey {
+  border: 1px solid #bcbabf;
+}
+
+main > .wrapper {
+  padding-bottom: 50px;
+}
+
 body {
   font-family: "Rubik";
 }
@@ -973,6 +981,21 @@ footer .date-created, footer .created-by {
   width: 40.67797%;
   float: right;
   margin-right: 0;
+}
+
+.bn-l {
+  margin-bottom: 25px;
+}
+
+.bn-l a {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+}
+
+.bn-l a img {
+  width: 100%;
 }
 
 .search {
@@ -1825,7 +1848,7 @@ footer .date-created, footer .created-by {
   border: 1px solid #bababe;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .filter .block {
