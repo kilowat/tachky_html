@@ -1,0 +1,120 @@
+.product-panel {
+  @include border-radius;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  .table {
+    width: 100%;
+  }
+  .table-cell {
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+  select {
+    font-size: 0.9em;
+    font-weight: 100;
+  }
+  .sorting {
+    .select-wrapper {
+      width: 210px;
+    }
+  }
+  .availabe-filtring {
+    .select-wrapper {
+      width: 150px;
+    }
+  }
+  .store-filtring {
+    .select-wrapper {
+      width: 150px;
+    }
+  }
+  .catalog-info-wrapper{
+    margin-top: 25px;
+    @include container;
+    .cell{
+      &:first-child{
+        text-align: left;
+        @include span(5 of 16 0 inside);
+      }
+      &:nth-child(2){
+        @include span(6 at 6 of 16 0 inside);
+        text-align: center;
+      }
+      &:nth-child(3){
+        @include span(5 of at 12 16 0 inside); 
+        text-align: right;
+        .select-wrapper{
+          width: 60px;
+          text-align: left;
+          padding-left: 5px;
+        }
+      }
+    }
+    .count-filter{
+      span{
+        padding-left: 3px;
+        padding-right: 3px;
+        font-weight: 100;
+        &:first-child{
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+  .radio-view-talbe {
+    .iradio_flat {
+      border: 0;
+      border-radius: 0;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      vertical-align: top;
+      @include sprite($ic_view-table);
+      &.checked {
+        @include sprite($ic_view-table-hover);
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .radio-view-list {
+    .iradio_flat {
+      border: 0;
+      border-radius: 0;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      vertical-align: top;
+      @include sprite($ic_view-list);
+      &.checked {
+        @include sprite($ic_view-list-hover);
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .radio-view-mini-list {
+    .iradio_flat {
+      border: 0;
+      border-radius: 0;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      vertical-align: top;
+      @include sprite($ic_view-mini-list);
+      &.checked {
+        @include sprite($ic_view-mini-list-hover);
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

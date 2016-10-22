@@ -6,7 +6,7 @@ body{
   font-size: $base-font-size;
 }
 a{
-  color: #000000;
+  color: #82b1df;
   &:hover{
     color: #bf312e;
   }
@@ -58,11 +58,11 @@ footer, .push {
   left: -0.1em;
 }
 .left{
-  @include span(18.5%);
+  @include span(18.9%);
   @include post(2%); 
 }
 .right{
-  @include span(79.5% last);
+  @include span(79.1% last);
 }
 .container{
   @include container;

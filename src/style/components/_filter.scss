@@ -1,6 +1,5 @@
 .filter {
-  border: 1px solid #bababe;
-  border-radius: 6px;
+  @include border-radius;
   margin-bottom: 25px;
   .block {
     padding-left: 10px;
@@ -12,8 +11,9 @@
       padding-bottom: 7px;
       padding-top: 7px;
       label {
-        padding-left: 10px;
+        padding-left: 4px;
         font-weight: 200;
+        font-size: 0.93em;
       }
     }
     .name {

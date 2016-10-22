@@ -35,12 +35,15 @@ $(document).ready(function () {
      checkboxClass: 'icheckbox_flat',
     radioClass: 'iradio_flat'
   });
-  
+  //slide filter propery
   $('.filter .ic_arrow-up2').click(function(){
     var self = this;
    $(this).parent().next().slideToggle(function(){
      $(self).toggleClass('selected');
    });
-
   });
+  
+  //customize select
+  $('select').selectize();
+  
 });

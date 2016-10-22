@@ -1,0 +1,37 @@
+.navigation-pages {
+  >* {
+  
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 7px;
+    padding-right: 7px;
+    &:first-child {
+      position: relative;
+      padding-left: 0;
+      &:after {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        background-color: #b9b9be;
+        top: 0px;
+        right: -2px;
+      }
+    }
+    &:last-child {
+      position: relative;
+      padding-right: 0;
+      &:after {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        background-color: #b9b9be;
+        top: 0px;
+        left: -2px;
+      }
+    }
+  }
+}

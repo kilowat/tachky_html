@@ -1,30 +1,107 @@
-{% extends './../layout/main.html'%}
-{% block content %}
- <div class="wrapper">
-    <div class="container">
-      <!--start component banner-->
-      {%include './../component/top-banner.html'%}
-      <!--end component banner-->
-      
-      <!--start component breadcrumbs-->
-      {%include './../component/breadcrumbs.html'%}
-      <!--end component breadcrumbs-->
-       <div class="left sidebar">
-        <!--start component filter-->
-         {% include './../component/filter.html' %}
-         <!--end component filter-->
-         
-         <!--start component left banner-->
-          {% include './../component/left-banner.html' %}
-         <!--end component left banner-->
-         
-         <!--include section text-->
-         {% include './../component/section-text.html'%}
-         <!--end include section text-->
-       </div>
-       <div class="right content">
-         right
-       </div>
+{% extends './../layout/main.html'%} {% block content %}
+<div class="wrapper">
+  <div class="container">
+    <!--start component banner-->
+    {%include './../component/top-banner.html'%}
+    <!--end component banner-->
+
+    <!--start component breadcrumbs-->
+    {%include './../component/breadcrumbs.html'%}
+    <!--end component breadcrumbs-->
+    <div class="left sidebar">
+      <!--start component filter-->
+      {% include './../component/filter.html' %}
+      <!--end component filter-->
+
+      <!--start component left banner-->
+      {% include './../component/left-banner.html' %}
+      <!--end component left banner-->
+
+      <!--include section text-->
+      {% include './../component/section-text.html'%}
+      <!--end include section text-->
     </div>
- </div>
+    <div class="right content">
+      <div class="product-panel">
+        <div class="row table filter-switches">
+          <div class="table-cell sorting">
+            <div class="table-cell">
+              <label for="sort">Сортировка</label>
+            </div>
+            <div class="table-cell select-wrapper">
+              <select name="sort" id="sort">
+                <option value="rating_asc">По уменьшению рейтинга</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-cell availabe-filtring">
+            <div class="table-cell">
+              <label for="available">Наличие</label>
+            </div>
+            <div class="table-cell select-wrapper">
+              <select name="available" id="available">
+                <option value="all">Все товары</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-cell store-filtring">
+            <div class="table-cell">
+              <label for="store">Магазины</label>
+            </div>
+            <div class="table-cell select-wrapper">
+              <select name="store" id="store">
+                <option value="all">Все магазины</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-cell change-view">
+            <div class="table-cell">
+              <label for="view">Вид</label>
+            </div>
+            <div class="table-cell radio-view-talbe">
+              <input type="radio" name="view">
+            </div>
+            <div class="table-cell radio-view-list">
+              <input type="radio" class="" value="list" name="view">
+            </div>
+            <div class="table-cell radio-view-mini-list">
+              <input type="radio" value="mini-list" name="view">
+            </div>
+          </div>
+        </div>
+        <div class="row catalog-info-wrapper">
+          <div class="cell count-filter">Показано товаров:<span id="product-current-count">30</span><span>из</span><span id="product-count-total">150</span></div>
+          <div class="cell">
+            <div class="navigation-pages">
+              <a id="navigation_1_next_page" href="/glass-and-crystal/?PAGEN_1=2">
+                <div class="disabled_left">В начало</div>
+              </a>
+              <span class="nav-current-page">1</span>
+              <a href="/glass-and-crystal/?PAGEN_1=2">2</a>
+              <a href="/glass-and-crystal/?PAGEN_1=3">3</a> ...
+              <a href="/glass-and-crystal/?PAGEN_1=7">7</a>
+              <a href="/glass-and-crystal/?PAGEN_1=8">8</a>
+              <a id="navigation_1_next_page" href="/glass-and-crystal/?PAGEN_1=2">
+                <div class="disabled_right">В конец</div>
+              </a>
+            </div>
+          </div>
+          <div class="cell count-select">
+            <div class="table">
+              <div class="table-cell">
+                <label for="product-count">Показывать по</label>
+              </div>
+              <div class="table-cell select-wrapper">
+                <select name="product-count" id="product-count">
+                  <option value="24">24</option>
+                  <option value="48">48</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

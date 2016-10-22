@@ -126,6 +126,11 @@ var libsPath = {
     js:[
       'src/libs/icheck/js/icheck.min.js'
     ]
+  },
+  select:{
+    js:[
+      'src/libs/select/js/selectize.min.js'
+    ]
   }
   
 }
@@ -140,6 +145,7 @@ var libs = {
    sliderLimit:libsPath.sliderLimit,
    jqueryUi:libsPath.jqueryUi,
    icheck:libsPath.icheck,
+  select:libsPath.select,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick
