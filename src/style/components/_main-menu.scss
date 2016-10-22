@@ -79,7 +79,11 @@
           margin-top:10px;
           margin-bottom: 15px;
           a{
+            color: #000;
             text-decoration: none;
+            &:hover{
+              color: $color-link-hover;
+            }
           }
         }
       }

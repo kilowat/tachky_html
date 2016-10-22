@@ -131,6 +131,11 @@ var libsPath = {
     js:[
       'src/libs/select/js/selectize.min.js'
     ]
+  },
+  cookie:{
+    js:[
+      'src/libs/cookie/js/js.cookie.js'
+    ]
   }
   
 }
@@ -145,7 +150,8 @@ var libs = {
    sliderLimit:libsPath.sliderLimit,
    jqueryUi:libsPath.jqueryUi,
    icheck:libsPath.icheck,
-  select:libsPath.select,
+   select:libsPath.select,
+   cookie:libsPath.cookie,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick
