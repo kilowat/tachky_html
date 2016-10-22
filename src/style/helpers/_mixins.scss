@@ -1,4 +1,12 @@
-@mixin border-radius(){
+@mixin border-radius() {
   border: 1px solid #bababc;
   border-radius: 6px;
+}
+
+@mixin clearfix() {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }

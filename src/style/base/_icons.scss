@@ -1,155 +1,243 @@
-.ic_bag{
+.ic_bag {
   @include sprite($ic_bag);
 }
-.ic_jurnal{
+
+.ic_jurnal {
   @include sprite($ic_jurnal);
 }
-.ic_people{
+
+.ic_people {
   @include sprite($ic_people);
 }
-.ic_user{
+
+.ic_user {
   @include sprite($ic_user);
 }
-.ic_menu{
+
+.ic_menu {
   @include sprite($ic_menu);
 }
-.ic_search{
+
+.ic_search {
   @include sprite($ic_search);
 }
-.ic_bookmark{
+
+.ic_bookmark {
   @include sprite($ic-book-mark);
-  &:hover{
+  &:hover {
     @include sprite($ic-book-mark-hover);
   }
 }
-.ic_compared{
+
+.ic_compared {
   @include sprite($ic_compared);
-  &:hover{
+  &:hover {
     @include sprite($ic_compared-hover);
   }
 }
-.ic_cart{
+
+.ic_cart {
   @include sprite($ic_cart);
-  &:hover{
+  &:hover {
     @include sprite($ic_cart-hover);
   }
 }
-.ic_cart-order-arrow-btn{
+
+.ic_cart-order-arrow-btn {
   @include sprite($ic_cart-order-arrow-btn);
 }
-.ic_cart-order-arrow-btn-active{
+
+.ic_cart-order-arrow-btn-active {
   @include sprite($ic_cart-order-arrow-btn-active);
 }
-.ic_arrow-down-disabled{
+
+.ic_arrow-down-disabled {
   @include sprite($ic_arrow-down-disabled);
 }
-.ic_close{
+
+.ic_close {
   @include sprite($ic_close);
-  &:hover{
+  &:hover {
     @include sprite($ic_close-hover);
   }
 }
-.ic_cart_item{
+
+.tocart-btn {
+  border: 1px solid #6a6a6a;
+  border-radius: 6px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  &:hover {
+    border-color: $color-link-hover;
+    .ic_cart_item {
+      @include sprite($ic_cart_item-hover);
+    }
+  }
+}
+
+.ic_cart_item {
   @include sprite($ic_cart_item);
-  &:hover{
+  &:hover {
     @include sprite($ic_cart_item-hover);
   }
 }
-.ic_allow{
+
+.ic_allow {
   @include sprite($ic_allow);
+  &~span {
+    color: #009700;
+    font-size: 0.9em;
+    font-weight: 100;
+  }
 }
-.ic_not-allow{
+
+.ic_not-allow {
   @include sprite($ic_not-allow);
+  &~span {
+    color: #de2e2a;
+    font-size: 0.9em;
+    font-weight: 100;
+  }
 }
-.ic_wait{
+
+.ic_wait {
   @include sprite($ic_wait);
+  &~span {
+    color: #ff9200;
+    font-size: 0.9em;
+    font-weight: 100;
+  }
 }
-.ic_arrow-down{
+
+.ic_arrow-down {
   @include sprite($ic_arrow-down);
 }
-.ic_arrow-down-hover{
+
+.ic_arrow-down-hover {
   @include sprite($ic_arrow-down-hover);
 }
-.ic_arrow{
+
+.ic_arrow {
   @include sprite($ic_arrow);
-  &:hover{
+  &:hover {
     @include sprite($ic_arrow-hover);
   }
 }
-.ic_engine{
+
+.ic_engine {
   @include sprite($ic_engine);
 }
-.ic_gear{
+
+.ic_gear {
   @include sprite($ic_gear);
 }
-.ic_carcase{
+
+.ic_carcase {
   @include sprite($ic_carcase);
 }
-.ic_suspension{
+
+.ic_suspension {
   @include sprite($ic_suspension);
 }
-.ic_wheels{
+
+.ic_wheels {
   @include sprite($ic_wheels);
 }
-.ic_chear{
+
+.ic_chear {
   @include sprite($ic_chear);
 }
-.ic_electric{
+
+.ic_electric {
   @include sprite($ic_electic);
 }
-.ic_break{
+
+.ic_break {
   @include sprite($ic_break);
 }
-.ic_trinket{
+
+.ic_trinket {
   @include sprite($ic_trinket);
 }
-.ic_xls{
-   @include sprite($ic_xls);
- }
-.ic_zip{
+
+.ic_xls {
+  @include sprite($ic_xls);
+}
+
+.ic_zip {
   @include sprite($ic_zip);
 }
-.ic_xls-hover{
+
+.ic_xls-hover {
   @include sprite($ic_xls-hover);
 }
-.ic_zip-hover{
+
+.ic_zip-hover {
   @include sprite($ic_zip-hover);
 }
-.ic_vk{
+
+.ic_vk {
   @include sprite($ic_vk);
-  &:hover{
+  &:hover {
     @include sprite($ic_vk-hover);
   }
 }
-.ic_facebook{
+
+.ic_facebook {
   @include sprite($ic_facebook);
-  &:hover{
+  &:hover {
     @include sprite($ic_facebook-hover);
   }
 }
-.ic_youtube{
+
+.ic_youtube {
   @include sprite($ic_youtube);
-  &:hover{
+  &:hover {
     @include sprite($ic_youtube-hover);
   }
 }
-.ic_inst{
+
+.ic_inst {
   @include sprite($ic_inst);
-  &:hover{
+  &:hover {
     @include sprite($ic_inst-hover);
   }
 }
-.ic_stars{
+
+.ic_stars {
   @include sprite($ic_stars);
 }
-.ic_address{
+
+.ic_address {
   @include sprite($ic_address);
 }
-.ic_arrow-up2{
+
+.ic_arrow-up2 {
   @include sprite($ic_arrow_up2);
 }
 
+.ic_star-0 {
+  @include sprite($ic_star-0);
+}
 
+.ic_star-1 {
+  @include sprite($ic_star-1);
+}
 
+.ic_star-2 {
+  @include sprite($ic_star-2);
+}
 
+.ic_star-3 {
+  @include sprite($ic_star-3);
+}
 
+.ic_star-4 {
+  @include sprite($ic_star-4);
+}
+
+.ic_star-5 {
+  @include sprite($ic_star-5);
+}

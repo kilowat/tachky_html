@@ -4,6 +4,7 @@
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 20px;
   .table {
     width: 100%;
   }
@@ -30,34 +31,34 @@
       width: 150px;
     }
   }
-  .catalog-info-wrapper{
+  .catalog-info-wrapper {
     margin-top: 25px;
     @include container;
-    .cell{
-      &:first-child{
+    .cell {
+      &:first-child {
         text-align: left;
         @include span(5 of 16 0 inside);
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         @include span(6 at 6 of 16 0 inside);
         text-align: center;
       }
-      &:nth-child(3){
-        @include span(5 of at 12 16 0 inside); 
+      &:nth-child(3) {
+        @include span(5 of at 12 16 0 inside);
         text-align: right;
-        .select-wrapper{
+        .select-wrapper {
           width: 60px;
           text-align: left;
           padding-left: 5px;
         }
       }
     }
-    .count-filter{
-      span{
+    .count-filter {
+      span {
         padding-left: 3px;
         padding-right: 3px;
         font-weight: 100;
-        &:first-child{
+        &:first-child {
           padding-left: 6px;
         }
       }
@@ -117,4 +118,199 @@
       }
     }
   }
+}
+
+.product-list {
+  .price {
+    font-size: 1.2em;
+    font-weight: 100;
+    .rouble::before {
+      content: "–";
+      display: block;
+      left: -0.1em;
+      position: absolute;
+      top: 0.1em;
+    }
+  }
+  .name {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .bonus {
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #737373;
+  }
+  //table-view
+  &.view-table {
+    @include container;
+    .product-cell {
+      overflow: hidden;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 1px solid #b9b9be;
+      position: relative;
+      box-sizing: border-box;
+      height: 325px;
+      margin-left: -1px;
+      margin-bottom: -1px;
+      width: 20.1%;
+      float: left;
+      .image {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .name {
+        display: inline-block;
+        height: 70px;
+        overflow: hidden;
+        font-size: 0.93em;
+        font-weight: 100;
+        line-height: 1.1em;
+      }
+      .rating-and-bonus {
+        float: left;
+      }
+      .add-to-block {
+        float: right;
+        .add-to-bookmark {
+          padding-right: 10px;
+        }
+      }
+      .price {
+        clear: both;
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
+      .status>* {
+        vertical-align: middle;
+      }
+      .add-to-cart {
+        float: right;
+        position: relative;
+        top: -21px;
+      }
+      .bonus {
+        .rouble::before {
+          content: "–";
+          display: block;
+          left: -0.1em;
+          position: absolute;
+          top: 0.09em;
+        }
+      }
+    }
+  }
+  //list-view
+  &.view-list {
+    .product-cell {
+      position: relative;
+      height: 75px;
+      border: 1px solid #b9b9be;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin: -1px;
+    }
+    .image {
+      float: left;
+      max-width: 65px;
+      padding-right: 15px;
+      img {
+        max-width: 65px;
+      }
+    }
+    .rating-and-bonus {
+      >* {
+        display: table-cell;
+      }
+      .rating {
+        padding-right: 20px;
+      }
+    }
+    .cell.add-to-block {
+      position: absolute;
+      right: 42%;
+      .add-to-bookmark {
+        cursor: pointer;
+        &:after {
+          content: "В закладки";
+          display: block;
+          left: 35px;
+          position: relative;
+          top: -22px;
+          font-weight: 100;
+          font-size: 0.9em;
+        }
+        &:hover {
+          &:after {
+            color: $color-link-hover;
+          }
+          .ic_bookmark {
+            @include sprite($ic-book-mark-hover);
+          }
+        }
+      }
+      .add-to-compare {
+        cursor: pointer;
+        padding-left: 55px;
+        &:after {
+          content: "К сравнению";
+          display: block;
+          left: 35px;
+          position: relative;
+          top: -22px;
+          font-weight: 100;
+          font-size: 0.9em;
+        }
+        &:hover {
+          &:after {
+            color: $color-link-hover;
+          }
+          .ic_compared {
+            @include sprite($ic-compared-hover);
+          }
+        }
+      }
+    }
+    .add-to-cart {
+      position: absolute;
+      right: 15px;
+      .tocart-btn:after {
+        display: inline-block;
+        content: "Добавить в корзину";
+        font-size: 0.9em;
+        color: #000;
+        padding-left: 6px;
+        vertical-align: middle;
+        font-weight: 100;
+      }
+      .tocart-btn:hover {
+        &:after {
+          display: inline-block;
+          content: "Добавить в корзину";
+          font-size: 0.9em;
+          color: $color-link-hover;
+          padding-left: 6px;
+          vertical-align: middle;
+          font-weight: 100;
+        }
+      }
+    }
+    .price {
+      padding-right: 170px;
+      float: right;
+    }
+    .status {
+      bottom: 14px;
+      left: 93px;
+      position: absolute;
+    }
+  }
+  &.view-mini-list {}
 }

@@ -242,203 +242,242 @@ main p {
 
 .ic_bag {
   background-image: url(../images/sprite.png);
-  background-position: -151px -99px;
+  background-position: 0px -148px;
   width: 14px;
   height: 14px;
 }
 
 .ic_jurnal {
   background-image: url(../images/sprite.png);
-  background-position: -95px -79px;
+  background-position: -14px -148px;
   width: 13px;
   height: 13px;
 }
 
 .ic_people {
   background-image: url(../images/sprite.png);
-  background-position: -114px -80px;
+  background-position: -123px -108px;
   width: 17px;
   height: 13px;
 }
 
 .ic_user {
   background-image: url(../images/sprite.png);
-  background-position: -54px -57px;
+  background-position: -54px -36px;
   width: 26px;
   height: 26px;
 }
 
 .ic_menu {
   background-image: url(../images/sprite.png);
-  background-position: -57px -83px;
+  background-position: -159px -137px;
   width: 16px;
   height: 10px;
 }
 
 .ic_search {
   background-image: url(../images/sprite.png);
-  background-position: -40px -112px;
+  background-position: -40px -128px;
   width: 20px;
   height: 20px;
 }
 
 .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -95px -27px;
+  background-position: -120px -50px;
   width: 19px;
   height: 26px;
 }
 
 .ic_bookmark:hover {
   background-image: url(../images/sprite.png);
-  background-position: -95px -53px;
+  background-position: -101px -50px;
   width: 19px;
   height: 26px;
 }
 
 .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -132px -48px;
+  background-position: -140px -48px;
   width: 16px;
   height: 26px;
 }
 
 .ic_compared:hover {
   background-image: url(../images/sprite.png);
-  background-position: -132px -22px;
+  background-position: -140px -22px;
   width: 16px;
   height: 26px;
 }
 
 .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -26px 0px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart:hover {
   background-image: url(../images/sprite.png);
-  background-position: -67px -26px;
+  background-position: -54px 0px;
   width: 28px;
   height: 26px;
 }
 
 .ic_cart-order-arrow-btn {
   background-image: url(../images/sprite.png);
-  background-position: 0px -57px;
+  background-position: 0px -36px;
   width: 27px;
   height: 26px;
 }
 
 .ic_cart-order-arrow-btn-active {
   background-image: url(../images/sprite.png);
-  background-position: -27px -57px;
+  background-position: -27px -36px;
   width: 27px;
   height: 26px;
 }
 
 .ic_arrow-down-disabled {
   background-image: url(../images/sprite.png);
-  background-position: -151px -36px;
+  background-position: -159px -104px;
   width: 15px;
   height: 18px;
 }
 
 .ic_close {
   background-image: url(../images/sprite.png);
-  background-position: -80px -71px;
+  background-position: -176px -17px;
   width: 9px;
   height: 9px;
 }
 
 .ic_close:hover {
   background-image: url(../images/sprite.png);
-  background-position: -73px -83px;
+  background-position: -176px -26px;
   width: 9px;
   height: 9px;
 }
 
+.tocart-btn {
+  border: 1px solid #6a6a6a;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tocart-btn:hover {
+  border-color: #bf312e;
+}
+
+.tocart-btn:hover .ic_cart_item {
+  background-image: url(../images/sprite.png);
+  background-position: -68px -108px;
+  width: 25px;
+  height: 15px;
+}
+
 .ic_cart_item {
   background-image: url(../images/sprite.png);
-  background-position: -26px 0px;
-  width: 41px;
-  height: 21px;
+  background-position: -43px -108px;
+  width: 25px;
+  height: 15px;
 }
 
 .ic_cart_item:hover {
   background-image: url(../images/sprite.png);
-  background-position: 0px -36px;
-  width: 41px;
-  height: 21px;
+  background-position: -68px -108px;
+  width: 25px;
+  height: 15px;
 }
 
 .ic_allow {
   background-image: url(../images/sprite.png);
-  background-position: -151px -69px;
+  background-position: -93px -108px;
   width: 15px;
   height: 15px;
+}
+
+.ic_allow ~ span {
+  color: #009700;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 .ic_not-allow {
   background-image: url(../images/sprite.png);
-  background-position: -151px -84px;
+  background-position: -159px -122px;
   width: 15px;
   height: 15px;
+}
+
+.ic_not-allow ~ span {
+  color: #de2e2a;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 .ic_wait {
   background-image: url(../images/sprite.png);
-  background-position: -151px -54px;
+  background-position: -108px -108px;
   width: 15px;
   height: 15px;
 }
 
+.ic_wait ~ span {
+  color: #ff9200;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
 .ic_arrow-down {
   background-image: url(../images/sprite.png);
-  background-position: -56px -21px;
+  background-position: -27px -148px;
   width: 11px;
   height: 13px;
 }
 
 .ic_arrow-down-hover {
   background-image: url(../images/sprite.png);
-  background-position: -34px -132px;
+  background-position: -38px -148px;
   width: 11px;
   height: 13px;
 }
 
 .ic_arrow {
   background-image: url(../images/sprite.png);
-  background-position: -161px -113px;
+  background-position: -176px -49px;
   width: 4px;
   height: 7px;
 }
 
 .ic_arrow:hover {
   background-image: url(../images/sprite.png);
-  background-position: -161px -120px;
+  background-position: -180px -49px;
   width: 4px;
   height: 7px;
 }
 
 .ic_engine {
   background-image: url(../images/sprite.png);
-  background-position: -20px -112px;
+  background-position: 0px -128px;
   width: 20px;
   height: 20px;
 }
 
 .ic_gear {
   background-image: url(../images/sprite.png);
-  background-position: -114px 0px;
+  background-position: 0px -82px;
   width: 18px;
   height: 26px;
 }
 
 .ic_carcase {
   background-image: url(../images/sprite.png);
-  background-position: -26px -21px;
+  background-position: -18px -82px;
   width: 30px;
   height: 14px;
 }
@@ -452,146 +491,192 @@ main p {
 
 .ic_wheels {
   background-image: url(../images/sprite.png);
-  background-position: 0px -112px;
+  background-position: -20px -128px;
   width: 20px;
   height: 20px;
 }
 
 .ic_chear {
   background-image: url(../images/sprite.png);
-  background-position: -132px 0px;
+  background-position: -140px 0px;
   width: 19px;
   height: 22px;
 }
 
 .ic_electric {
   background-image: url(../images/sprite.png);
-  background-position: 0px -93px;
+  background-position: -21px -108px;
   width: 22px;
   height: 19px;
 }
 
 .ic_break {
   background-image: url(../images/sprite.png);
-  background-position: -41px -36px;
+  background-position: 0px -108px;
   width: 21px;
   height: 20px;
 }
 
 .ic_trinket {
   background-image: url(../images/sprite.png);
-  background-position: -95px 0px;
+  background-position: -82px -50px;
   width: 19px;
   height: 27px;
 }
 
 .ic_xls {
   background-image: url(../images/sprite.png);
-  background-position: -60px -112px;
+  background-position: -96px -128px;
   width: 18px;
   height: 18px;
 }
 
 .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -151px -18px;
+  background-position: -159px -68px;
   width: 16px;
   height: 18px;
 }
 
 .ic_xls-hover {
   background-image: url(../images/sprite.png);
-  background-position: -114px -62px;
+  background-position: -78px -128px;
   width: 18px;
   height: 18px;
 }
 
 .ic_zip-hover {
   background-image: url(../images/sprite.png);
-  background-position: -151px 0px;
+  background-position: -159px -86px;
   width: 16px;
   height: 18px;
 }
 
 .ic_vk {
   background-image: url(../images/sprite.png);
-  background-position: -22px -93px;
+  background-position: -48px -82px;
   width: 25px;
   height: 14px;
 }
 
 .ic_vk:hover {
   background-image: url(../images/sprite.png);
-  background-position: -47px -93px;
+  background-position: -73px -82px;
   width: 25px;
   height: 14px;
 }
 
 .ic_facebook {
   background-image: url(../images/sprite.png);
-  background-position: -151px -113px;
+  background-position: -148px -128px;
   width: 10px;
   height: 17px;
 }
 
 .ic_facebook:hover {
   background-image: url(../images/sprite.png);
-  background-position: -151px -130px;
+  background-position: -176px 0px;
   width: 10px;
   height: 17px;
 }
 
 .ic_youtube {
   background-image: url(../images/sprite.png);
-  background-position: -132px -74px;
+  background-position: -140px -92px;
   width: 19px;
   height: 18px;
 }
 
 .ic_youtube:hover {
   background-image: url(../images/sprite.png);
-  background-position: -132px -92px;
+  background-position: -140px -74px;
   width: 19px;
   height: 18px;
 }
 
 .ic_inst {
   background-image: url(../images/sprite.png);
-  background-position: -114px -26px;
+  background-position: -140px -110px;
   width: 18px;
   height: 18px;
 }
 
 .ic_inst:hover {
   background-image: url(../images/sprite.png);
-  background-position: -114px -44px;
+  background-position: -60px -128px;
   width: 18px;
   height: 18px;
 }
 
 .ic_stars {
   background-image: url(../images/sprite.png);
-  background-position: 0px -83px;
+  background-position: -82px -40px;
   width: 57px;
   height: 10px;
 }
 
 .ic_address {
   background-image: url(../images/sprite.png);
-  background-position: -80px -57px;
+  background-position: 0px -162px;
   width: 12px;
   height: 14px;
 }
 
 .ic_arrow-up2 {
   background-image: url(../images/sprite.png);
-  background-position: -67px -52px;
+  background-position: -176px -44px;
   width: 8px;
   height: 5px;
 }
 
+.ic_star-0 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -62px;
+  width: 58px;
+  height: 10px;
+}
+
+.ic_star-1 {
+  background-image: url(../images/sprite.png);
+  background-position: -82px -10px;
+  width: 58px;
+  height: 10px;
+}
+
+.ic_star-2 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -72px;
+  width: 58px;
+  height: 10px;
+}
+
+.ic_star-3 {
+  background-image: url(../images/sprite.png);
+  background-position: -82px 0px;
+  width: 58px;
+  height: 10px;
+}
+
+.ic_star-4 {
+  background-image: url(../images/sprite.png);
+  background-position: -82px -30px;
+  width: 58px;
+  height: 10px;
+}
+
+.ic_star-5 {
+  background-image: url(../images/sprite.png);
+  background-position: -82px -20px;
+  width: 58px;
+  height: 10px;
+}
+
 header {
   background-color: #1e1e1e;
+}
+
+header a {
+  color: #000;
 }
 
 header .top-line {
@@ -863,14 +948,14 @@ footer .date-created, footer .created-by {
 
 .price-list-wrapper a:hover .ic_xls {
   background-image: url(../images/sprite.png);
-  background-position: -114px -62px;
+  background-position: -78px -128px;
   width: 18px;
   height: 18px;
 }
 
 .price-list-wrapper a:hover .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -151px 0px;
+  background-position: -159px -86px;
   width: 16px;
   height: 18px;
 }
@@ -1006,6 +1091,7 @@ footer .date-created, footer .created-by {
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 20px;
 }
 
 .product-panel .table {
@@ -1106,14 +1192,14 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: -112px -112px;
+  background-position: -131px -128px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-talbe .iradio_flat.checked {
   background-image: url(../images/sprite.png);
-  background-position: -78px -112px;
+  background-position: -114px -128px;
   width: 17px;
   height: 17px;
 }
@@ -1132,14 +1218,14 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: 0px -132px;
+  background-position: -159px -34px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-list .iradio_flat.checked {
   background-image: url(../images/sprite.png);
-  background-position: -129px -112px;
+  background-position: -159px 0px;
   width: 17px;
   height: 17px;
 }
@@ -1158,20 +1244,244 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: -95px -112px;
+  background-position: -159px -51px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-mini-list .iradio_flat.checked {
   background-image: url(../images/sprite.png);
-  background-position: -17px -132px;
+  background-position: -159px -17px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-mini-list .iradio_flat.checked:after {
   display: none;
+}
+
+.product-list .price {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.product-list .price .rouble::before {
+  content: "–";
+  display: block;
+  left: -0.1em;
+  position: absolute;
+  top: 0.1em;
+}
+
+.product-list .name a {
+  text-decoration: none;
+  color: #000;
+}
+
+.product-list .bonus {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: #737373;
+}
+
+.product-list.view-table {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-list.view-table:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.product-list.view-table .product-cell {
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #b9b9be;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 325px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  width: 20.1%;
+  float: left;
+}
+
+.product-list.view-table .product-cell .image {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.product-list.view-table .product-cell .name {
+  display: inline-block;
+  height: 70px;
+  overflow: hidden;
+  font-size: 0.93em;
+  font-weight: 100;
+  line-height: 1.1em;
+}
+
+.product-list.view-table .product-cell .rating-and-bonus {
+  float: left;
+}
+
+.product-list.view-table .product-cell .add-to-block {
+  float: right;
+}
+
+.product-list.view-table .product-cell .add-to-block .add-to-bookmark {
+  padding-right: 10px;
+}
+
+.product-list.view-table .product-cell .price {
+  clear: both;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.product-list.view-table .product-cell .status > * {
+  vertical-align: middle;
+}
+
+.product-list.view-table .product-cell .add-to-cart {
+  float: right;
+  position: relative;
+  top: -21px;
+}
+
+.product-list.view-table .product-cell .bonus .rouble::before {
+  content: "–";
+  display: block;
+  left: -0.1em;
+  position: absolute;
+  top: 0.09em;
+}
+
+.product-list.view-list .product-cell {
+  position: relative;
+  height: 75px;
+  border: 1px solid #b9b9be;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: -1px;
+}
+
+.product-list.view-list .image {
+  float: left;
+  max-width: 65px;
+  padding-right: 15px;
+}
+
+.product-list.view-list .image img {
+  max-width: 65px;
+}
+
+.product-list.view-list .rating-and-bonus > * {
+  display: table-cell;
+}
+
+.product-list.view-list .rating-and-bonus .rating {
+  padding-right: 20px;
+}
+
+.product-list.view-list .cell.add-to-block {
+  position: absolute;
+  right: 42%;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-bookmark {
+  cursor: pointer;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-bookmark:after {
+  content: "В закладки";
+  display: block;
+  left: 35px;
+  position: relative;
+  top: -22px;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-bookmark:hover:after {
+  color: #bf312e;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-bookmark:hover .ic_bookmark {
+  background-image: url(../images/sprite.png);
+  background-position: -101px -50px;
+  width: 19px;
+  height: 26px;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-compare {
+  cursor: pointer;
+  padding-left: 55px;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-compare:after {
+  content: "К сравнению";
+  display: block;
+  left: 35px;
+  position: relative;
+  top: -22px;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-compare:hover:after {
+  color: #bf312e;
+}
+
+.product-list.view-list .cell.add-to-block .add-to-compare:hover .ic_compared {
+  background-image: url(../images/sprite.png);
+  background-position: -140px -22px;
+  width: 16px;
+  height: 26px;
+}
+
+.product-list.view-list .add-to-cart {
+  position: absolute;
+  right: 15px;
+}
+
+.product-list.view-list .add-to-cart .tocart-btn:after {
+  display: inline-block;
+  content: "Добавить в корзину";
+  font-size: 0.9em;
+  color: #000;
+  padding-left: 6px;
+  vertical-align: middle;
+  font-weight: 100;
+}
+
+.product-list.view-list .add-to-cart .tocart-btn:hover:after {
+  display: inline-block;
+  content: "Добавить в корзину";
+  font-size: 0.9em;
+  color: #bf312e;
+  padding-left: 6px;
+  vertical-align: middle;
+  font-weight: 100;
+}
+
+.product-list.view-list .price {
+  padding-right: 170px;
+  float: right;
+}
+
+.product-list.view-list .status {
+  bottom: 14px;
+  left: 93px;
+  position: absolute;
 }
 
 .search {
@@ -1376,6 +1686,7 @@ footer .date-created, footer .created-by {
   width: 760px;
   color: #000;
   text-align: left;
+  z-index: 3;
 }
 
 .catalog-menu .catalog-menu-item-wrapper.opened {
@@ -1423,7 +1734,7 @@ footer .date-created, footer .created-by {
 
 .catalog-menu .catalog-menu-item-wrapper .root-items > li > a:hover .ic_arrow {
   background-image: url(../images/sprite.png);
-  background-position: -161px -120px;
+  background-position: -180px -49px;
   width: 4px;
   height: 7px;
 }
@@ -1570,14 +1881,14 @@ footer .date-created, footer .created-by {
 
 .bookmark-wrapper:hover .ic_bookmark, .bookmark-wrapper .bookmark.selected .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -95px -53px;
+  background-position: -101px -50px;
   width: 19px;
   height: 26px;
 }
 
 .bookmark-wrapper.disabled:hover .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -95px -27px;
+  background-position: -120px -50px;
   width: 19px;
   height: 26px;
 }
@@ -1590,7 +1901,7 @@ footer .date-created, footer .created-by {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -72px -93px;
+  background-position: -98px -82px;
   width: 22px;
   height: 12px;
   position: absolute;
@@ -1600,14 +1911,14 @@ footer .date-created, footer .created-by {
 
 .compared-wrapper:hover .ic_compared, .compared-wrapper .compared.selected .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -132px -22px;
+  background-position: -140px -22px;
   width: 16px;
   height: 26px;
 }
 
 .compared-wrapper.disabled:hover .ic_compared {
   background-image: url(../images/sprite.png);
-  background-position: -132px -48px;
+  background-position: -140px -48px;
   width: 16px;
   height: 26px;
 }
@@ -1620,7 +1931,7 @@ footer .date-created, footer .created-by {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -72px -93px;
+  background-position: -98px -82px;
   width: 22px;
   height: 12px;
   position: absolute;
@@ -1630,14 +1941,14 @@ footer .date-created, footer .created-by {
 
 .cart-wrapper:hover .ic_cart, .cart-wrapper .top-cart.selected .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px -26px;
+  background-position: -54px 0px;
   width: 28px;
   height: 26px;
 }
 
 .cart-wrapper.disabled:hover .ic_cart {
   background-image: url(../images/sprite.png);
-  background-position: -67px 0px;
+  background-position: -26px 0px;
   width: 28px;
   height: 26px;
 }
@@ -1673,7 +1984,7 @@ footer .date-created, footer .created-by {
   display: block;
   content: "";
   background-image: url(../images/sprite.png);
-  background-position: -72px -93px;
+  background-position: -98px -82px;
   width: 22px;
   height: 12px;
   position: absolute;
@@ -1713,7 +2024,7 @@ footer .date-created, footer .created-by {
 
 .cart-wrapper .do-order:hover .ic_arrow-down {
   background-image: url(../images/sprite.png);
-  background-position: -34px -132px;
+  background-position: -38px -148px;
   width: 11px;
   height: 13px;
 }
@@ -2850,7 +3161,7 @@ footer .date-created, footer .created-by {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   background-image: url(../images/sprite.png);
-  background-position: -67px -52px;
+  background-position: -176px -44px;
   width: 8px;
   height: 5px;
 }

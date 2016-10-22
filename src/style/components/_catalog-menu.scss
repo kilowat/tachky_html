@@ -19,6 +19,7 @@
     width: 760px;
     color: #000;
     text-align: left;
+    z-index: 3;
     &.opened{
       display: block;
     }
