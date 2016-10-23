@@ -119,10 +119,59 @@
     }
   }
 }
-.product-list .product-cell:hover{
+
+.product-list .product-cell:hover {
   box-shadow: 0 0 7px 0 rgba(5, 5, 0, 0.3);
 }
+
 .product-list {
+  .product-cell {
+    position: relative;
+    &.gift {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_gift);
+      }
+    }
+    &.hit {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_hit);
+      }
+    }
+    &.discount {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_discount);
+      }
+    }
+    &.new {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_new);
+      }
+    }    
+  }
   .price {
     font-size: 1.2em;
     font-weight: 100;
@@ -131,7 +180,7 @@
       display: block;
       left: -0.1em;
       position: absolute;
-      top: 0.1em;
+      top: 0.2em;
     }
   }
   .name {
@@ -153,7 +202,6 @@
   &.view-table {
     @include container;
     .product-cell {
-      overflow: hidden;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 10px;
@@ -167,8 +215,9 @@
       width: 20.1%;
       float: left;
       .image {
-        text-align: center;
         margin-bottom: 15px;
+        padding-top: 5px;
+        text-align: center;
       }
       .name {
         display: inline-block;
@@ -177,9 +226,12 @@
         font-size: 0.93em;
         font-weight: 100;
         line-height: 1.1em;
+        margin-bottom: 5px;
       }
       .rating-and-bonus {
         float: left;
+        position: relative;
+        top: -5px;
       }
       .add-to-block {
         float: right;
@@ -189,14 +241,22 @@
       }
       .price {
         clear: both;
-        padding-top: 15px;
-        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        position: relative;
+        top: 7px;
+        .current-price {
+          padding-right: 5px;
+        }
         .old-price {
           display: none;
         }
       }
       .status>* {
         vertical-align: middle;
+      }
+      .status {
+        padding-top: 5px;
       }
       .add-to-cart {
         float: right;
@@ -221,7 +281,7 @@
       height: 75px;
       border: 1px solid #b9b9be;
       padding-left: 15px;
-      padding-right: 15px;
+      padding-right: 25px;
       padding-bottom: 10px;
       padding-top: 10px;
       margin: -1px;
@@ -255,6 +315,7 @@
           top: -22px;
           font-weight: 100;
           font-size: 0.9em;
+          color: #737373;
         }
         &:hover {
           &:after {
@@ -276,6 +337,7 @@
           top: -22px;
           font-weight: 100;
           font-size: 0.9em;
+          color: #737373;
         }
         &:hover {
           &:after {
@@ -289,7 +351,7 @@
     }
     .add-to-cart {
       position: absolute;
-      right: 15px;
+      right: 25px;
       .tocart-btn:after {
         display: inline-block;
         content: "Добавить в корзину";
@@ -324,6 +386,13 @@
         color: #767676;
         left: 56px;
         top: -16px;
+        .rouble:before {
+          content: "–";
+          display: block;
+          left: -0.1em;
+          position: absolute;
+          top: 0.1em;
+        }
         &:after {
           position: absolute;
           width: 100%;
@@ -346,30 +415,42 @@
     }
   }
   &.mini {
+    .product-cell{
+       height: 60px;
+    }
+    .name {
+      position: relative;
+      top: 5px;
+    }
     .image {
       display: none;
     }
     .rating-and-bonus {
       position: relative;
-      top: 28px;
+      top: 10px;
     }
     .status {
       left: 195px;
-      bottom: 12px;
+      bottom: 15px;
     }
     .price {
       float: right;
-      padding-right: 40px;
+      padding-right: 50px;
       position: relative;
-      top: -25px;
+      top: -45px;
       .old-price {
-        left: 56px;
-        top: -16px;
+        left: 0px;
+        top: 0px;
       }
     }
     .cell.add-to-block {
       position: absolute;
       right: 32%;
+      bottom: -7px;;
+    }
+    .add-to-cart {
+      bottom: 15px;
+      right:35px;
     }
   }
 }

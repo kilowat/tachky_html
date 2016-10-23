@@ -1116,13 +1116,13 @@
                   <label for="view">Вид</label>
                 </div>
                 <div class="table-cell radio-view-talbe">
-                  <input type="radio" checked="checked" name="view">
+                  <input type="radio" value="view-table" checked="checked" name="view">
                 </div>
                 <div class="table-cell radio-view-list">
-                  <input type="radio" class="" value="list" name="view">
+                  <input type="radio" class="" value="view-list" name="view">
                 </div>
                 <div class="table-cell radio-view-mini-list">
-                  <input type="radio" value="mini-list" name="view">
+                  <input type="radio" value="mini" name="view">
                 </div>
               </div>
             </div>
@@ -1160,10 +1160,10 @@
           </div>
           <!--start component product list-->
           <!--view classes: view-table,view-list,view-list mini-->
-          <div class="product-list view-table">
+          <div id="catalog-view" class="product-list view-table">
             <!--foreach $arResult-->
 
-            <div class="product-cell">
+            <div class="product-cell hit">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1199,7 +1199,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell discount">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1235,7 +1235,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell gift">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1271,7 +1271,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell new">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1307,7 +1307,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1343,7 +1343,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1379,7 +1379,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1415,7 +1415,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1451,7 +1451,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1487,7 +1487,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1523,7 +1523,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1559,7 +1559,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1595,7 +1595,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1631,7 +1631,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1667,7 +1667,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1703,7 +1703,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1739,7 +1739,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -1775,7 +1775,7 @@
               </div>
             </div>
 
-            <div class="product-cell">
+            <div class="product-cell ">
               <div class="image">
                 <a href="#" title=""><img src="./images/product-img.png" alt=""></a>
               </div>
@@ -2046,6 +2046,7 @@
   <script src="./js/app.js"></script>
   <script src="./js/drop_menu.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/select-view.js"></script>
   <!--endinject-->
 </body>
 

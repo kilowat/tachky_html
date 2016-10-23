@@ -59,13 +59,13 @@
               <label for="view">Вид</label>
             </div>
             <div class="table-cell radio-view-talbe">
-              <input type="radio" checked="checked" name="view">
+              <input type="radio" value="view-table" checked="checked" name="view">
             </div>
             <div class="table-cell radio-view-list">
-              <input type="radio" class="" value="list" name="view">
+              <input type="radio" class="" value="view-list" name="view">
             </div>
             <div class="table-cell radio-view-mini-list">
-              <input type="radio" value="mini-list" name="view">
+              <input type="radio" value="mini" name="view">
             </div>
           </div>
         </div>
@@ -103,10 +103,10 @@
       </div>
       <!--start component product list-->
       <!--view classes: view-table,view-list,view-list mini-->
-      <div class="product-list view-table">
+      <div id="catalog-view" class="product-list view-table">
         <!--foreach $arResult-->
         {% for item in catalogItems%}
-        <div class="product-cell">
+        <div class="product-cell {{item.promo}}">
           <div class="image">
             <a href="{{item.link}}" title=""><img src="{{item.img}}" alt=""></a>
           </div>
