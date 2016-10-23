@@ -119,7 +119,7 @@ body {
 }
 
 a {
-  color: #82b1df;
+  color: #0096d7;
 }
 
 a:hover {
@@ -238,6 +238,11 @@ main {
 
 main p {
   margin-top: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .ic_bag {
@@ -1021,7 +1026,7 @@ footer .date-created, footer .created-by {
 }
 
 .after-header-row .contact-text .address {
-  color: #82b1df;
+  color: #0096d7;
   display: inline-block;
   vertical-align: top;
 }
@@ -2441,15 +2446,15 @@ footer .date-created, footer .created-by {
 }
 
 .main-menu ul li ul:before {
-  background-image: url("../images/sprite.png");
-  background-position: -91px -93px;
   content: "";
   display: block;
-  height: 12px;
   left: 40%;
   position: absolute;
   top: -12px;
+  background-image: url(../images/sprite.png);
+  background-position: -186px -152px;
   width: 22px;
+  height: 12px;
 }
 
 .main-menu ul li ul li {

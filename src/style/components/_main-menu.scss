@@ -65,15 +65,12 @@
           z-index: 1;
         }
         &:before {
-          background-image: url("#{$path-to-img}/sprite.png");
-          background-position: -91px -93px;
           content: "";
           display: block;
-          height: 12px;
           left: 40%;
           position: absolute;
           top: -12px;
-          width: 22px;
+          @include sprite($ic_arrow-up);
         }
         li{
           margin-top:10px;
