@@ -12,17 +12,13 @@
         $('#min-price').next().val(ui.values[0]);
         $('#max-price').next().val(ui.values[1]);
       },
+      stop: function () {
+        showButton($('.slider-gaps'));
+      },
       ranges: [false, {
         styleClass: 'range-glow'
-    }, false, true]
-    });
+      }, false, true]
 
-    //set min-max prices
-    $('#min-price').next().change(function () {
-      $(".slider-gaps").limitslider('values', 0, $(this).val());
-    });
-    $('#max-price').next().change(function () {
-      $(".slider-gaps").limitslider('values', 1, $(this).val());
     });
 
     //slide filter propery
@@ -32,4 +28,26 @@
         $(self).toggleClass('selected');
       });
     });
+
+    $('.filter').on('ifChanged', function (e) {
+      showButton($(e.target));
+    });
+
+    $('.filter').on('change', function (e) {
+      var $t = $(e.target);
+
+      if ($t.hasClass('min-price')) {
+        $(".slider-gaps").limitslider('values', 0, $t.val());
+      }
+      if ($t.hasClass('max-price')) {
+        $(".slider-gaps").limitslider('values', 0, $t.val());
+      }
+
+      showButton($t);
+    });
+
+    function showButton(el) {
+      console.log(el);
+    }
+
   });
