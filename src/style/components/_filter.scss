@@ -8,8 +8,8 @@
     padding-top: 10px;
     border-bottom: 1px solid #b9b9bb;
     .input-row {
-      padding-bottom: 7px;
-      padding-top: 7px;
+      padding-bottom: 2px;
+      padding-top: 2px;
       label {
         padding-left: 4px;
         font-weight: 200;
@@ -49,25 +49,6 @@
     }
     .buttons{
       border-top: 1px solid #b9b9bb;
-    }
-    .show-all{
-      border-radius: 10px;
-      border: 1px solid #6a6a6a;
-      color: #6a6a6a;
-      font-weight: 100;
-      display: inline-block;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      font-size: 0.9em;
-      cursor: pointer;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      &:hover{
-        background-color: #6b6b6b;
-        color: #fff;
-      }
     }
   }
   .ic_arrow-up2 {

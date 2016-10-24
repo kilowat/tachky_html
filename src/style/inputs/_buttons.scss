@@ -1,35 +1,54 @@
-.btn-round{
+.btn-round {
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 10px;
-  &.grey{
+  &.grey {
     background-color: #6a6a6a;
     color: #fff;
-    &:hover{
+    &:hover {
       background-color: scale_color(#6a6a6a, 40);
     }
   }
-  &.grey-light{
+  &.grey-light {
     border: 1px solid #6b6b6b;
     color: #6b6b6b;
-    &:hover{
+    &:hover {
       background-color: #8d8d8d;
       color: #fff;
     }
   }
-  &.red-light{
+  &.red-light {
     border: 1px solid #de2d29;
     color: #de2d29;
-    &:hover{
+    &:hover {
       background-color: #de2d2a;
       color: #fff;
     }
   }
 }
+
 .toggle-btn {
   background: transparent none repeat scroll 0 0;
   border: medium none;
-  &:active{
-    position:unset;
+  &:active {
+    position: unset;
+  }
+}
+
+.grey-button-default {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #6a6a6a;
+  color: #6a6a6a;
+  font-weight: 100;
+  display: inline-block;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 4px 20px 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &:hover {
+    background-color: #6b6b6b;
+    color: #fff;
   }
 }
