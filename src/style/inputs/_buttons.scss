@@ -36,6 +36,8 @@
 }
 
 .grey-button-default {
+  
+  line-height: 2em;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #6a6a6a;
@@ -44,9 +46,10 @@
   display: inline-block;
   font-size: 0.9em;
   cursor: pointer;
-  padding: 4px 20px 3px;
+  padding: 0px 20px 0px;
   margin-bottom: 10px;
   margin-top: 10px;
+  height: 30px;
   &:hover {
     background-color: #6b6b6b;
     color: #fff;
