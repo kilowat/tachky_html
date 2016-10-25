@@ -47,7 +47,13 @@
     });
 
     function showButton(el) {
-      console.log(el);
+      var y = el.offset().top;
+      var x = $('.sidebar').outerWidth() + $('.sidebar').offset().left;
+      var block = '<div id="set-filter" style="top:' + y + 'px;left:' + x + 'px">' +
+        '<div class="found-fl">Найдено 25 товаров</div>' +
+        '<div class="show-from-filter"><a href="#">Показать</a></div>' +
+        '</div>';
+      $('#set-filter').remove();
+      $('body').append(block);
     }
-
   });

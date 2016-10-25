@@ -1726,6 +1726,7 @@ footer .date-created, footer .created-by {
 
 #ajax-show-more {
   margin-top: 30px;
+  margin-left: 10px;
 }
 
 .search {
@@ -2656,6 +2657,38 @@ footer .date-created, footer .created-by {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+#set-filter {
+  position: absolute;
+  border: 1px solid #de2e2a;
+  background-color: #fff;
+  z-index: 2;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#set-filter div {
+  display: inline-block;
+  padding: 10px 7px;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+#set-filter .found-fl {
+  color: #3e3e3e;
+}
+
+#set-filter .show-from-filter {
+  background-color: #de2d2a;
+  -webkit-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+#set-filter .show-from-filter a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed;
 }
 
 .ui-slider {

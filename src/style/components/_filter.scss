@@ -38,16 +38,16 @@
       margin-left: 5px;
       margin-right: 5px;
     }
-    .reset-filter{
+    .reset-filter {
       font-size: 0.9em;
       border-bottom: 1px dashed;
       color: #0096d7;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $color-link-hover;
       }
     }
-    .buttons{
+    .buttons {
       border-top: 1px solid #b9b9bb;
     }
   }
@@ -57,6 +57,33 @@
     margin-top: 10px;
     &.selected {
       transform: rotate(180deg);
+    }
+  }
+}
+
+#set-filter {
+  position: absolute;
+  border: 1px solid #de2e2a;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 0px 5px 5px 0px;
+
+  div {
+    display: inline-block;
+    padding: 10px 7px;
+    font-size: 0.9em;
+    font-weight: 100;
+  }
+  .found-fl {
+    color: #3e3e3e;
+  }
+  .show-from-filter {
+    background-color: #de2d2a;
+    border-radius: 0px 3px 3px 0px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px dashed;
     }
   }
 }
