@@ -65,6 +65,7 @@
       var y = el.offset().top - $(setFilter).height() / 2;
       var x = $('.sidebar').outerWidth() + $('.sidebar').offset().left;
       var block = '<div id="set-filter" style="top:' + y + 'px;left:' + x + 'px;display:none;">' +
+        '<div class="triangle"></div>'+
         '<div class="found-fl">Выбрано товаров: ' + count + '</div>' +
         '<div class="show-from-filter"><a href="#">Показать</a></div>' +
         '</div>';
