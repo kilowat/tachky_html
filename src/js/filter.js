@@ -1,4 +1,6 @@
   $(document).ready(function () {
+    var setFilter = '#set-filter';
+    var filter = '.filter';
     //run sliderprice
     $('.slider-gaps').limitslider({
       values: [parseInt($('#min-price').val()), parseInt($('#max-price').val())],
@@ -22,18 +24,18 @@
     });
 
     //slide filter propery
-    $('.filter .ic_arrow-up2').click(function () {
+    $(filter+' .ic_arrow-up2').click(function () {
       var self = this;
       $(this).parent().next().slideToggle(function () {
         $(self).toggleClass('selected');
       });
     });
 
-    $('.filter').on('ifChanged', function (e) {
+    $(filter).on('ifChanged', function (e) {
       showButton($(e.target));
     });
 
-    $('.filter').on('change', function (e) {
+    $(filter).on('change', function (e) {
       var $t = $(e.target);
 
       if ($t.hasClass('min-price')) {
@@ -42,18 +44,43 @@
       if ($t.hasClass('max-price')) {
         $(".slider-gaps").limitslider('values', 0, $t.val());
       }
-
       showButton($t);
     });
 
     function showButton(el) {
-      var y = el.offset().top;
+      var count = 0;
+      $(setFilter).remove()
+      //run ajax request 
+       //todo
+      ////**waiting**///
+      
+      //when done run this//
+      $('body').append(getBlock(count, el));
+      $(setFilter).fadeIn('fast');
+      //////////////////////////
+    }
+
+    function getBlock(count, el) {
+      var count = count || 0;
+      var y = el.offset().top - $(setFilter).height() / 2;
       var x = $('.sidebar').outerWidth() + $('.sidebar').offset().left;
-      var block = '<div id="set-filter" style="top:' + y + 'px;left:' + x + 'px">' +
-        '<div class="found-fl">Найдено 25 товаров</div>' +
+      var block = '<div id="set-filter" style="top:' + y + 'px;left:' + x + 'px;display:none;">' +
+        '<div class="found-fl">Выбрано товаров: ' + count + '</div>' +
         '<div class="show-from-filter"><a href="#">Показать</a></div>' +
         '</div>';
-      $('#set-filter').remove();
-      $('body').append(block);
+      return block;
     }
+
+    $('body').click(function (e) {
+      var $t = $(e.target);
+
+      if ($(setFilter).length === 0)
+        return
+
+      if ($t.parents().filter(setFilter).length === 0 && $t.parents().filter(filter).length === 0) {
+        $(setFilter).fadeOut('fast', function () {
+          $(this).remove();
+        })
+      }
+    });
   });
