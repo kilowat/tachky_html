@@ -6,11 +6,12 @@ $(document).ready(function () {
   $(".vtip").tipTip();
 
   //run checkbox
- $('input').iCheck({
-     checkboxClass: 'icheckbox_flat',
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat',
     radioClass: 'iradio_flat'
   });
 
   //customize select
-  $('select').selectize(); 
+  $('select').selectize();
+
 });

@@ -1,0 +1,247 @@
+{
+  "bookMarkItem": [
+    {
+      "img": "./images/bolt-img.png",
+      "name": "Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
+      "status": "allow",
+      "price": "1 200"
+    },
+    {
+      "img": "./images/bolt-img.png",
+      "name": "Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
+      "status": "not-allow",
+      "price": "1 200"
+    },
+    {
+      "img": "./images/bolt-img.png",
+      "name": "Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
+      "status": "wait",
+      "price": "500 000"
+    },
+    {
+      "img": "./images/bolt-img.png",
+      "name": "Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
+      "status": "allow",
+      "price": "1 200"
+    },
+    {
+      "img": "./images/bolt-img.png",
+      "name": "Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное",
+      "status": "allow",
+      "price": "1 200"
+    }
+  ],
+  "catalogItems": [
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo":"hit"
+    },
+    {
+      "img": "./images/bold-1.jpg",
+      "name": "Cекретные болты на колеса 4шт. (болты, М12*1.5, длина резьбы: 40 мм, размер ключа: 17 мм.)",
+      "link": "#",
+      "rating": "2",
+      "price": "1 800",
+      "bonus": "18",
+      "status": "wait",
+      "statusText":"Под заказ",
+      "promo":"discount"
+    },
+    {
+      "img": "./images/bamper.png",
+      "name": "Бампер для ферарри слегка потертый и подрыпаный, но вообщем сойдет, немного подкрасить подклеить и можно присобачить, не ворованный просто найден на дороге",
+      "link": "#",
+      "rating": "4",
+      "price": "25 800",
+      "bonus": "250",
+      "status": "not-allow",
+      "statusText":"Нет в наличии",
+      "promo":"gift"
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": "new"
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    },
+    {
+      "img": "./images/product-img.png",
+      "name": "Комплект болтов секреток дя автомобильных дисков Mc Gard 2600 sl",
+      "link": "#",
+      "rating": "4",
+      "price": "2 800",
+      "bonus": "25",
+      "status": "allow",
+      "statusText":"В наличии",
+      "promo": ""
+    }
+    
+  ],
+  "sectionName": "Секребные болты McGard",
+  "breadCrubms": [
+    {
+      "name": "Колеса"
+    },
+    {
+      "name": "Крепеж"
+    },
+    {
+      "name": "Болты"
+    }
+  ]
+}

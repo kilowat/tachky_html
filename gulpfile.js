@@ -136,8 +136,7 @@ var libsPath = {
     js:[
       'src/libs/cookie/js/js.cookie.js'
     ]
-  }
-  
+  },
 }
 
 //set what your want use
@@ -152,6 +151,7 @@ var libs = {
    icheck:libsPath.icheck,
    select:libsPath.select,
    cookie:libsPath.cookie,
+  
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick

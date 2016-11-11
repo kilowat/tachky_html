@@ -3001,6 +3001,34 @@ footer .date-created, footer .created-by {
   left: -2px;
 }
 
+.product .product-content {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product .product-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.product .product-content .cell {
+  width: 31.03448%;
+  float: left;
+  margin-right: 3.44828%;
+}
+
+.product .product-content .cell.price-info {
+  float: right;
+  margin-right: 0;
+}
+
+.product .slider-product {
+  height: 300px;
+  border: 1px solid #b8b8bc;
+}
+
 .btn-round {
   text-decoration: none;
   padding: 5px 20px;

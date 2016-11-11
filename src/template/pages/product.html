@@ -1,0 +1,30 @@
+{% extends './../layout/main.html'%} {% block content %}
+<div class="wrapper">
+  <div class="container">
+    <!--start component breadcrumbs-->
+    {%include './../component/breadcrumbs.html'%}
+    <!--end component breadcrumbs-->
+    <h1>{{sectionName}}</h1>
+    <div class="content">
+      <div class="product">
+        <div class="product-content">
+          <div class="cell">
+           <div class="slider-product">
+             <div class="slider-image"></div>
+           </div>
+          </div>
+          <div class="cell descr">
+            Описание
+          </div>
+          <div class="cell price-info">
+            Цена
+          </div>
+        </div>
+        <div class="row-buttons">
+          Кнопки
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

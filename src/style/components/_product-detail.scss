@@ -1,0 +1,15 @@
+.product{
+  .product-content{
+    @include container;
+    .cell{
+      @include span(1 of 3 1/9);
+      &.price-info{
+        @include last
+      }
+    }
+  }
+  .slider-product{
+    height: 300px;
+    border: 1px solid #b8b8bc;
+  }
+}
