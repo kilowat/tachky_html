@@ -1,0 +1,102 @@
+.product {
+  .product-content {
+    font-weight: 300;
+    @include container;
+    .p {
+      overflow: hidden;
+      padding-bottom: 10px;
+    }
+    .p:after {
+      content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .l {
+      float: left;
+    }
+    .r {
+      float: right;
+    }
+    .cell {
+      @include span(1 of 3 1/9);
+      &:last-child {
+        @include last;
+      }
+      &.descr .text {
+        margin-bottom: 40px;
+      }
+    }
+    .property-list {
+      width: 100%;
+    }
+    .price-info {
+      border: 1px solid #b8b8bc;
+      border-radius: 4px;
+      .wrapp {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+      }
+      .price-head {
+        font-weight: 400;
+      }
+      .price {
+        font-size: 2em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .rouble::before {
+          content: "–";
+          display: block;
+          left: -0.05em;
+          position: absolute;
+          top: 0.1em;
+        }
+      }
+      .cart-buttons {
+        @include clearfix;
+        .add-to-block {
+          float: left;
+          width: 49%;
+          .add-to-bookmark {
+            margin-top: 15px;
+            height: 30px;
+          }
+          .add-to-compare {
+            height: 30px;
+          }
+          .add-to-bookmark::after {
+            color: #737373;
+            content: "В закладки";
+            display: block;
+            font-size: 0.9em;
+            font-weight: 100;
+            left: 35px;
+            position: relative;
+            top: -21px;
+          }
+          .add-to-compare::after {
+            color: #737373;
+            content: "К сравнению";
+            display: block;
+            font-size: 0.9em;
+            font-weight: 100;
+            left: 35px;
+            position: relative;
+            top: -21px;
+          }
+        }
+      }
+      .to-cart-buttons{
+        float: right;
+        width: 49%;
+        text-align: right;
+      }
+    }
+  }
+  .slider-product {
+    height: 300px;
+    border: 1px solid #b8b8bc;
+  }
+}
