@@ -77,7 +77,7 @@
 .tocart-btn {
   border: 1px solid #6a6a6a;
   border-radius: 6px;
-  padding: 0 8px 2px;
+  padding: 2px 8px 2px;
   display: inline-block;
   &:hover {
     border-color: $color-link-hover;
@@ -86,7 +86,15 @@
     }
   }
 }
-
+.ic_fast-buy{
+  @include sprite($ic_fast-buy);
+    &:hover {
+    border-color: $color-link-hover;
+    .ic_fast-buy {
+      @include sprite($ic_fast-buy-hover);
+    }
+  }
+}
 .ic_cart_item {
   @include sprite($ic_cart_item);
   &:hover {
@@ -215,7 +223,15 @@
     @include sprite($ic_inst-hover);
   }
 }
-
+.ic_question{
+  @include sprite($ic_question);
+}
+.ic_no{
+  @include sprite($ic_no);
+}
+.ic_yes{
+  @include sprite($ic_yes);
+}
 .ic_stars {
   @include sprite($ic_stars);
 }

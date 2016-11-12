@@ -2,12 +2,42 @@
   .product-content {
     font-weight: 300;
     @include container;
+    .slider-product {
+      .bx-wrapper {
+        border: 1px solid #b8b8bc;
+        margin: 0 auto 10px;
+      }
+      #bx-pager {
+        a {
+          @include gallery(1 of 5);
+          border: 1px solid #b8b8bc;
+          height: 55px;
+          text-align: center;
+          margin-bottom: 10px;
+          &.active{
+            border: 1px solid #e1403d;
+          }
+          &:hover{
+            border: 1px solid #e1403d;
+          }
+          span {
+            text-align: center;
+            height: 55px;
+            display: table-cell;
+            vertical-align: middle;
+            img {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
     .p {
       overflow: hidden;
       padding-bottom: 10px;
     }
     .p:after {
-      content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';
+      content: '............................................................................................................................................................................................................................................................................';
       display: block;
       white-space: nowrap;
       overflow: hidden;
@@ -29,8 +59,9 @@
     }
     .property-list {
       width: 100%;
+      margin-bottom: 20px;
     }
-    .price-info {
+    .price-block {
       border: 1px solid #b8b8bc;
       border-radius: 4px;
       .wrapp {
@@ -39,64 +70,187 @@
         padding-right: 15px;
         padding-bottom: 20px;
       }
-      .price-head {
+      .head {
         font-weight: 400;
+        padding-bottom: 10px;
       }
-      .price {
-        font-size: 2em;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        .rouble::before {
-          content: "–";
-          display: block;
-          left: -0.05em;
-          position: absolute;
-          top: 0.1em;
+      .price-info {
+        border-bottom: 1px solid #b8b8bc;
+        .price {
+          font-size: 2em;
+          padding-bottom: 15px;
+          .rouble::before {
+            content: "–";
+            display: block;
+            left: -0.05em;
+            position: absolute;
+            top: 0.1em;
+          }
         }
-      }
-      .cart-buttons {
-        @include clearfix;
-        .add-to-block {
-          float: left;
+        .cart-buttons {
+          @include clearfix;
+          .add-to-block {
+            float: left;
+            width: 49%;
+            .add-to-bookmark {
+              margin-top: 15px;
+              height: 30px;
+            }
+            .add-to-compare {
+              height: 30px;
+            }
+            .add-to-bookmark::after {
+              color: #737373;
+              content: "В закладки";
+              display: block;
+              font-size: 0.9em;
+              font-weight: 100;
+              left: 35px;
+              position: relative;
+              top: -21px;
+            }
+            .add-to-compare::after {
+              color: #737373;
+              content: "К сравнению";
+              display: block;
+              font-size: 0.9em;
+              font-weight: 100;
+              left: 35px;
+              position: relative;
+              top: -21px;
+            }
+          }
+        }
+        .to-cart-buttons {
+          float: right;
           width: 49%;
-          .add-to-bookmark {
-            margin-top: 15px;
-            height: 30px;
+          text-align: right;
+          a {
+            text-decoration: none;
           }
-          .add-to-compare {
-            height: 30px;
-          }
-          .add-to-bookmark::after {
-            color: #737373;
-            content: "В закладки";
-            display: block;
-            font-size: 0.9em;
+          .tocart-btn:after {
+            display: inline-block;
+            content: "В корзину";
+            font-size: 0.8rem;
+            color: #000;
+            padding-left: 6px;
+            vertical-align: middle;
             font-weight: 100;
-            left: 35px;
-            position: relative;
-            top: -21px;
-          }
-          .add-to-compare::after {
             color: #737373;
-            content: "К сравнению";
-            display: block;
-            font-size: 0.9em;
             font-weight: 100;
-            left: 35px;
-            position: relative;
-            top: -21px;
+            text-decoration: none;
+          }
+          .tocart-btn:hover {
+            &:after {
+              display: inline-block;
+              content: "В корзину";
+              color: $color-link-hover;
+              padding-left: 6px;
+              vertical-align: middle;
+              font-weight: 100;
+              font-size: 0.8rem;
+              text-decoration: none;
+            }
+          }
+          .fast-buy-btn {
+            border: 1px solid #6a6a6a;
+            border-radius: 6px;
+            display: inline-block;
+            padding: 4px 8px 2px;
+            margin-top: 10px;
+            &:hover {
+              border-color: #bf312e;
+              .ic_fast-buy {
+                @include sprite($ic_fast-buy-hover)
+              }
+            }
+          }
+          .fast-buy-btn:after {
+            color: #737373;
+            content: "Купить в один клик";
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 100;
+            line-height: 14px;
+            padding-left: 6px;
+            text-align: left;
+            text-decoration: none;
+            vertical-align: middle;
+            width: 64px;
+          }
+          .fast-buy-btn:hover {
+            &:after {
+              color: $color-link-hover;
+              content: "Купить в один клик";
+              display: inline-block;
+              font-size: 0.8rem;
+              font-weight: 100;
+              line-height: 14px;
+              padding-left: 6px;
+              text-align: left;
+              text-decoration: none;
+              vertical-align: middle;
+              width: 64px;
+            }
           }
         }
       }
-      .to-cart-buttons{
-        float: right;
-        width: 49%;
-        text-align: right;
+      .amount-in-store {
+        border-bottom: 1px solid #b8b8bc;
+      }
+      .dop-prop {
+        .show-next.grey-button-default {
+          &.selected{
+            i{
+              transform: rotate(180deg);
+            }
+          }
+          i {
+            position: relative;
+            left: 12px;
+            top: -2px;
+          }
+          &:hover {
+            background-color: #fff;
+            color: #6a6a6a;
+          }
+        }
+        ul {
+          li {
+            margin-bottom: 5px;
+            .drop-down{
+              display: none;
+            }
+            i {
+              margin-right: 5px;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
       }
     }
   }
-  .slider-product {
-    height: 300px;
-    border: 1px solid #b8b8bc;
+  .product-bottom-row{
+    position: relative;
+    top:-53px;
+    float: left;
+    .buttons{
+      margin-top: 10px;
+      li{
+        display: inline-block;
+        margin-right: 10px;
+        border-radius: 6px;
+        border: 1px solid #dededf;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        a{
+          font-weight: 300;
+          text-decoration: none;
+          border-bottom: 1px dashed;
+        }
+      }
+    }
   }
 }

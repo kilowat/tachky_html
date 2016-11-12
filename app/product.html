@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./libs/jqueryUi/css/jquery-ui.min.css">
   <!--endinject-->
   <link rel="stylesheet" href="./css/screen.css">
-
 </head>
 
 <body>
@@ -967,7 +966,40 @@
             <div class="product-content">
               <div class="cell">
                 <div class="slider-product">
-                  <div class="slider-image"></div>
+                  <div class="slider-image">
+                    <ul class="bxslider">
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                      <li>
+                        <img src="./images/product-slide1.jpg" alt="">
+                      </li>
+                    </ul>
+                    <div id="bx-pager">
+                      <a data-slide-index="0" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="1" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="2" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="3" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="4" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="5" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                      <a data-slide-index="6" href=""><span><img src="./images/product-slide1-mini.png"></span></a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="cell descr">
@@ -1006,38 +1038,103 @@
                 </div>
               </div>
               <div class="cell">
-                <div class="price-info">
-                  <div class="wrapp">
-                    <span class="price-head">Цена</span>
-                    <div class="price">
-                      2 800 <span class="rouble">P</span>
-                    </div>
-                    <div class="price-type">
-                      <ul>
-                        <li><span>Вид цены:</span><span>Простой покупатель</span></li>
-                        <li><span>Базовая цена: </span><span>2 800</span> <span class="rouble">P</span></li>
-                        <li><span>Накопительный бонус: </span><span>2 800</span> <span class="rouble">P</span></li>
-                      </ul>
-                    </div>
-                    <div class="cart-buttons">
-                      <div class="add-to-block">
-                        <div class="add-to-bookmark">
-                          <i class="ic_bookmark-mini"></i>
+                <div class="price-block">
+                  <div class="price-info">
+                    <div class="wrapp">
+                      <div class="head">Цена</div>
+                      <div class="price">
+                        2 800 <span class="rouble">P</span>
+                      </div>
+                      <div class="price-type">
+                        <ul>
+                          <li><span>Вид цены:</span><span>Простой покупатель</span></li>
+                          <li><span>Базовая цена: </span><span>2 800</span> <span class="rouble">P</span></li>
+                          <li><span>Накопительный бонус: </span><span>2 800</span> <span class="rouble">P</span></li>
+                        </ul>
+                      </div>
+                      <div class="cart-buttons">
+                        <div class="add-to-block">
+                          <div class="add-to-bookmark">
+                            <i class="ic_bookmark-mini"></i>
+                          </div>
+                          <div class="add-to-compare">
+                            <i class="ic_compared-mini"></i>
+                          </div>
                         </div>
-                        <div class="add-to-compare">
-                          <i class="ic_compared-mini"></i>
+                        <div class="to-cart-buttons">
+                          <a class="tocart-btn" href="" title="В корзину">
+                            <i class="ic_cart_item"></i>
+                          </a>
+                          <a class="fast-buy-btn" href="" title="Купить в один клик">
+                            <i class="ic_fast-buy"></i>
+                          </a>
                         </div>
                       </div>
-                      <div class="to-cart-buttons">
-                        rigth
+                    </div>
+                  </div>
+                  <div class="amount-in-store">
+                    <div class="wrapp">
+                      <div class="head">Наличие</div>
+                      <div class="p">
+                        <div class="l">Магазин 1</div>
+                        <div class="r">10 шт</div>
+                      </div>
+                      <div class="p">
+                        <div class="l">Магазин 2</div>
+                        <div class="r">20 шт</div>
+                      </div>
+                      <div class="p">
+                        <div class="l">Магазин 3</div>
+                        <div class="r">10 шт</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dop-prop">
+                    <div class="wrapp">
+                      <div class="head">Совместимость</div>
+                      <ul>
+                        <li><span><i class="ic_yes"></i>Audi RS 7</span></li>
+                        <li><span><i class="ic_no"></i>Nissan skyline</span></li>
+                        <li><span><i class="ic_question"></i>BMW</span></li>
+                        <li>
+                          <ul class="drop-down">
+                            <li><span><i class="ic_question"></i>BMW</span></li>
+                            <li><span><i class="ic_question"></i>BMW</span></li>
+                            <li><span><i class="ic_question"></i>BMW</span></li>
+                            <li><span><i class="ic_question"></i>BMW</span></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <button class="show-next grey-button-default">
+                      Показать остальные<i class="ic_arrow-up2"></i>
+                    </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row-buttons">
-              Кнопки
+            <div class="product-bottom-row">
+              <div class="rating">
+                <div class="head">Оценка: <i class="ic_stars-4"></i></div>
+              </div>
+              <div class="buttons">
+                <ul>
+                  <li>
+                    <a href="" title="Подробные характеристики">Подробные характеристики</a>
+                  </li>
+                  <li>
+                    <a href="" title="Инструкции">Инструкции</a>
+                  </li>
+                  <li>
+                    <a href="" title="Отзывы">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="" title="Детальное описание">Детальное описание</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1260,7 +1357,8 @@
   <!--numberInput:js-->
   <script src="./libs/numberInput/js/number_input.js"></script>
   <!--endinject-->
-  <!--priceSlider:js-->
+  <!--bxslider:js-->
+  <script src="./libs/bxslider/js/jquery.bxslider.js"></script>
   <!--endinject-->
   <!--jqueryUi:js-->
   <script src="./libs/jqueryUi/js/jquery-ui.min.js"></script>

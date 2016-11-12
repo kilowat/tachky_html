@@ -13,5 +13,18 @@ $(document).ready(function () {
 
   //customize select
   $('select').selectize();
-
+  
+  $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager',
+    controls: false
+  });
+  
+  //product detail drop down dop props
+  $('.dop-prop .show-next').click(function(){ 
+    var self = $(this);
+    $('.dop-prop .drop-down').slideToggle('fast',function(){
+      self.toggleClass('selected');
+    });
+  });
+  
 });

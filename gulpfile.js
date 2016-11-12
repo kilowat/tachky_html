@@ -137,9 +137,15 @@ var libsPath = {
       'src/libs/cookie/js/js.cookie.js'
     ]
   },
+  bxslider:{
+    js:[
+      'src/libs/bxslider/js/jquery.bxslider.js'
+    ]
+  }
+  
 }
 
-//set what your want use
+//set what you want to use
 var libs = {
   jquery: libsPath.jquery, // inject name jquery
    susy: libsPath.susy,
@@ -151,7 +157,7 @@ var libs = {
    icheck:libsPath.icheck,
    select:libsPath.select,
    cookie:libsPath.cookie,
-  
+   bxslider:libsPath.bxslider
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
    //slick: libsPath.slick, // inject name slick
