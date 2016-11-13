@@ -232,6 +232,12 @@
 .ic_yes{
   @include sprite($ic_yes);
 }
+.ic_left-arrow{
+  @include sprite($ic_left-arrow);
+}
+.ic_right-arrow{
+  @include sprite($ic_right-arrow);
+}
 .ic_stars {
   @include sprite($ic_stars);
 }
@@ -243,7 +249,15 @@
 .ic_arrow-up2 {
   @include sprite($ic_arrow_up2);
 }
-
+.arrow-down2{
+  @include sprite($arrow-down2);
+}
+.ic_arrow_up2-hover{
+  @include sprite($ic_arrow_up2-hover);
+}
+.ic_arrow-down2-hover{
+  @include sprite($ic_arrow-down2-hover);
+}
 .ic_star-0 {
   @include sprite($ic_star-0);
 }
@@ -266,4 +280,19 @@
 
 .ic_star-5 {
   @include sprite($ic_star-5);
+}
+.ic_big-stars-0{
+  @include sprite($ic_big-stars-0);
+}
+.ic_big-stars-1{
+  @include sprite($ic_big-stars-1);
+}
+.ic_big-stars-2{
+  @include sprite($ic_big-stars-2);
+}
+.ic_big-stars-3{
+  @include sprite($ic_big-stars-3);
+}
+.ic_big-stars-4{
+  @include sprite($ic_big-stars-4);
 }

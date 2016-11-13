@@ -63,11 +63,7 @@ var libsPath = {
         'bower_components/slick-carousel/slick/slick.min.js'
       ],
     css: [
-        'bower_components/slick-carousel/slick/slick.css',
-        'bower_components/slick-carousel/slick/slick-theme.css'
-      ],
-    fonts: [
-        'bower_components/slick-carousel/slick/fonts/*.*'
+        'bower_components/slick-carousel/slick/slick.css'
       ],
     images: [
         'bower_components/slick-carousel/slick/ajax-loader.gif'
@@ -157,10 +153,10 @@ var libs = {
    icheck:libsPath.icheck,
    select:libsPath.select,
    cookie:libsPath.cookie,
-   bxslider:libsPath.bxslider
+   bxslider:libsPath.bxslider,
   // bourbon: libsPath.bourbon
   // bootstrap: libsPath.bootstrap, // inject name bootstrap
-   //slick: libsPath.slick, // inject name slick
+   slick: libsPath.slick, // inject name slick
    //select:libsPath.select,
    //fancybox:libsPath.fancybox,
    //cropper:libsPath.cropper,

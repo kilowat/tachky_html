@@ -1,0 +1,191 @@
+.product-lenta .product-cell:hover {
+  box-shadow: 0 0 7px 0 rgba(5, 5, 0, 0.3);
+}
+.product-lenta {
+  margin-bottom: 40px;
+  .slick-list {
+    margin: -1px;
+    padding: 2px;
+  }
+  .slick-arrow {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    top: 50%;
+    cursor: pointer;
+    &.slick-prev {
+      left: -15px;
+      @include sprite($ic_left-arrow);
+    }
+    &.slick-next {
+      right: -18px;
+      @include sprite($ic_right-arrow);
+    }
+  }
+  .product-cell {
+    position: relative;
+    &.gift {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_gift);
+      }
+    }
+    &.hit {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_hit);
+      }
+    }
+    &.discount {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_discount);
+      }
+    }
+    &.new {
+      &:before {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+        @include sprite($ic_new);
+      }
+    }
+  }
+  .price {
+    font-size: 1.2em;
+    font-weight: 100;
+    .rouble::before {
+      content: "–";
+      display: block;
+      left: -0.1em;
+      position: absolute;
+      top: 0.2em;
+    }
+  }
+  .image img {
+    height: 100%;
+    display: inline-block;
+  }
+  .name {
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 100;
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+  }
+  .bonus {
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #737373;
+  }
+  .status {
+    .ic_allow ~ span {
+      position: relative;
+      left: 3px;
+    }
+  }
+  @include container;
+  .product-cell {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #b9b9be;
+    position: relative;
+    box-sizing: border-box;
+    height: 325px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    width: 20%;
+    float: left;
+    .image {
+      margin-bottom: 15px;
+      padding-top: 5px;
+      text-align: center;
+      height: 110px;
+    }
+    .name {
+      display: inline-block;
+      height: 71px;
+      overflow: hidden;
+      font-size: 0.93em;
+      font-weight: 100;
+      line-height: 1.1em;
+      margin-bottom: 5px;
+    }
+    .rating-and-bonus {
+      float: left;
+      position: relative;
+      top: -7px;
+    }
+    .add-to-block {
+      float: right;
+      .add-to-bookmark {
+        padding-right: 10px;
+      }
+    }
+    .price {
+      clear: both;
+      padding-top: 5px;
+      padding-bottom: 4px;
+      position: relative;
+      top: 7px;
+      .current-price {
+        padding-right: 5px;
+      }
+      .old-price {
+        display: none;
+      }
+    }
+    .status>* {
+      vertical-align: middle;
+    }
+    .status {
+      padding-top: 5px;
+      >span {
+        height: 20px;
+        left: 41px;
+        margin-top: 2px;
+        overflow: hidden;
+        position: absolute;
+        width: 100px;
+      }
+    }
+    .add-to-cart {
+      float: right;
+      position: relative;
+      top: -21px;
+    }
+    .bonus {
+      .rouble::before {
+        content: "–";
+        display: block;
+        left: -0.1em;
+        position: absolute;
+        top: 0.09em;
+      }
+    }
+  }
+}

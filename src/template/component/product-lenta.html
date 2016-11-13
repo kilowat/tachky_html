@@ -1,0 +1,41 @@
+<div class="product-lenta promo">
+  <!--foreach $arResult-->
+  {% for item in catalogItems%}
+  <div class="product-cell {{item.promo}}">
+    <div class="image">
+      <a href="{{item.link}}" title=""><img src="{{item.img}}" alt=""></a>
+    </div>
+    <div class="name">
+      <a href="{{item.link}}" title="{{item.name}}">{{item.name}}</a>
+    </div>
+    <div class="cell rating-and-bonus">
+      <div class="rating">
+        <i class="ic_star-{{item.rating}}"></i>
+      </div>
+      <div class="bonus">
+        Бонус:{{item.bonus}} <span class="rouble">Р</span>
+      </div>
+    </div>
+    <div class="cell add-to-block">
+      <div class="add-to-bookmark table-cell">
+        <i class="ic_bookmark-mini"></i>
+      </div>
+      <div class="add-to-compare table-cell">
+        <i class="ic_compared-mini"></i>
+      </div>
+    </div>
+    <div class="price">
+      <span class="old-price">1 800 <span class="rouble">Р</span></span>
+      <span class="current-price">{{item.price}}</span><span class="rouble">Р</span>
+    </div>
+    <div class="add-to-cart">
+      <a href="" title="В корзину" class="tocart-btn"><i class="ic_cart_item"></i></a>
+    </div>
+    <div class="status">
+      <i class="ic_{{item.status}}"></i>
+      <span>{{item.statusText}}</span>
+    </div>
+  </div>
+  {% endfor %}
+  <!--endforeach-->
+</div>
