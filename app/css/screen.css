@@ -260,6 +260,10 @@ h3 {
   font-size: 1.3em;
 }
 
+b {
+  font-weight: 600;
+}
+
 .ic_bag {
   background-image: url(../images/sprite.png);
   background-position: -271px -13px;
@@ -2268,6 +2272,80 @@ footer .date-created, footer .created-by {
   margin-top: 20px;
 }
 
+#tabs-3 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.reviews {
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.reviews h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.reviews .reviews-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .reviews-wrapper:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.reviews .reviews-wrapper .reviews-list {
+  float: left;
+  width: 69%;
+}
+
+.reviews .reviews-wrapper .reviews-list .item:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .image {
+  width: 75px;
+  float: left;
+  text-align: center;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .image img {
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .content {
+  float: right;
+  width: 87%;
+  padding-left: 2%;
+  padding-bottom: 20px;
+  padding-right: 1%;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .content .top-line .cell {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+}
+
+.reviews .reviews-statistic {
+  float: left;
+  width: 30%;
+  position: relative;
+  border-left: 1px solid #b9b9be;
+  text-align: center;
+}
+
 .product-tabs {
   margin-bottom: 20px;
   margin-top: 100px;
@@ -2305,6 +2383,8 @@ footer .date-created, footer .created-by {
   background-color: #fafafa;
   -webkit-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-tabs .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab a {

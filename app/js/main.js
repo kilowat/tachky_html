@@ -37,13 +37,17 @@ $(document).ready(function () {
   $("#product-tabs").tabs({
     classes: {
       "ui-tabs": "product-tabs"
-    }
+    },
+    activate: function (event, ui) {
+      localStorage.selectedTab = ui.newTab.index() + 1;
+    },
+    active: localStorage.selectedTab ? localStorage.selectedTab - 1 : 0
   });
-  
+
   //dorp down btn
-  $('.drop-down-btn').click(function(){
+  $('.drop-down-btn').click(function () {
     var self = $(this);
-    $(self.next()).slideToggle('fast', function(){
+    $(self.next()).slideToggle('fast', function () {
       self.toggleClass('selected');
     });
   });

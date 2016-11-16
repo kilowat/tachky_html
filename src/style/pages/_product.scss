@@ -278,13 +278,13 @@
       }
     }
   }
-  #filters-store{
+  #filters-store {
     margin-bottom: 10px;
-    ul{
-      li{
+    ul {
+      li {
         display: inline-block;
         margin-right: 2px;
-        label{
+        label {
           margin-right: 10px;
           font-weight: 200;
           font-size: 0.9em;
@@ -293,32 +293,92 @@
     }
   }
 }
-.comp-wrapp{
+
+.comp-wrapp {
   margin-bottom: 20px;
   @include clearfix;
-  .see-history{
+  .see-history {
     float: right;
     display: inline-block;
     font-weight: 300;
     text-decoration: underline;
     font-size: 1.1em;
-  } 
-  .header-comp{
+  }
+  .header-comp {
     margin: 0;
     float: left;
     display: inline-block;
   }
 }
-.section-text{
+
+.section-text {
   font-size: 0.9em;
   font-weight: 200;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+#tabs-3 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.reviews {
+  margin-top: -3px;
+  margin-bottom: -3px;
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .reviews-wrapper {
+    display: flex;
+    @include clearfix;
+    .reviews-list {
+      float: left;
+      width: 69%;
+      .item {
+        @include clearfix;
+        .image {
+          width: 75px;
+          float: left;
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 100%;
+          }
+        }
+        .content {
+          float: right;
+          width: 87%;
+          padding-left: 2%;
+          padding-bottom: 20px;
+          padding-right: 1%;
+          .top-line {
+            .cell {
+              display: inline-block;
+              vertical-align: top;
+              margin-right: 25px;
+            }
+          }
+          .text {}
+        }
+      }
+    }
+  }
+  .reviews-statistic {
+    float: left;
+    width: 30%;
+    position: relative;
+    border-left: 1px solid #b9b9be;
+    text-align: center;
+  }
+}
+
 .product-tabs {
   margin-bottom: 20px;
-  .prop-detail-section{
-   width: 350px; 
+  .prop-detail-section {
+    width: 350px;
   }
   margin-top: 100px;
   .ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
@@ -343,6 +403,8 @@
   .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
     background-color: #fafafa;
     border-radius: 5px 5px 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     a {
       border-radius: 5px 5px 0px 0px;
       color: #259fd9;
