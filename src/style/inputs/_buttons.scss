@@ -9,6 +9,17 @@
       background-color: scale_color(#6a6a6a, 40);
     }
   }
+  &.grey-white {
+    cursor: pointer;
+    border: 1px solid #6b6b6b;
+    background-color: #fff;
+    color: #747474;
+    &:hover {
+      background-color: #fff;
+      border: 1px solid $color-link-hover;
+      color: $color-link-hover;
+    }
+  }
   &.grey-light {
     border: 1px solid #6b6b6b;
     color: #6b6b6b;
@@ -62,21 +73,21 @@
       position: absolute;
       right: 17px;
       top: 42%;
-       @include sprite($arrow-down2);
+      @include sprite($arrow-down2);
     }
     &:hover {
       background-color: #fff;
       border-color: $color-link-hover;
       color: #6a6a6a;
-      i{
-       @include sprite($ic_arrow-down2-hover);
+      i {
+        @include sprite($ic_arrow-down2-hover);
       }
-    }    
+    }
     &.selected {
       background-color: #fff;
       border-color: $color-link-hover;
       color: #6a6a6a;
-      i{
+      i {
         @include sprite($ic_arrow_up2-hover);
       }
     }

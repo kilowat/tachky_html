@@ -338,10 +338,18 @@
       width: 69%;
       .item {
         @include clearfix;
+        margin-bottom: 30px;
         .image {
           width: 75px;
           float: left;
           text-align: center;
+          a{
+            text-decoration: none;
+            color: #259fd9;
+            display: inline-block;
+            border-bottom: 1px dashed;
+            line-height: 1em;
+          }
           img {
             width: 100%;
             height: auto;
@@ -355,13 +363,18 @@
           padding-bottom: 20px;
           padding-right: 1%;
           .top-line {
+            margin-bottom: 5px;
             .cell {
               display: inline-block;
               vertical-align: top;
               margin-right: 25px;
             }
           }
-          .text {}
+          .text {
+            .row{
+              padding-bottom: 5px;
+            }
+          }
         }
       }
     }
@@ -372,6 +385,27 @@
     position: relative;
     border-left: 1px solid #b9b9be;
     text-align: center;
+    padding-left: 30px;
+    .total{
+      display: inline-block;
+      font-size: 2em;
+      margin-top: 65px;
+      margin-bottom: 10px;
+    }
+    .stars-icon{
+      padding-bottom: 5px;
+    }
+    .btn-row{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .reviews-chart{
+      width: 100%;
+      .table-cell{
+        text-align: center;
+        width: 30%;
+      }
+    }
   }
 }
 

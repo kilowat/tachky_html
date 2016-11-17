@@ -73,7 +73,12 @@
     @include sprite($ic_close-hover);
   }
 }
-
+.ic_like-down{
+  @include sprite($ic_like-down);
+}
+.ic_like-up{
+  @include sprite($ic_like-up);
+}
 .tocart-btn {
   border: 1px solid #6a6a6a;
   border-radius: 6px;

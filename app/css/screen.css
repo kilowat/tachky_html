@@ -143,7 +143,8 @@ i {
   padding-right: 10px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -154,7 +155,8 @@ main {
   margin: 0 auto -268px;
 }
 
-footer, .push {
+footer,
+.push {
   height: 268px;
 }
 
@@ -238,6 +240,20 @@ main > .wrapper {
   margin-bottom: 1em;
 }
 
+.like .like-count {
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+}
+
+.like-up .like-count {
+  color: #88ce88;
+}
+
+.like-down .like-count {
+  color: #de2d2a;
+}
+
 body {
   font-family: "Rubik";
 }
@@ -266,21 +282,21 @@ b {
 
 .ic_bag {
   background-image: url(../images/sprite.png);
-  background-position: -271px -13px;
+  background-position: -271px -30px;
   width: 14px;
   height: 14px;
 }
 
 .ic_jurnal {
   background-image: url(../images/sprite.png);
-  background-position: -271px -61px;
+  background-position: -271px -78px;
   width: 13px;
   height: 13px;
 }
 
 .ic_people {
   background-image: url(../images/sprite.png);
-  background-position: -271px 0px;
+  background-position: 0px -268px;
   width: 17px;
   height: 13px;
 }
@@ -294,7 +310,7 @@ b {
 
 .ic_menu {
   background-image: url(../images/sprite.png);
-  background-position: -271px -88px;
+  background-position: -229px -86px;
   width: 16px;
   height: 10px;
 }
@@ -308,14 +324,14 @@ b {
 
 .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -38px -223px;
+  background-position: -19px -223px;
   width: 19px;
   height: 26px;
 }
 
 .ic_bookmark:hover {
   background-image: url(../images/sprite.png);
-  background-position: -19px -223px;
+  background-position: -38px -223px;
   width: 19px;
   height: 26px;
 }
@@ -350,14 +366,14 @@ b {
 
 .ic_compared-mini {
   background-image: url(../images/sprite.png);
-  background-position: -255px -72px;
+  background-position: -255px -52px;
   width: 16px;
   height: 20px;
 }
 
 .ic_compared-mini:hover {
   background-image: url(../images/sprite.png);
-  background-position: -255px -52px;
+  background-position: -255px -72px;
   width: 16px;
   height: 20px;
 }
@@ -378,14 +394,14 @@ b {
 
 .ic_cart-order-arrow-btn {
   background-image: url(../images/sprite.png);
-  background-position: -109px -187px;
+  background-position: -82px -187px;
   width: 27px;
   height: 26px;
 }
 
 .ic_cart-order-arrow-btn-active {
   background-image: url(../images/sprite.png);
-  background-position: -82px -187px;
+  background-position: -109px -187px;
   width: 27px;
   height: 26px;
 }
@@ -399,16 +415,30 @@ b {
 
 .ic_close {
   background-image: url(../images/sprite.png);
-  background-position: -271px -142px;
+  background-position: -271px -131px;
   width: 9px;
   height: 9px;
 }
 
 .ic_close:hover {
   background-image: url(../images/sprite.png);
-  background-position: -271px -133px;
+  background-position: -271px -149px;
   width: 9px;
   height: 9px;
+}
+
+.ic_like-down {
+  background-image: url(../images/sprite.png);
+  background-position: -271px -15px;
+  width: 15px;
+  height: 15px;
+}
+
+.ic_like-up {
+  background-image: url(../images/sprite.png);
+  background-position: -219px -223px;
+  width: 15px;
+  height: 15px;
 }
 
 .tocart-btn {
@@ -425,14 +455,14 @@ b {
 
 .tocart-btn:hover .ic_cart_item {
   background-image: url(../images/sprite.png);
-  background-position: -154px -223px;
+  background-position: -179px -223px;
   width: 25px;
   height: 15px;
 }
 
 .ic_fast-buy {
   background-image: url(../images/sprite.png);
-  background-position: -183px -187px;
+  background-position: -162px -187px;
   width: 21px;
   height: 25px;
 }
@@ -443,28 +473,28 @@ b {
 
 .ic_fast-buy:hover .ic_fast-buy {
   background-image: url(../images/sprite.png);
-  background-position: -162px -187px;
+  background-position: -183px -187px;
   width: 21px;
   height: 25px;
 }
 
 .ic_cart_item {
   background-image: url(../images/sprite.png);
-  background-position: -179px -223px;
+  background-position: -154px -223px;
   width: 25px;
   height: 15px;
 }
 
 .ic_cart_item:hover {
   background-image: url(../images/sprite.png);
-  background-position: -154px -223px;
+  background-position: -179px -223px;
   width: 25px;
   height: 15px;
 }
 
 .ic_allow {
   background-image: url(../images/sprite.png);
-  background-position: -234px -223px;
+  background-position: -227px -250px;
   width: 15px;
   height: 15px;
 }
@@ -477,7 +507,7 @@ b {
 
 .ic_not-allow {
   background-image: url(../images/sprite.png);
-  background-position: -227px -250px;
+  background-position: -271px 0px;
   width: 15px;
   height: 15px;
 }
@@ -490,7 +520,7 @@ b {
 
 .ic_wait {
   background-image: url(../images/sprite.png);
-  background-position: -204px -223px;
+  background-position: -234px -223px;
   width: 15px;
   height: 15px;
 }
@@ -503,35 +533,35 @@ b {
 
 .ic_arrow-down {
   background-image: url(../images/sprite.png);
-  background-position: -271px -98px;
+  background-position: -271px -118px;
   width: 11px;
   height: 13px;
 }
 
 .ic_arrow-down-hover {
   background-image: url(../images/sprite.png);
-  background-position: -271px -111px;
+  background-position: -271px -105px;
   width: 11px;
   height: 13px;
 }
 
 .ic_arrow {
   background-image: url(../images/sprite.png);
-  background-position: -281px -27px;
+  background-position: -281px -44px;
   width: 4px;
   height: 7px;
 }
 
 .ic_arrow:hover {
   background-image: url(../images/sprite.png);
-  background-position: -281px -34px;
+  background-position: -281px -51px;
   width: 4px;
   height: 7px;
 }
 
 .ic_engine {
   background-image: url(../images/sprite.png);
-  background-position: -94px -223px;
+  background-position: -114px -223px;
   width: 20px;
   height: 20px;
 }
@@ -559,7 +589,7 @@ b {
 
 .ic_wheels {
   background-image: url(../images/sprite.png);
-  background-position: -114px -223px;
+  background-position: -94px -223px;
   width: 20px;
   height: 20px;
 }
@@ -601,7 +631,7 @@ b {
 
 .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -255px -132px;
+  background-position: -255px -214px;
   width: 16px;
   height: 18px;
 }
@@ -615,7 +645,7 @@ b {
 
 .ic_zip-hover {
   background-image: url(../images/sprite.png);
-  background-position: -255px -182px;
+  background-position: -255px -132px;
   width: 16px;
   height: 18px;
 }
@@ -643,7 +673,7 @@ b {
 
 .ic_facebook:hover {
   background-image: url(../images/sprite.png);
-  background-position: -271px -27px;
+  background-position: -271px -61px;
   width: 10px;
   height: 17px;
 }
@@ -678,35 +708,35 @@ b {
 
 .ic_question {
   background-image: url(../images/sprite.png);
-  background-position: -212px -250px;
+  background-position: -204px -223px;
   width: 15px;
   height: 15px;
 }
 
 .ic_no {
   background-image: url(../images/sprite.png);
-  background-position: -242px -250px;
+  background-position: -212px -250px;
   width: 15px;
   height: 15px;
 }
 
 .ic_yes {
   background-image: url(../images/sprite.png);
-  background-position: -219px -223px;
+  background-position: -242px -250px;
   width: 15px;
   height: 15px;
 }
 
 .ic_left-arrow {
   background-image: url(../images/sprite.png);
-  background-position: -255px -150px;
+  background-position: -255px -182px;
   width: 9px;
   height: 32px;
 }
 
 .ic_right-arrow {
   background-image: url(../images/sprite.png);
-  background-position: -255px -200px;
+  background-position: -255px -150px;
   width: 9px;
   height: 32px;
 }
@@ -720,112 +750,112 @@ b {
 
 .ic_address {
   background-image: url(../images/sprite.png);
-  background-position: -271px -74px;
+  background-position: -271px -91px;
   width: 12px;
   height: 14px;
 }
 
 .ic_arrow-up2 {
   background-image: url(../images/sprite.png);
-  background-position: -280px -124px;
+  background-position: -271px -158px;
   width: 8px;
   height: 5px;
 }
 
 .arrow-down2 {
   background-image: url(../images/sprite.png);
-  background-position: -271px -151px;
+  background-position: -271px -173px;
   width: 8px;
   height: 5px;
 }
 
 .ic_arrow_up2-hover {
   background-image: url(../images/sprite.png);
-  background-position: -280px -133px;
+  background-position: -271px -163px;
   width: 8px;
   height: 5px;
 }
 
 .ic_arrow-down2-hover {
   background-image: url(../images/sprite.png);
-  background-position: -280px -142px;
+  background-position: -271px -168px;
   width: 8px;
   height: 5px;
 }
 
 .ic_star-0 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -86px;
+  background-position: -85px -161px;
   width: 58px;
   height: 10px;
 }
 
 .ic_star-1 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -101px;
+  background-position: -171px -131px;
   width: 58px;
   height: 10px;
 }
 
 .ic_star-2 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -146px;
+  background-position: -171px -116px;
   width: 58px;
   height: 10px;
 }
 
 .ic_star-3 {
   background-image: url(../images/sprite.png);
-  background-position: -85px -161px;
+  background-position: -171px -146px;
   width: 58px;
   height: 10px;
 }
 
 .ic_star-4 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -131px;
+  background-position: -171px -86px;
   width: 58px;
   height: 10px;
 }
 
 .ic_star-5 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -116px;
+  background-position: -171px -101px;
   width: 58px;
   height: 10px;
 }
 
 .ic_big-stars-0 {
   background-image: url(../images/sprite.png);
-  background-position: -85px -146px;
+  background-position: 0px -172px;
   width: 86px;
   height: 15px;
 }
 
 .ic_big-stars-1 {
   background-image: url(../images/sprite.png);
-  background-position: -85px -116px;
+  background-position: -85px -146px;
   width: 86px;
   height: 15px;
 }
 
 .ic_big-stars-2 {
   background-image: url(../images/sprite.png);
-  background-position: -85px -101px;
+  background-position: -85px -131px;
   width: 86px;
   height: 15px;
 }
 
 .ic_big-stars-3 {
   background-image: url(../images/sprite.png);
-  background-position: -85px -131px;
+  background-position: -85px -86px;
   width: 86px;
   height: 15px;
 }
 
 .ic_big-stars-4 {
   background-image: url(../images/sprite.png);
-  background-position: 0px -172px;
+  background-position: -85px -116px;
   width: 86px;
   height: 15px;
 }
@@ -1114,7 +1144,7 @@ footer .date-created, footer .created-by {
 
 .price-list-wrapper a:hover .ic_zip {
   background-image: url(../images/sprite.png);
-  background-position: -255px -182px;
+  background-position: -255px -132px;
   width: 16px;
   height: 18px;
 }
@@ -1355,14 +1385,14 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: -144px -250px;
+  background-position: -178px -250px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-talbe .iradio_flat.checked {
   background-image: url(../images/sprite.png);
-  background-position: -161px -250px;
+  background-position: -110px -250px;
   width: 17px;
   height: 17px;
 }
@@ -1381,7 +1411,7 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: -110px -250px;
+  background-position: -195px -250px;
   width: 17px;
   height: 17px;
 }
@@ -1407,14 +1437,14 @@ footer .date-created, footer .created-by {
   position: relative;
   vertical-align: top;
   background-image: url(../images/sprite.png);
-  background-position: -178px -250px;
+  background-position: -144px -250px;
   width: 17px;
   height: 17px;
 }
 
 .product-panel .radio-view-mini-list .iradio_flat.checked {
   background-image: url(../images/sprite.png);
-  background-position: -195px -250px;
+  background-position: -161px -250px;
   width: 17px;
   height: 17px;
 }
@@ -1453,7 +1483,7 @@ footer .date-created, footer .created-by {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -86px;
+  background-position: -170px 0px;
   width: 85px;
   height: 86px;
 }
@@ -1466,7 +1496,7 @@ footer .date-created, footer .created-by {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: -170px 0px;
+  background-position: 0px 0px;
   width: 85px;
   height: 86px;
 }
@@ -1479,7 +1509,7 @@ footer .date-created, footer .created-by {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -86px;
   width: 85px;
   height: 86px;
 }
@@ -1715,7 +1745,7 @@ footer .date-created, footer .created-by {
 
 .product-list.view-list .cell.add-to-block .add-to-compare:hover .ic_compared-mini {
   background-image: url(../images/sprite.png);
-  background-position: -255px -52px;
+  background-position: -255px -72px;
   width: 16px;
   height: 20px;
 }
@@ -2101,7 +2131,7 @@ footer .date-created, footer .created-by {
 
 .product .product-content .price-block .price-info .to-cart-buttons .fast-buy-btn:hover .ic_fast-buy {
   background-image: url(../images/sprite.png);
-  background-position: -162px -187px;
+  background-position: -183px -187px;
   width: 21px;
   height: 25px;
 }
@@ -2305,6 +2335,10 @@ footer .date-created, footer .created-by {
   width: 69%;
 }
 
+.reviews .reviews-wrapper .reviews-list .item {
+  margin-bottom: 30px;
+}
+
 .reviews .reviews-wrapper .reviews-list .item:after {
   display: block;
   content: "";
@@ -2315,6 +2349,14 @@ footer .date-created, footer .created-by {
   width: 75px;
   float: left;
   text-align: center;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .image a {
+  text-decoration: none;
+  color: #259fd9;
+  display: inline-block;
+  border-bottom: 1px dashed;
+  line-height: 1em;
 }
 
 .reviews .reviews-wrapper .reviews-list .item .image img {
@@ -2332,10 +2374,18 @@ footer .date-created, footer .created-by {
   padding-right: 1%;
 }
 
+.reviews .reviews-wrapper .reviews-list .item .content .top-line {
+  margin-bottom: 5px;
+}
+
 .reviews .reviews-wrapper .reviews-list .item .content .top-line .cell {
   display: inline-block;
   vertical-align: top;
   margin-right: 25px;
+}
+
+.reviews .reviews-wrapper .reviews-list .item .content .text .row {
+  padding-bottom: 5px;
 }
 
 .reviews .reviews-statistic {
@@ -2344,6 +2394,32 @@ footer .date-created, footer .created-by {
   position: relative;
   border-left: 1px solid #b9b9be;
   text-align: center;
+  padding-left: 30px;
+}
+
+.reviews .reviews-statistic .total {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+
+.reviews .reviews-statistic .stars-icon {
+  padding-bottom: 5px;
+}
+
+.reviews .reviews-statistic .btn-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reviews .reviews-statistic .reviews-chart {
+  width: 100%;
+}
+
+.reviews .reviews-statistic .reviews-chart .table-cell {
+  text-align: center;
+  width: 30%;
 }
 
 .product-tabs {
@@ -2655,7 +2731,7 @@ footer .date-created, footer .created-by {
 
 .catalog-menu .catalog-menu-item-wrapper .root-items > li > a:hover .ic_arrow {
   background-image: url(../images/sprite.png);
-  background-position: -281px -34px;
+  background-position: -281px -51px;
   width: 4px;
   height: 7px;
 }
@@ -2802,14 +2878,14 @@ footer .date-created, footer .created-by {
 
 .bookmark-wrapper:hover .ic_bookmark, .bookmark-wrapper .bookmark.selected .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -19px -223px;
+  background-position: -38px -223px;
   width: 19px;
   height: 26px;
 }
 
 .bookmark-wrapper.disabled:hover .ic_bookmark {
   background-image: url(../images/sprite.png);
-  background-position: -38px -223px;
+  background-position: -19px -223px;
   width: 19px;
   height: 26px;
 }
@@ -2945,7 +3021,7 @@ footer .date-created, footer .created-by {
 
 .cart-wrapper .do-order:hover .ic_arrow-down {
   background-image: url(../images/sprite.png);
-  background-position: -271px -111px;
+  background-position: -271px -105px;
   width: 11px;
   height: 13px;
 }
@@ -3642,6 +3718,22 @@ footer .date-created, footer .created-by {
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
+.slider-load-process:before {
+  display: block;
+  content: 'Загрузка';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.slider-load-process {
+  position: relative;
+}
+
+.slider-load-process .bx-wrapper {
+  opacity: 0;
+}
+
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
@@ -3905,7 +3997,7 @@ ul.bxslider {
 .product-lenta .slick-arrow.slick-prev {
   left: -15px;
   background-image: url(../images/sprite.png);
-  background-position: -255px -150px;
+  background-position: -255px -182px;
   width: 9px;
   height: 32px;
 }
@@ -3913,7 +4005,7 @@ ul.bxslider {
 .product-lenta .slick-arrow.slick-next {
   right: -18px;
   background-image: url(../images/sprite.png);
-  background-position: -255px -200px;
+  background-position: -255px -150px;
   width: 9px;
   height: 32px;
 }
@@ -3943,7 +4035,7 @@ ul.bxslider {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px -86px;
+  background-position: -170px 0px;
   width: 85px;
   height: 86px;
 }
@@ -3956,7 +4048,7 @@ ul.bxslider {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: -170px 0px;
+  background-position: 0px 0px;
   width: 85px;
   height: 86px;
 }
@@ -3969,7 +4061,7 @@ ul.bxslider {
   right: -5px;
   top: -5px;
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -86px;
   width: 85px;
   height: 86px;
 }
@@ -4129,6 +4221,19 @@ ul.bxslider {
   background-color: #a66a6a;
 }
 
+.btn-round.grey-white {
+  cursor: pointer;
+  border: 1px solid #6b6b6b;
+  background-color: #fff;
+  color: #747474;
+}
+
+.btn-round.grey-white:hover {
+  background-color: #fff;
+  border: 1px solid #bf312e;
+  color: #bf312e;
+}
+
 .btn-round.grey-light {
   border: 1px solid #6b6b6b;
   color: #6b6b6b;
@@ -4192,7 +4297,7 @@ ul.bxslider {
   right: 17px;
   top: 42%;
   background-image: url(../images/sprite.png);
-  background-position: -271px -151px;
+  background-position: -271px -173px;
   width: 8px;
   height: 5px;
 }
@@ -4205,7 +4310,7 @@ ul.bxslider {
 
 .grey-button-default.drop-down-btn:hover i {
   background-image: url(../images/sprite.png);
-  background-position: -280px -142px;
+  background-position: -271px -168px;
   width: 8px;
   height: 5px;
 }
@@ -4218,7 +4323,7 @@ ul.bxslider {
 
 .grey-button-default.drop-down-btn.selected i {
   background-image: url(../images/sprite.png);
-  background-position: -280px -133px;
+  background-position: -271px -163px;
   width: 8px;
   height: 5px;
 }
@@ -4637,7 +4742,7 @@ ul.bxslider {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   background-image: url(../images/sprite.png);
-  background-position: -280px -124px;
+  background-position: -271px -158px;
   width: 8px;
   height: 5px;
 }

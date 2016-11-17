@@ -16,7 +16,10 @@ $(document).ready(function () {
 
   $('.bxslider').bxSlider({
     pagerCustom: '#bx-pager',
-    controls: false
+    controls: false,
+    onSliderLoad:function(){
+      $('.slider-load-process').removeClass();
+    }
   });
 
   //product detail drop down dop props

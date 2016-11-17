@@ -2,6 +2,19 @@
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
+.slider-load-process:before{
+  display: block;
+  content: 'Загрузка';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.slider-load-process{
+  position: relative;
+  .bx-wrapper{
+    opacity: 0;
+  }
+}
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
