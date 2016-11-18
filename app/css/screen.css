@@ -2389,6 +2389,7 @@ footer .date-created, footer .created-by {
 }
 
 .reviews .reviews-statistic {
+  padding-bottom: 20px;
   float: left;
   width: 30%;
   position: relative;
@@ -2420,6 +2421,20 @@ footer .date-created, footer .created-by {
 .reviews .reviews-statistic .reviews-chart .table-cell {
   text-align: center;
   width: 30%;
+  vertical-align: top;
+}
+
+.reviews-bar {
+  display: block;
+  background-color: #de2d2a;
+  height: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.reviews-bar .r-int {
+  position: absolute;
+  right: -30px;
 }
 
 .product-tabs {
@@ -3718,22 +3733,6 @@ footer .date-created, footer .created-by {
 ===================================*/
 /** RESET AND LAYOUT
 ===================================*/
-.slider-load-process:before {
-  display: block;
-  content: 'Загрузка';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-.slider-load-process {
-  position: relative;
-}
-
-.slider-load-process .bx-wrapper {
-  opacity: 0;
-}
-
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;

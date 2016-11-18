@@ -17,9 +17,7 @@ $(document).ready(function () {
   $('.bxslider').bxSlider({
     pagerCustom: '#bx-pager',
     controls: false,
-    onSliderLoad:function(){
-      $('.slider-load-process').removeClass();
-    }
+
   });
 
   //product detail drop down dop props
@@ -54,4 +52,5 @@ $(document).ready(function () {
       self.toggleClass('selected');
     });
   });
+  
 });
