@@ -343,12 +343,15 @@
           width: 75px;
           float: left;
           text-align: center;
-          a{
+          a {
             text-decoration: none;
             color: #259fd9;
             display: inline-block;
             border-bottom: 1px dashed;
             line-height: 1em;
+            &:hover {
+              color: $color-link-hover;
+            }
           }
           img {
             width: 100%;
@@ -358,7 +361,7 @@
         }
         .content {
           float: right;
-          width: 87%;
+          width: 85%;
           padding-left: 2%;
           padding-bottom: 20px;
           padding-right: 1%;
@@ -371,7 +374,7 @@
             }
           }
           .text {
-            .row{
+            .row {
               padding-bottom: 5px;
             }
           }
@@ -387,42 +390,76 @@
     border-left: 1px solid #b9b9be;
     text-align: center;
     padding-left: 30px;
-    .total{
+    .total {
       display: inline-block;
-      font-size: 2em;
+      font-size: 2.2em;
       margin-top: 65px;
       margin-bottom: 10px;
     }
-    .stars-icon{
+    .reveiws-amound {
+      padding-left: 5px;
+    }
+    .stars-icon {
       padding-bottom: 5px;
     }
-    .btn-row{
+    .btn-row {
       padding-top: 30px;
       padding-bottom: 30px;
     }
-    .reviews-chart{
+    .reviews-chart {
       width: 100%;
-      .table-cell{
+      .table-cell {
+        padding-bottom: 7px;
         text-align: center;
         width: 30%;
-        vertical-align: top;
+        vertical-align: middle;
+        i {
+          position: relative;
+          top: -2px;
+        }
+        &:nth-child(2) {
+          width: 60%;
+        }
+        &:nth-chld(3) {
+          width: 10%;
+        }
+      }
+      .r-wrapper {
+        position: relative;
+        background-color: #e7e9ea;
+        display: block;
+        .reviews-bar {
+          display: block;
+          background-color: #de2d2a;
+          height: 12px;
+          .r-int {
+            position: absolute;
+            right: -25px;
+            top: -4px;
+            color: #747474;
+            font-weight: 300;
+          }
+        }
       }
     }
   }
 }
-.reviews-bar{
-  display: block;
-  background-color: #de2d2a;
-  height: 20px;
-  margin-bottom: 5px;
-  position: relative;
-  .r-int{
-    position: absolute;
-    right: -30px;
-  }
-}
+
 .product-tabs {
   margin-bottom: 20px;
+  .instructions {
+    margin-top: 10px;
+    li {
+      margin-bottom: 5px;
+      a {
+        color: #259fd9;
+        text-decoration: none;
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
+  }
   .prop-detail-section {
     width: 350px;
   }
@@ -436,6 +473,7 @@
   &.ui-widget.ui-widget-content {
     background-color: #fff;
     border: 1px solid #bababe!important;
+    border-radius: 0 6px 6px;
   }
   .ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
     background: #fff none repeat scroll 0 0;
