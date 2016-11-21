@@ -2,7 +2,7 @@
 	"conf": {
 		"host": "template.aliens.pro",
 		"user": "aliens_kadancev",
-		"password": "408221987ser",
+		"password": "",
 		"parallel": "10"
 	},
 	"files": [
