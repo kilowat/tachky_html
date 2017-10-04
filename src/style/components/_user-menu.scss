@@ -1,7 +1,7 @@
 .user-menu-block{
   &:hover{
     .user-links{
-      display: block;
+      //display: block;
     }
     .user-menu-line>a:after {
       display: block;
@@ -16,6 +16,10 @@
       top: 8px;
       transform: rotate(-90deg);
     }
+  }
+  .user-menu{
+    position: relative;
+    top: 12px;
   }
   .user-avatar{
     display: inline-block;
@@ -33,7 +37,6 @@
     z-index: 2;
   }
   .user-menu-line{
-    height: 40px;
     position: relative;
   }
   .user-menu-line>a{
@@ -68,6 +71,9 @@
   }
   a{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
   }
+}
+.ic_search {
+    margin-right: 5px;
 }

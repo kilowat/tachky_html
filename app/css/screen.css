@@ -1006,6 +1006,7 @@ footer .social-wrapper, footer > .wrapper .social-wrapper {
 
 footer {
   padding-top: 20px;
+  margin-bottom: 82px;
   color: #c9c9c9;
 }
 
@@ -1281,6 +1282,84 @@ footer .date-created, footer .created-by {
 
 .section-text {
   font-weight: 100;
+}
+
+.fly-block {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+}
+
+.fly-block .fly-block-row {
+  float: right;
+}
+
+.fly-block .block {
+  text-align: center;
+  position: relative;
+  display: table-cell;
+  height: 70px;
+  vertical-align: middle;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #FFFFFF;
+}
+
+.fly-block .block.compared-wrapper:before, .fly-block .block.bookmark-wrapper:before {
+  left: 0px;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 8px;
+  background-color: #3a3a3a;
+}
+
+.fly-block .block.compared-wrapper, .fly-block .block.bookmark-wrapper {
+  position: relative;
+}
+
+.fly-block .block.compared-wrapper:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  top: 8px;
+  right: 0;
+  background-color: #3a3a3a;
+}
+
+.fly-block .block .order-detail.disabled {
+  background-color: #c1c1c3;
+  padding: 7px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.fly-block .counter {
+  background-color: #434343;
+  border: 1px solid;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #a43634;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 16px;
+  margin-left: 10px;
+  position: relative;
+  min-width: 38px;
+  padding: 10px 2px;
+  text-align: center;
+}
+
+.fly-block .counter.disabled {
+  border-color: #b9b9bc;
+  color: #b9b9bc;
 }
 
 .product-panel {
@@ -2650,10 +2729,6 @@ footer .date-created, footer .created-by {
   top: -2px;
 }
 
-.user-menu-block:hover .user-links {
-  display: block;
-}
-
 .user-menu-block:hover .user-menu-line > a:after {
   display: block;
   content: "";
@@ -2668,6 +2743,11 @@ footer .date-created, footer .created-by {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.user-menu-block .user-menu {
+  position: relative;
+  top: 12px;
 }
 
 .user-menu-block .user-avatar {
@@ -2688,7 +2768,6 @@ footer .date-created, footer .created-by {
 }
 
 .user-menu-block .user-menu-line {
-  height: 40px;
   position: relative;
 }
 
@@ -2727,7 +2806,11 @@ footer .date-created, footer .created-by {
 
 .user-menu-block a {
   text-decoration: none;
-  color: #000000;
+  color: #fff;
+}
+
+.ic_search {
+  margin-right: 5px;
 }
 
 .catalog-menu .catalog-menu-btn {

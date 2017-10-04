@@ -212,7 +212,7 @@ var sassOptions = {
 
 var configServer = {
   tunnel: false,
-  host: 'localhost',
+  host: 'tachky.local',
   logPrefix: "Frontend_Devil",
   proxy: 'tachky.local',
   port: 80,
