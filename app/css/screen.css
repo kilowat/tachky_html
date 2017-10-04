@@ -894,7 +894,10 @@ header .user-menu-block {
 
 header .top-panel {
   height: 65px;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #1e1e1e;
+  z-index: 5;
+  width: 100%;
+  background-color: #1e1e1e;
 }
 
 header .top-panel .block {
@@ -1285,11 +1288,12 @@ footer .date-created, footer .created-by {
 }
 
 .fly-block {
-  background-color: #000;
+  background-color: #1e1e1e;
   position: fixed;
   bottom: 0;
   height: 70px;
   width: 100%;
+  z-index: 5;
 }
 
 .fly-block .fly-block-row {

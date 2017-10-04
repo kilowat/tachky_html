@@ -52,5 +52,34 @@ $(document).ready(function () {
       self.toggleClass('selected');
     });
   });
-  
+
+//slick top block
+(function(){
+    var obj = $('.top-panel');
+    var offset = obj.offset();
+    var topOffset = offset.top;
+    var marginTop = obj.css("marginTop");
+
+    $(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+
+      if (scrollTop >= topOffset){
+
+        obj.css({
+          marginTop: 0,
+          position: 'fixed',
+          top: 0,
+        });
+      }
+
+      if (scrollTop < topOffset){
+
+        obj.css({
+          marginTop: 0,
+          position: 'relative',
+        });
+      }
+    });
+  })();
+
 });
