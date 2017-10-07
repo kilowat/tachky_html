@@ -1,3 +1,1 @@
-var app = (function($){
-
-})(jQuery);
+var app = app || {};

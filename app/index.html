@@ -698,9 +698,10 @@
         <div class="table fly-block-row">
           <div class="block bookmark-wrapper">
             <!--start component book-mark-->
-            <div class="bookmark toggle-btn">
+            <div class="bookmark toggle-btn" id="bookmark-added-block">
               <i class="ic_bookmark"></i>
-              <span class="counter">7</span>
+              <span class="fly-block-label">в закладках</span>
+              <span class="counter"><span class="counter-value">0</span></span>
             </div>
             <div class="top-item-wrapper toggle-wrapper">
               <div class="top-item-list table">
@@ -830,13 +831,16 @@
                 <a href="#" title="#" class="btn-round grey">Управление закладками</a>
               </div>
             </div>
+
             <!--end component book-mark-->
           </div>
           <div class="block compared-wrapper">
             <!--start component compared-->
-            <div class="compared toggle-btn">
+            <div class="compared toggle-btn" id="compared-added-block">
               <i class="ic_compared"></i>
-              <span class="counter">467</span>
+              <span class="fly-block-label">в сравнении</span>
+              <!--action-red-->
+              <span class="counter"><span class="counter-value">0</span></span>
             </div>
             <div class="top-item-wrapper toggle-wrapper">
               <div class="top-item-list table">
@@ -966,206 +970,212 @@
                 <a href="#" title="#" class="btn-round grey">Сравнить выбранные</a>
               </div>
             </div>
+
             <!--end component compared-->
           </div>
           <div class="block cart-wrapper">
             <!--start component top-cart-->
-            <div class="top-cart toggle-btn">
+            <div class="top-cart">
               <i class="ic_cart"></i>
-              <span class="counter">10</span>
+              <span class="fly-block-label">В корзине</span>
+              <span class="drop-down-cart-block toggle-btn">
+      <span class="cart-count">999 товаров на</span>
               <span class="cart-summ">9 999 999 <span class="rouble">P</span></span>
+              </span>
+              <div class="top-item-wrapper toggle-wrapper show-box">
+                <div class="top-item-list table">
+
+                  <div class="item table-row">
+                    <div class="table-cell pic">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
+                    </div>
+                    <div class="table-cell name">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
+                    </div>
+                    <div class="table-cell status">
+                      <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
+                    </div>
+                    <div class="table-cell price">
+                      <span>1 200 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell amount">
+                      <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
+                      <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
+                      <span class="amound-down vtip" title="Уменьшить количество">-</span>
+                    </div>
+                    <div class="table-cell row-summ">
+                      <span>= 500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell bookmark ">
+                      <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
+                    </div>
+                    <div class="table-cell compared">
+                      <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
+                    </div>
+                    <div class="table-cell remove-from">
+                      <i class="ic_close vtip" title="Убрать из корзины"></i>
+                    </div>
+                  </div>
+
+                  <div class="item table-row">
+                    <div class="table-cell pic">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
+                    </div>
+                    <div class="table-cell name">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
+                    </div>
+                    <div class="table-cell status">
+                      <i class="ic_not-allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
+                    </div>
+                    <div class="table-cell price">
+                      <span>1 200 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell amount">
+                      <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
+                      <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
+                      <span class="amound-down vtip" title="Уменьшить количество">-</span>
+                    </div>
+                    <div class="table-cell row-summ">
+                      <span>= 500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell bookmark ">
+                      <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
+                    </div>
+                    <div class="table-cell compared">
+                      <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
+                    </div>
+                    <div class="table-cell remove-from">
+                      <i class="ic_close vtip" title="Убрать из корзины"></i>
+                    </div>
+                  </div>
+
+                  <div class="item table-row">
+                    <div class="table-cell pic">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
+                    </div>
+                    <div class="table-cell name">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
+                    </div>
+                    <div class="table-cell status">
+                      <i class="ic_wait vtip" title="В наличии 15 шт. в 5 магазинах"></i>
+                    </div>
+                    <div class="table-cell price">
+                      <span>500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell amount">
+                      <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
+                      <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
+                      <span class="amound-down vtip" title="Уменьшить количество">-</span>
+                    </div>
+                    <div class="table-cell row-summ">
+                      <span>= 500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell bookmark ">
+                      <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
+                    </div>
+                    <div class="table-cell compared">
+                      <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
+                    </div>
+                    <div class="table-cell remove-from">
+                      <i class="ic_close vtip" title="Убрать из корзины"></i>
+                    </div>
+                  </div>
+
+                  <div class="item table-row">
+                    <div class="table-cell pic">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
+                    </div>
+                    <div class="table-cell name">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
+                    </div>
+                    <div class="table-cell status">
+                      <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
+                    </div>
+                    <div class="table-cell price">
+                      <span>1 200 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell amount">
+                      <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
+                      <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
+                      <span class="amound-down vtip" title="Уменьшить количество">-</span>
+                    </div>
+                    <div class="table-cell row-summ">
+                      <span>= 500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell bookmark ">
+                      <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
+                    </div>
+                    <div class="table-cell compared">
+                      <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
+                    </div>
+                    <div class="table-cell remove-from">
+                      <i class="ic_close vtip" title="Убрать из корзины"></i>
+                    </div>
+                  </div>
+
+                  <div class="item table-row">
+                    <div class="table-cell pic">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
+                    </div>
+                    <div class="table-cell name">
+                      <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
+                    </div>
+                    <div class="table-cell status">
+                      <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
+                    </div>
+                    <div class="table-cell price">
+                      <span>1 200 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell amount">
+                      <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
+                      <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
+                      <span class="amound-down vtip" title="Уменьшить количество">-</span>
+                    </div>
+                    <div class="table-cell row-summ">
+                      <span>= 500 000 <span class="rouble">P</span></span>
+                    </div>
+                    <div class="table-cell bookmark ">
+                      <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
+                    </div>
+                    <div class="table-cell compared">
+                      <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
+                    </div>
+                    <div class="table-cell remove-from">
+                      <i class="ic_close vtip" title="Убрать из корзины"></i>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="cart-summ-block">
+                  <div class="table-cell">
+                    <a href="#" title="Детально" class="btn-round grey-light order-detail">Детально</a>
+                  </div>
+                  <div class="table-cell">
+                    <span class="total-text">В корзине 7 товаров на общую сумму 7 200 <span
+                                        class="rouble">P</span></span>
+                  </div>
+                  <div class="table-cell">
+                    <a href="#" title="Оформить" class="btn-round red-light do-order">Оформить <i
+                        class="ic_arrow-down"></i></a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" title="Оформить заказ" class="order-detail-btn vtip">
+                <span class="make-order-txt">оформить</span><i class="ic_cart-make-order"></i>
+              </a>
               <!--
      <span class="counter disabled">0</span>
      <span class="cart-summ">Нет товаров</span>
      -->
             </div>
-            <div class="top-item-wrapper toggle-wrapper">
-              <div class="top-item-list table">
 
-                <div class="item table-row">
-                  <div class="table-cell pic">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
-                  </div>
-                  <div class="table-cell name">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
-                  </div>
-                  <div class="table-cell status">
-                    <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
-                  </div>
-                  <div class="table-cell price">
-                    <span>1 200 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell amount">
-                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
-                    <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
-                    <span class="amound-down vtip" title="Уменьшить количество">-</span>
-                  </div>
-                  <div class="table-cell row-summ">
-                    <span>= 500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell bookmark ">
-                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
-                  </div>
-                  <div class="table-cell compared">
-                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
-                  </div>
-                  <div class="table-cell remove-from">
-                    <i class="ic_close vtip" title="Убрать из корзины"></i>
-                  </div>
-                </div>
-
-                <div class="item table-row">
-                  <div class="table-cell pic">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
-                  </div>
-                  <div class="table-cell name">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
-                  </div>
-                  <div class="table-cell status">
-                    <i class="ic_not-allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
-                  </div>
-                  <div class="table-cell price">
-                    <span>1 200 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell amount">
-                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
-                    <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
-                    <span class="amound-down vtip" title="Уменьшить количество">-</span>
-                  </div>
-                  <div class="table-cell row-summ">
-                    <span>= 500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell bookmark ">
-                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
-                  </div>
-                  <div class="table-cell compared">
-                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
-                  </div>
-                  <div class="table-cell remove-from">
-                    <i class="ic_close vtip" title="Убрать из корзины"></i>
-                  </div>
-                </div>
-
-                <div class="item table-row">
-                  <div class="table-cell pic">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
-                  </div>
-                  <div class="table-cell name">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
-                  </div>
-                  <div class="table-cell status">
-                    <i class="ic_wait vtip" title="В наличии 15 шт. в 5 магазинах"></i>
-                  </div>
-                  <div class="table-cell price">
-                    <span>500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell amount">
-                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
-                    <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
-                    <span class="amound-down vtip" title="Уменьшить количество">-</span>
-                  </div>
-                  <div class="table-cell row-summ">
-                    <span>= 500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell bookmark ">
-                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
-                  </div>
-                  <div class="table-cell compared">
-                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
-                  </div>
-                  <div class="table-cell remove-from">
-                    <i class="ic_close vtip" title="Убрать из корзины"></i>
-                  </div>
-                </div>
-
-                <div class="item table-row">
-                  <div class="table-cell pic">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
-                  </div>
-                  <div class="table-cell name">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
-                  </div>
-                  <div class="table-cell status">
-                    <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
-                  </div>
-                  <div class="table-cell price">
-                    <span>1 200 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell amount">
-                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
-                    <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
-                    <span class="amound-down vtip" title="Уменьшить количество">-</span>
-                  </div>
-                  <div class="table-cell row-summ">
-                    <span>= 500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell bookmark ">
-                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
-                  </div>
-                  <div class="table-cell compared">
-                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
-                  </div>
-                  <div class="table-cell remove-from">
-                    <i class="ic_close vtip" title="Убрать из корзины"></i>
-                  </div>
-                </div>
-
-                <div class="item table-row">
-                  <div class="table-cell pic">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное"><img src="./images/bolt-img.png" alt="#"></a>
-                  </div>
-                  <div class="table-cell name">
-                    <a href="#" title="Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное">Болты секретки Мс Guadr 200 Длинное название болта секретки, очень длинное</a>
-                  </div>
-                  <div class="table-cell status">
-                    <i class="ic_allow vtip" title="В наличии 15 шт. в 5 магазинах"></i>
-                  </div>
-                  <div class="table-cell price">
-                    <span>1 200 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell amount">
-                    <span class="amound-up vtip" title="Уменьшить увеличть">+</span>
-                    <span class="vtip" title="Ввести количество"><input type="number" class="amountset vtip" title="Ввести количество" value="1"></span>
-                    <span class="amound-down vtip" title="Уменьшить количество">-</span>
-                  </div>
-                  <div class="table-cell row-summ">
-                    <span>= 500 000 <span class="rouble">P</span></span>
-                  </div>
-                  <div class="table-cell bookmark ">
-                    <a href="#" title="Перенести в закладки" class="vtip"><i class="ic_bookmark"></i></a>
-                  </div>
-                  <div class="table-cell compared">
-                    <a href="#" title="Перенести в сравнение" class="vtip"><i class="ic_compared"></i></a>
-                  </div>
-                  <div class="table-cell remove-from">
-                    <i class="ic_close vtip" title="Убрать из корзины"></i>
-                  </div>
-                </div>
-
-              </div>
-              <div class="cart-summ-block">
-                <div class="table-cell">
-                  <a href="#" title="Детально" class="btn-round grey-light order-detail">Детально</a>
-                </div>
-                <div class="table-cell">
-                  <span class="total-text">В корзине 7 товаров на общую сумму 7 200 <span
-                                    class="rouble">P</span></span>
-                </div>
-                <div class="table-cell">
-                  <a href="#" title="Оформить" class="btn-round red-light do-order">Оформить <i
-                    class="ic_arrow-down"></i></a>
-                </div>
-              </div>
-            </div>
             <!--end component top-cart-->
-          </div>
-          <div class="order-wrapper block">
-            <a href="#" title="Оформить заказ" class="order-detail vtip"><i class="ic_cart-order-arrow-btn"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <!--jquery:js-->
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--endinject-->
@@ -1198,6 +1208,7 @@
   <!--endinject-->
   <!--dev:js-->
   <script src="./js/app.js"></script>
+  <script src="./js/cart.js"></script>
   <script src="./js/catalog.js"></script>
   <script src="./js/drop_menu.js"></script>
   <script src="./js/filter.js"></script>
@@ -1205,6 +1216,7 @@
   <script src="./js/product-box.js"></script>
   <script src="./js/reviews-bar.js"></script>
   <script src="./js/select-view.js"></script>
+  <script src="./js/untils.js"></script>
   <!--endinject-->
 </body>
 

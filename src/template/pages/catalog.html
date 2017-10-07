@@ -16,8 +16,8 @@
 
       <!--start component left banner-->
       {% include './../component/left-banner.html' %}
-      <!--end component left banner-->  
-     
+      <!--end component left banner-->
+
       <!--include section text-->
       {% include './../component/section-text.html'%}
       <!--end include section text-->
@@ -123,10 +123,10 @@
             </div>
           </div>
           <div class="cell add-to-block">
-            <div class="add-to-bookmark table-cell">
+            <div class="add-to-bookmark table-cell" onclick=cart.addToBookMark(this)>
               <i class="ic_bookmark-mini"></i>
             </div>
-            <div class="add-to-compare table-cell">
+            <div class="add-to-compare table-cell" onclick="cart.addToCompare(this)">
               <i class="ic_compared-mini"></i>
             </div>
           </div>

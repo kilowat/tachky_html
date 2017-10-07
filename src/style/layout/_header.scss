@@ -12,7 +12,7 @@ header {
   }
   .user-menu-block{
     float: right;
-    border-left: 1px solid #cdcdcf;
+    border-left: 1px solid #3e3e3e;
     height: 40px;
     padding-right: 20px;
     padding-left: 25px;
@@ -33,54 +33,6 @@ header {
       height: 70px;
       vertical-align: middle;
       color: #FFFFFF;
-      &.compared-wrapper, &.bookmark-wrapper{
-        &:before{
-          display: block;
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: 80%;
-          top: 8px;
-          background-color: #3a3a3a;
-        }
-      }
-       &.compared-wrapper, &.bookmark-wrapper{
-        position: relative;
-      }
-      &.compared-wrapper:after{
-        display: block;
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 80%;
-        top: 8px;
-        right:0;
-        background-color: #3a3a3a;
-      }
-      .order-detail.disabled{
-        background-color: #c1c1c3;
-        padding: 7px;
-        border-radius: 8px;
-      }
-    }
-    .counter{
-      background-color: #434343;
-      border: 1px solid;
-      border-radius: 10px;
-      color: #a43634;
-      display: inline-block;
-      font-size: 16px;
-      font-weight: 500;
-      height: 16px;
-      margin-left: 10px;
-      position: relative;
-      min-width: 38px;
-      padding: 10px 2px;
-      text-align: center;
-      &.disabled{
-        border-color: #b9b9bc;
-        color: #b9b9bc;
-      }
     }
   }
   .logo{

@@ -1,3 +1,6 @@
+.ic_cart-make-order{
+  @include sprite($ic_cart-make-order);
+}
 .ic_bag {
   @include sprite($ic_bag);
 }
@@ -84,7 +87,7 @@
   border-radius: 6px;
   padding: 2px 8px 2px;
   display: inline-block;
-  &:hover {
+  &:hover, &.selected {
     border-color: $color-link-hover;
     .ic_cart_item {
       @include sprite($ic_cart_item-hover);

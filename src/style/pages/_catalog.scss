@@ -247,6 +247,20 @@
         float: right;
         .add-to-bookmark {
           padding-right: 10px;
+          cursor: pointer;
+          &.selected{
+            .ic_bookmark-mini {
+              @include sprite($ic-bookmark-mini-hover);
+            }
+          }
+        }
+        .add-to-compare {
+          cursor: pointer;
+          &.selected{
+            .ic_compared-mini {
+              @include sprite($ic-compared-mini-hover);
+            }
+          }
         }
       }
       .price {

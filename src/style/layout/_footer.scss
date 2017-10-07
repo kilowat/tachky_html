@@ -1,5 +1,5 @@
 footer, footer>.wrapper{
-  background-color: #1e1e1e;
+  background-color: #434041;
   .bottom-menu-wrapper{
     @include span(7 of 15 1/4);
   }
@@ -15,11 +15,11 @@ footer, footer>.wrapper{
 }
 footer{
   padding-top:20px;
-  margin-bottom: 82px;
+  margin-bottom: 52px;
   color: #c9c9c9;
   .bottom-line{
     height: 35px;
-    background-color: #000000;
+    background-color: #434041;
   }
   a{
     color: #c9c9c9;
@@ -130,7 +130,7 @@ footer{
     }
   }
   .date{
-    color: #404040;
+    color: #9f9f9f;
     display: inline-block;
     padding-top: 6px;
     margin-bottom: 10px;
@@ -141,7 +141,7 @@ footer{
   #subcribe{
     border:1px solid;
     border-radius: 8px;
-    background-color: #1e1e1e;
+    background-color: #434041;;
     color:#c0c0c2;
     height: 35px;
     width: 100%;
@@ -158,10 +158,10 @@ footer{
   .input-email{
     height: 35px;
     width: 100%;
-    border:1px solid #3a3a3a;
+    border:1px solid #c1c1c3;
     border-radius: 8px;
     color:#c0c0c2;
-    background-color: #1e1e1e;
+    background-color: #434041;
     text-align: center;
     font-size: 1.1em;
     font-style: italic;

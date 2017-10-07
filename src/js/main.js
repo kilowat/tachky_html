@@ -59,21 +59,27 @@ $(document).ready(function () {
     var offset = obj.offset();
     var topOffset = offset.top;
     var marginTop = obj.css("marginTop");
+    var height = obj.height();
 
     $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
 
       if (scrollTop >= topOffset){
-
+        $('header').css({
+          marginBottom: height,
+        });
         obj.css({
           marginTop: 0,
           position: 'fixed',
           top: 0,
         });
+
       }
 
       if (scrollTop < topOffset){
-
+        $('header').css({
+          marginBottom: 0,
+        });
         obj.css({
           marginTop: 0,
           position: 'relative',

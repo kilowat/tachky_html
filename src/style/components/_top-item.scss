@@ -1,23 +1,19 @@
 .top-item-wrapper{
-  padding-top:20px;
+  padding-top: 20px;
   display: block;
   border: 1px solid #b8b8bc;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #424242;
-  left: -300px;
-  margin-top: 15px;
+  left: 0px;
+  margin-bottom: 42px;
   position: absolute;
   width: 560px;
-  top: 56px;
+  bottom: 0px;
   z-index: 2;
   background-color: #ffffff;
   a{
     text-decoration: none;
-  }
-  &:hover{
-    .top-item-wrapper{
-      //display: block;
-    }
   }
   .top-item-list.table {
     padding-left: 10px;
@@ -100,8 +96,9 @@
       content: "";
       @include sprite($ic_arrow-up);
       position: absolute;
-      left: 65.5%;
-      top: -12px;
+      left: 17.5%;
+      bottom: -12px;
+      transform: rotate(180deg);
     }
   }
 }
@@ -123,8 +120,9 @@
       content: "";
       @include sprite($ic_arrow-up);
       position: absolute;
-      left: 65%;
-      top: -12px;
+      left: 17.5%;
+      bottom: -12px;
+      transform: rotate(180deg);
     }
   }
 }
@@ -146,4 +144,3 @@
 .bookmark, .compared, .top-cart{
   cursor: pointer;
 }
-
