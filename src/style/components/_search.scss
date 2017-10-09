@@ -1,5 +1,11 @@
 .search{
   position: relative;
+  @include breakpoint(max-width $width-large){
+    position: absolute;
+    right: 0;
+    top: 14px;
+    right: 40px;
+  }
   input[type=text]{
     height: 35px;
     border-radius: 10px;
@@ -11,14 +17,21 @@
     ::-moz-placeholder          {color:#2c2c2c;}/* Firefox 19+ */
     :-moz-placeholder           {color:#2c2c2c;}/* Firefox 18- */
     :-ms-input-placeholder      {color:#2c2c2c;}
+    @include breakpoint(max-width $width-large){
+      display: none;
+    }
   }
   input[type="submit"]{
     border: medium none;
     position: absolute;
-    right: 13px;
+    right: 3%;
     top: 9px;
     background-color: transparent;
     cursor: pointer;
-
+    @include breakpoint(max-width $width-large){
+      right: 0;
+      position: static;
+      top: 0;
+    }
   }
 }

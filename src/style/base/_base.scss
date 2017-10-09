@@ -79,9 +79,16 @@ footer,
   @include span(18.9%);
   @include post(2%);
 }
-
+.sidebar{
+  @include breakpoint(max-width $width-large){
+    display: none;
+  }
+}
 .right {
   @include span(79.1% last);
+  @include breakpoint(max-width $width-large){
+    width: 100%;
+  }
 }
 
 .container {

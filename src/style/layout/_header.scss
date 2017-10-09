@@ -3,9 +3,22 @@ header {
   a{
     color: #000;
   }
+  .logo.block {
+    @include breakpoint(max-width $width-large){
+      width: 160px;
+      text-align: left;
+    }
+  }
+  .table{
+    width: 100%;
+    position: relative;
+  }
   .top-line{
     height: 40px;
     background-color: #ffffff;
+    @include breakpoint(max-width $width-large){
+      display: none;
+    }
   }
   .top-menu-block{
     float: left;
@@ -16,6 +29,11 @@ header {
     height: 40px;
     padding-right: 20px;
     padding-left: 25px;
+    @include breakpoint(max-width $width-large){
+      display: none;
+      padding: 0;
+      border: none;
+    }
   }
   .top-panel{
     height: 65px;
@@ -23,23 +41,34 @@ header {
     z-index: 5;
     width: 100%;
     background-color: #1e1e1e;
+    @include breakpoint(max-width $width-large){
+      height: 48px;
+    }
     .cart-wrapper{
 
     }
     .block {
       text-align: center;
-      position: relative;
       display: table-cell;
       height: 70px;
       vertical-align: middle;
       color: #FFFFFF;
+      @include breakpoint(max-width $width-large){
+        height: 48px;
+      }
     }
   }
   .logo{
     width: 1%;
+    img{
+      width: 120px;
+    }
   }
   .catalog-menu-wrapper{
     width: 14%;
+    @include breakpoint(max-width $width-large){
+    //  width: 200px;
+    }
   }
   .search-wrapper{
     padding-right: 25px;

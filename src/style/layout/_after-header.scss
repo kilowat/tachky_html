@@ -1,6 +1,9 @@
 .after-header-row{
   padding-top: 15px;
   margin-bottom: 15px;
+  @include breakpoint(max-width $width-large){
+    display: none;
+  }
   .contact-text{
     text-align: right;
     .phone-number{
