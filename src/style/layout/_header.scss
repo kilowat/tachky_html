@@ -4,6 +4,7 @@ header {
     color: #000;
   }
   .logo.block {
+    padding-right: 20px;
     @include breakpoint(max-width $width-large){
       width: 160px;
       text-align: left;
@@ -47,27 +48,35 @@ header {
     .cart-wrapper{
 
     }
-    .block {
+    .block{
       text-align: center;
       display: table-cell;
       height: 70px;
       vertical-align: middle;
       color: #FFFFFF;
+      &.catalog-menu-wrapper{
+        text-align: left;
+      }
       @include breakpoint(max-width $width-large){
         height: 48px;
       }
     }
   }
-  .logo{
-    width: 1%;
+  .logo.block{
+    @include breakpoint(min-width $width-large){
+      width: 1%;
+    }
+    @include breakpoint(max-width 430px){
+      display: none;
+    }
     img{
       width: 120px;
     }
   }
   .catalog-menu-wrapper{
-    width: 14%;
+    width: 130px;
     @include breakpoint(max-width $width-large){
-    //  width: 200px;
+      width: 20%;
     }
   }
   .search-wrapper{
