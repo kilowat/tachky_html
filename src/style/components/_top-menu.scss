@@ -34,13 +34,26 @@
         padding-right: 25px;
         color: #000000;
         text-decoration: none;
+        .top-menu-text{
+          margin-left: 10px;
+        }
+        @include breakpoint(max-width $width-large){
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+          .top-menu-text{
+            display: none;
+          }
+        }
         &.selected {
           background-color: $panel-bg-color;
           color: #fff;
           border-color: $panel-bg-color;
+          .top-menu-text{
+            display: inline-block;
+          }
         }
         i{
-          margin-right: 10px;
           position: relative;
           top:-2px;
         }

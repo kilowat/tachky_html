@@ -17,6 +17,16 @@ footer{
   padding-top:20px;
   margin-bottom: 52px;
   color: #c9c9c9;
+  clear: both;
+  @include breakpoint(max-width $width-large){
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+  }
+  .bottom-block{
+    @include breakpoint(max-width $width-large){
+      display: none;
+    }
+  }
   .bottom-line{
     height: 35px;
     background-color: #434041;

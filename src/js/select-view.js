@@ -5,7 +5,7 @@ $(document).ready(function () {
   var miniView = "mini";
   var viewId = '#catalog-view';
   var className = Cookies.get(templateNameKey) || tableView;
-  
+
   var setView = function(className) {
     Cookies.set(templateNameKey,className);
 
@@ -26,18 +26,18 @@ $(document).ready(function () {
       $(viewId).addClass(listView);
     }
   }
-  
+
   setView(className);
 
   $('.change-view input').each(function(key,value){
-    $(value).prop('checked', false); 
+    $(value).prop('checked', false);
     $(value).parent().removeClass('checked');
     if($(value).val() === className){
       $(value).prop('checked', true);
       $(value).parent().addClass('checked');
     }
   });
-  
+
   $('.change-view').on('ifChanged', function (e) {
     var t = $(e.target);
 
@@ -47,6 +47,7 @@ $(document).ready(function () {
     }
   });
 
-
+  if(window.innerWidth < 980)
+    setView(tableView);
 
 });

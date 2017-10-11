@@ -21,12 +21,14 @@ cart = (function(){
   }
 
   function dropMsgAnimation($wrapper, $text){
+    var pos = $wrapper.offset();
     var $msg = $text.hide();
-    var stopTop = -25;
+    var stopTop = -30;
     var startTop = -50;
+    var leftPos = 0;
     var dropMs = 300;
     var removeMs = 500;
-    $wrapper.append($msg);
+    $wrapper.find('.counter').append($msg);
     $msg.css('top', startTop+'px');
     $msg.show();
     $msg.animate({
@@ -34,7 +36,7 @@ cart = (function(){
     }, dropMs, 'easeOutBounce', function(){
       setTimeout(function(){
         $msg.fadeOut('fast', function(){
-          $msg.remove();
+        //  $msg.remove();
         });
       }, removeMs);
     });

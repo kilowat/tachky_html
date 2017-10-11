@@ -5,6 +5,9 @@
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
+  @include breakpoint(max-width $width-large){
+    display: none;
+  }
   .table {
     width: 100%;
   }

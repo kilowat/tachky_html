@@ -48,6 +48,9 @@ main {
 footer,
 .push {
   height: 268px;
+  @include breakpoint(max-width $width-large){
+    height: auto;
+  }
 }
 
 .table {

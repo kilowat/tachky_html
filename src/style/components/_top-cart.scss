@@ -4,11 +4,33 @@
     display: inline-block;
     font-family: Rubik;
     font-size: 14px;
+    @include breakpoint(max-width 780px){
+      margin-left: 10px;
+    }
   }
   .drop-down-cart-block{
-    border-bottom: 1px dashed #fff;
     margin-left: 20px;
     margin-right: 20px;
+    @include breakpoint(max-width 780px){
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .without-text{
+      display: none;
+      @include breakpoint(max-width 780px){
+        display: inline-block;
+      }
+    }
+    .with-text{
+      @include breakpoint(max-width 780px){
+        display: none;
+      }
+    }
+    .cart-count{
+      @include breakpoint(max-width 380px){
+        display: none;
+      }
+    }
   }
 }
 .block.cart-wrapper {
@@ -77,6 +99,9 @@
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    @include breakpoint(max-width 780px){
+      display: none;
+    }
     >*{
       display: inline-block;
       vertical-align: middle;
@@ -92,6 +117,9 @@
   .top-cart{
     padding-left: 15px;
     text-align: left;
+    @include breakpoint(max-width 780px){
+      padding-left: 0px;
+    }
   }
   .cart-summ-block{
     border-top: 1px solid #b8b8bc;
