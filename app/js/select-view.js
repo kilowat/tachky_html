@@ -47,7 +47,9 @@ $(document).ready(function () {
     }
   });
 
-  if(window.innerWidth < 980)
+  if(window.innerWidth < 980){
     setView(tableView);
+  }
+
 
 });

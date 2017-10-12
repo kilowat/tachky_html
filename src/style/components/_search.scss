@@ -1,10 +1,13 @@
 .search{
   position: relative;
-  @include breakpoint(max-width $width-large){
+  @include breakpoint(max-width 640px){
     position: absolute;
     right: 0;
     top: 14px;
     right: 40px;
+    .ic_search{
+      @include sprite($ic_m_search);
+    }
   }
   input[type=text]{
     height: 35px;
@@ -17,9 +20,10 @@
     ::-moz-placeholder          {color:#2c2c2c;}/* Firefox 19+ */
     :-moz-placeholder           {color:#2c2c2c;}/* Firefox 18- */
     :-ms-input-placeholder      {color:#2c2c2c;}
-    @include breakpoint(max-width $width-large){
+    @include breakpoint(max-width 640px){
       display: none;
     }
+
   }
   input[type="submit"]{
     border: medium none;
@@ -28,7 +32,7 @@
     top: 9px;
     background-color: transparent;
     cursor: pointer;
-    @include breakpoint(max-width $width-large){
+    @include breakpoint(max-width 640px){
       right: 0;
       position: static;
       top: 0;
