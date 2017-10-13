@@ -35,7 +35,10 @@
     display: inline-block;
     left: -4px;
     position: relative;
-    top: 11px;
+    top: 7px;
+    @include breakpoint(max-width $width-large){
+      top: 10px;
+    }
   }
   .user-links{
     background: #ccc none repeat scroll 0 0;

@@ -11,10 +11,11 @@
     display: none;
     position: relative;
     cursor: pointer;
+
     @include breakpoint(max-width $width-large){
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: column;
     }
     &:hover{
@@ -24,11 +25,20 @@
       }
     }
     .hm-line{
-      height: 3px;
+      height: 4px;
       background-color: #c0c0c2;
-      margin: 3px;
-      padding-right: 3px;
-      width: 100%;
+      width: 26px;
+      position: absolute;
+      left: 5px;
+      &:first-child{
+        top: 6px;
+      }
+      &:nth-child(2){
+        top: 16px;
+      }
+      &:nth-child(3){
+        top: 26px;
+      }
     }
   }
   .catalog-menu-btn{
@@ -62,8 +72,17 @@
     text-align: left;
     left: 0;
     z-index: 3;
+    @include breakpoint(max-width $width-large){
+      width: auto;
+      top: 55px;
+  }
     &.opened{
       display: block;
+      }
+      .desktop-menu{
+        @include breakpoint(max-width $width-large){
+          display: none;
+      }
     }
     a{
       text-decoration: none;
@@ -153,5 +172,8 @@
         }
       }
     }
+  }
+  .mobile-menu{
+
   }
 }

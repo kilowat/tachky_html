@@ -1,3 +1,27 @@
+.ic_m_youtube{
+  @include sprite($ic_m_youtube);
+  &:hover{
+    @include sprite($ic_m_you_h);
+  }
+}
+.ic_m-inst{
+  @include sprite($ic_m-inst);
+  &:hover{
+    @include sprite($ic_m-inst-h);
+  }
+}
+.ic_m-f{
+  @include sprite($ic_m-f);
+  &:hover{
+    @include sprite($ic_m-h);
+  }
+}
+.ic_m-vk{
+  @include sprite($ic_m-vk);
+  &:hover{
+    @include sprite($ic_m-vk-h);
+  }
+}
 .ic_cart-make-order{
   @include sprite($ic_cart-make-order);
 }

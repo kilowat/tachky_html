@@ -34,23 +34,16 @@ i {
 }
 
 html,
-body {
-  height: 100%;
-}
+
 
 main {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -268px;
+  min-height: 100vh;
 }
+.content{
+  //min-height: 100vh;
+}
+footer{
 
-footer,
-.push {
-  height: 268px;
-  @include breakpoint(max-width $width-large){
-    height: auto;
-  }
 }
 
 .table {

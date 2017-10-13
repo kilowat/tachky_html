@@ -15,7 +15,7 @@ footer, footer>.wrapper{
 }
 footer{
   padding-top:20px;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   color: #c9c9c9;
   clear: both;
   @include breakpoint(max-width $width-large){
@@ -30,6 +30,39 @@ footer{
   .bottom-line{
     height: 35px;
     background-color: #434041;
+    @include breakpoint(max-width $width-large){
+      height: auto;
+      padding-bottom: 20px;
+    }
+    .line-for-mobile{
+      margin-bottom: 20px;
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      @include breakpoint(max-width $width-large){
+        display: flex;
+      }
+      @include breakpoint(max-width 440px){
+        display: block;
+        >*{
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+      }
+      .d-price{
+        border-radius: 10px;
+        border: 1px solid;
+        padding: 12px;
+        text-decoration: none;
+      }
+      .soc-m-block{
+        ul>li{
+          display: inline-block;
+        }
+      }
+    }
   }
   a{
     color: #c9c9c9;
@@ -112,9 +145,17 @@ footer{
   }
   .date-created{
     float: left;
+    @include breakpoint(max-width 440px){
+      float: none;
+      text-align: center;
+    }
   }
   .created-by{
     float: right;
+    @include breakpoint(max-width 440px){
+      float: none;
+      text-align: center;
+    }
   }
   .date-created, .created-by{
     margin-top:13px;

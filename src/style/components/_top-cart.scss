@@ -120,6 +120,11 @@
     @include breakpoint(max-width 780px){
       padding-left: 0px;
     }
+    @include breakpoint(max-width 325px){
+      .ic_cart{
+        display: none;
+      }
+    }
   }
   .cart-summ-block{
     border-top: 1px solid #b8b8bc;
