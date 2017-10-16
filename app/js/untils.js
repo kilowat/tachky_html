@@ -26,8 +26,45 @@ utils = (function(){
      }
    };
 
+  var showMobileMenu = function(id){
+    var $id = $('#'+id);
+    var width = $id.width();
+
+    if(!$id.is(":visible")){
+      open();
+    }
+
+
+    function open(){
+      $id.css('left', -width+"px");
+      $id.show();
+      $id.animate({
+        left: 0
+      });
+    }
+  }
+
+  var closeMobileMenu = function(id){
+    var $id = $('#'+id);
+    var width = $id.width();
+
+    if($id.is(":visible")){
+      close();
+    }
+    function close(){
+      $id.animate({
+        left: -width+"px"
+      }, function(){
+        $id.hide();
+      });
+    }
+
+  }
+
   return {
     showPopupBox: showPopupBox,
+    showMobileMenu: showMobileMenu,
+    closeMobileMenu: closeMobileMenu,
   }
 
 })();

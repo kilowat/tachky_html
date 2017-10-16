@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+  $('#menu-catalog-mobile').mmenu();
+
   //set input number
   $('input[type=number]').iLightInputNumber();
 

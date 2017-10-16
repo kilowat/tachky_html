@@ -10,7 +10,7 @@ const
   ftp = require("./ftp.json");
 
 var env = process.env.NODE_ENV || 'local';
-var conn = plugins.vinylFtp.create(ftp.conf);  
+var conn = plugins.vinylFtp.create(ftp.conf);
 var ignorinc = 'app';
 var htmlBeautifyOptions = { "indent_size": 2};
 
@@ -138,7 +138,7 @@ var libsPath = {
       'src/libs/bxslider/js/jquery.bxslider.js'
     ]
   }
-  
+
 }
 
 //set what you want to use
@@ -339,7 +339,7 @@ function lib_build(cb) {
           if (!fs.existsSync('src/style/libs/' + nameLib))
             gulp.src(path).pipe(gulp.dest('src/style/libs/'));
         } else {
-          
+
           gulp.src(path)
           .pipe(plugins.if(env === "ftp", conn.dest(root+'/libs/' + nameLib + '/' + fileType + '/')))
           .pipe(plugins.if(env === "local", (gulp.dest(root + 'libs/' + nameLib + '/' + fileType + '/'))))
@@ -424,7 +424,7 @@ var build = gulp.series(
 );
 
 function upload() {
-  var conn = plugins.vinylFtp.create(ftp.conf);  
+  var conn = plugins.vinylFtp.create(ftp.conf);
   var stream =  gulp.src(ftp.files, {
       base: 'app',
       buffer: true
@@ -456,7 +456,7 @@ function watch() {
   gulp.watch(path.watch.sprite, sprite_build).on('unlink', function (filepath) {
     return plugins.remember.forget('sprite', plugins.resolvePath(filepath));
   });
-  
+
   gulp.watch(path.watch.fonts, fonts_build);
 
 }

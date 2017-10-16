@@ -10,6 +10,7 @@
   <!--slick:css-->
   <link rel="stylesheet" href="./libs/slick/css/slick.css">
   <!--endinject-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.4/jquery.mmenu.all.css">
   <link rel="stylesheet" href="./css/screen.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -47,9 +48,9 @@
             <div class="block catalog-menu-wrapper">
               <!--start component catalog menu-->
               <div class="catalog-menu">
-                <button class="hm-btn"><span class="hm-line"></span><span class="hm-line"></span><span class="hm-line"></span></button>
+                <button class="hm-btn" onclick="utils.showMobileMenu('menu-catalog-mobile')"><span class="hm-line"></span><span class="hm-line"></span><span class="hm-line"></span></button>
                 <button class="catalog-menu-btn toggle-btn">Каталог <i class="ic_menu"></i></button>
-                <div class="catalog-menu-item-wrapper toggle-wrapper">
+                <nav class="catalog-menu-item-wrapper toggle-wrapper">
                   <ul class="root-items desktop-menu">
                     <li>
                       <a href="" title="Двигатель">
@@ -357,37 +358,29 @@
                       </a>
                     </li>
                   </ul>
-
-                  <!--modbile menu-->
-                  <ul class="mobile-menu">
-                    <li>
-                      <a href="#">root level 1</a>
-                      <ul>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">root level 2</a>
-                      <ul>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                        <li><a href="#">sub-level</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">root level 3</a>
-                    </li>
-                    <li>
-                      <a href="#">root level 4</a>
-                    </li>
-                  </ul>
-                </div>
+                </nav>
               </div>
+
+              <nav id="menu-catalog-mobile" style="display:none;">
+                <ul>
+                  <li><a href="#/">Home</a></li>
+                  <li><span>About us</span>
+                    <ul>
+                      <li><a href="#/about/history">History</a></li>
+                      <li><span>The team</span>
+                        <ul>
+                          <li><a href="#/about/team/management">Management</a></li>
+                          <li><a href="#/about/team/sales">Sales</a></li>
+                          <li><a href="#/about/team/development">Development</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#/about/address">Our address</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#/contact">Contact</a></li>
+                </ul>
+                <a href="#" class="m-link-close" onclick="utils.closeMobileMenu('menu-catalog-mobile')" title="Закрыть">Закрыть</a>
+              </nav>
 
               <!--end component catalog menu-->
             </div>
@@ -505,6 +498,36 @@
     <div class="wrapper">
       <div class="container">
         <div class="content">
+          <div class="icons-testing">
+            <h3>Тест иконок</h3>
+            <div class="block-icons">
+              <div class="ic-before">
+                <style>
+                  .ic-test {
+                    background-image: url(/images/ic-s-test.png);
+                    background-repeat: no-repeat;
+                    height: 14px;
+                    width: 14px;
+                  }
+                  
+                  .ic-test-2 {
+                    background-image: url(/images/ic-s-test@2x.png);
+                    background-size: 14px 14px;
+                    background-repeat: no-repeat;
+                    height: 14px;
+                    width: 14px;
+                  }
+                </style>
+                <div class="">
+                  Обычная 1x:<i class="ic-test"></i>
+                </div>
+                <div class="">
+                  Больше точек 2x: <i class="ic-test-2"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Assumenda culpa dolor ea, earum harum illo minima nesciunt non reiciendis sint temporibus voluptate. Alias fuga fugiat harum hic, maiores ratione reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -1259,17 +1282,22 @@
   <!--slick:js-->
   <script src="./libs/slick/js/slick.min.js"></script>
   <!--endinject-->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.4/jquery.mmenu.all.js"></script>
   <!--dev:js-->
   <script src="./js/app.js"></script>
   <script src="./js/cart.js"></script>
   <script src="./js/catalog.js"></script>
   <script src="./js/drop_menu.js"></script>
   <script src="./js/filter.js"></script>
+  <script src="./js/jquery.mhead.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/mobile-menu-toggle.js"></script>
   <script src="./js/product-box.js"></script>
   <script src="./js/reviews-bar.js"></script>
   <script src="./js/select-view.js"></script>
   <script src="./js/untils.js"></script>
+  <script src="./js/_ma5-menu.js"></script>
   <!--endinject-->
 </body>
 

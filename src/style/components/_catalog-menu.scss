@@ -173,7 +173,12 @@
       }
     }
   }
-  .mobile-menu{
-
+}
+#menu-catalog-mobile{
+  z-index: 10;
+  .m-link-close{
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
   }
 }
