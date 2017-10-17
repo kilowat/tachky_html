@@ -1451,7 +1451,7 @@ footer .date-created, footer .created-by {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .fly-block .fly-block-row {
@@ -1798,7 +1798,7 @@ footer .date-created, footer .created-by {
 
 .product-list .product-cell.gift:before {
   display: block;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   content: "";
   right: -5px;
@@ -1811,7 +1811,7 @@ footer .date-created, footer .created-by {
 
 .product-list .product-cell.hit:before {
   display: block;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   content: "";
   right: -5px;
@@ -1824,7 +1824,7 @@ footer .date-created, footer .created-by {
 
 .product-list .product-cell.discount:before {
   display: block;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   content: "";
   right: -5px;
@@ -1837,7 +1837,7 @@ footer .date-created, footer .created-by {
 
 .product-list .product-cell.new:before {
   display: block;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   content: "";
   right: -5px;
@@ -3584,6 +3584,18 @@ footer .date-created, footer .created-by {
 
 .bookmark, .compared, .top-cart {
   cursor: pointer;
+}
+
+.top-cart .ic_cart::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  content: "";
+  left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
 }
 
 .top-cart .cart-summ {
